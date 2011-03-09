@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/app_osggis_viewer.dir/osggis_viewer.o  -o ../../bin/osggis_viewerd -rdynamic -L/home/jatrigueros/programas/RALine/osggis/lib -losgGISd -losgGAd -losgViewerd -losgSimd 

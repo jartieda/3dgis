@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/osggis_test_encode.dir/main.o  -o ../../bin/osggis_test_encoded -rdynamic -L/home/jatrigueros/programas/RALine/osggis/lib -losgGISd -losgGISProjectsd 

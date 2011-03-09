@@ -1,0 +1,84 @@
+/* -*-c++-*- */
+/* osgGIS - GIS Library for OpenSceneGraph
+ * Copyright 2007-2008 Glenn Waldron and Pelican Ventures, Inc.
+ * http://osggis.org
+ *
+ * osgGIS is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+
+#ifndef _OSGGISPROJECTS_BUILD_LAYER_SLICE_H_
+#define _OSGGISPROJECTS_BUILD_LAYER_SLICE_H_ 1
+
+#include <osgGISProjects/Common>
+#include <osgGISProjects/Source>
+#include <osgGIS/FilterGraph>
+#include <osgGIS/Property>
+#include <list>
+
+using namespace osgGIS;
+
+namespace osgGISProjects
+{
+    class OSGGISPROJECTS_EXPORT BuildLayerSlice;
+    typedef std::list<osg::ref_ptr<BuildLayerSlice> > BuildLayerSliceList;
+
+    class OSGGISPROJECTS_EXPORT BuildLayerSlice : public osg::Referenced
+    {
+    public:
+        BuildLayerSlice();
+        
+        FilterGraph* getFilterGraph() const;
+        
+        void setFilterGraph( FilterGraph* graph );
+
+        Source* getSource() const;
+
+        void setSource( Source* source );
+        
+        
+        float getMinRange() const;
+        
+        void setMinRange( float value );
+        
+        float getMaxRange() const;
+        
+        void setMaxRange( float value );
+
+        void setMaxTextureSize( unsigned int value );
+
+        unsigned int getMaxTextureSize() const;
+
+        BuildLayerSliceList& getSubSlices();
+
+        const BuildLayerSliceList& getSubSlices() const;
+        
+        
+        Properties& getProperties();
+        
+        const Properties& getProperties() const;
+
+    private:
+        osg::ref_ptr<Source> source;
+        osg::ref_ptr<FilterGraph> graph;
+        BuildLayerSliceList sub_slices;
+        Properties props;
+        float min_range;
+        float max_range;
+        unsigned int max_tex_size;
+    };
+
+}
+
+#endif // _OSGGISPROJECTS_BUILD_LAYER_SLICE_H_
+

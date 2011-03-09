@@ -1,0 +1,203 @@
+/* -*-c++-*- */
+/* osgGIS - GIS Library for OpenSceneGraph
+ * Copyright 2007-2008 Glenn Waldron and Pelican Ventures, Inc.
+ * http://osggis.org
+ *
+ * osgGIS is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+
+#ifndef _OSGGISPROJECTS_MAP_LAYER_H_
+#define _OSGGISPROJECTS_MAP_LAYER_H_ 1
+
+#include <osgGISProjects/Common>
+#include <osgGISProjects/MapLayerLevelOfDetail>
+#include <osgGIS/FeatureLayer>
+#include <osgGIS/FilterGraph>
+#include <osgGIS/Session>
+#include <osgGIS/ResourcePackager>
+#include <osg/BoundingSphere>
+
+using namespace osgGIS;
+
+namespace osgGISProjects
+{
+
+    /**
+     * A complete definition of a single runtime map layer, which is a set of one or
+     * more feature layers and their compilation configurations. This object is input
+     * for a MapLayerCompiler.
+     */
+    class OSGGISPROJECTS_EXPORT MapLayer : public osg::Referenced
+    {
+    public:
+        /**
+         * Constructs a new map layer definition.
+         */
+        MapLayer();
+
+        /**
+         * Sets the geospatial extent bounding the area we want to build.
+         *
+         * @param extent Geospatial area of interest
+         */
+        void setAreaOfInterest( const GeoExtent& extent );
+
+        /**
+         * Gets the geospatial extent bounding the area to build.
+         *
+         * @return The geospatial area of interest
+         */
+        const GeoExtent& getAreaOfInterest() const;
+
+        /**
+         * Sets the east-west extent of each cell in the map layer.
+         *
+         * @param width Extent (in source data units)
+         */
+        void setCellWidth( double width );
+
+        /**
+         * Gets the east-west extent of each cell in the map layer.
+         *
+         * @return Extent (in source data units)
+         */
+        double getCellWidth() const;
+
+        /**
+         * Sets the north-source extent of each cell in the map layer.
+         *
+         * @param height Extent (in source data units)
+         */
+        void setCellHeight( double height );
+        
+        /**
+         * Gets the north-south extent of each cell in the map layer.
+         *
+         * @return Extent (in source data units)
+         */
+        double getCellHeight() const;
+
+        /**
+         * Pushes source data onto the level of detail queue. Levels of detail are
+         * interpreted from front to back.
+         *
+         * @param layer
+         *      Feature layer from which to read source data
+         * @param graph
+         *      Filter graph to use to build scene graph
+         * @param min_range
+         *      Minimum visibility range of this level of detail
+         * @param max_range
+         *      Maximum visibility range of this level of detail
+         * @param replace
+         *      If true, this detail level will replace the ones before it. If false, it
+         *      will join the scene graph without removing the previous levels.
+         * @param depth
+         *      Level of detail depth (0 = top level)
+         * @param user_data
+         *      User-defined data to pass to the cell compiler
+         */
+        void push(
+            FeatureLayer*     layer,
+            FilterGraph*      graph,
+            const Properties& env_props,
+            ResourcePackager* packager,
+            float             min_range,
+            float             max_range,
+            bool              replace,
+            unsigned int      depth,
+            osg::Referenced*  user_data =NULL);
+            
+        /**
+         * Gets the maximum depth (LOD nesting level) in the map layer.
+         *
+         * @return Integer depth number (0=shallowest)
+         */
+        unsigned int getMaxDepth() const;
+
+        /**
+         * Gets the spatial reference system of the output when this layer is compiled.
+         *
+         * @param session
+         *      Session under which to examine this map layer
+         * @param terrain_srs
+         *      Optional terrain SRS
+         *
+         * @return A spatial reference
+         */
+        SpatialReference* getOutputSRS( Session* session, SpatialReference* terrain_srs =NULL) const;
+
+        /**
+         * Calculates the number of rows in the resulting cell grid.
+         *
+         * @return Integer column count
+         */
+        unsigned int getNumCellColumns() const;
+
+        /**
+         * Calculates the number of rows in the resulting cell grid.
+         *
+         * @return Integer row count.
+         */
+        unsigned int getNumCellRows() const;
+
+        /**
+         * Gets the number of detail levels at each grid location cell location.
+         *
+         * @return Number of detail levels
+         */
+        unsigned int getNumCellLevels() const;
+
+        /**
+         * Creates and returns a cell definition for a given cell location.
+         *
+         * @param col, row
+         *      Column and row for which to create a cell definition
+         * @param level
+         *      Detail level for which to create a cell definition
+         * @return
+         *      Cell definition
+         */
+//        MapLayerCell* createCell( unsigned int col, unsigned int row, unsigned int level ) const;
+
+        MapLayerLevelsOfDetail& getLevels() { return levels; }
+        
+        /**
+         * Sets whether to explicity calculate and encode the radius of each cell in the
+         * map structure. This is desirable for large-area datasets as it will improve
+         * spatial organization, but undesirable for point-model substitution datasets
+         * since it will cause odd switching thresholds.
+         */
+        void setEncodeCellRadius( bool value );
+        
+        bool getEncodeCellRadius() const;
+
+    private:
+        MapLayerLevelsOfDetail levels;
+        double cell_width, cell_height;
+        bool encode_cell_radius;
+        GeoExtent aoi_auto, aoi_manual;
+
+        // cached calculated grid setup:
+        double dx, last_dx, dy, last_dy;
+        unsigned int num_rows, num_cols;
+        bool grid_valid;
+        osg::ref_ptr<SpatialReference> output_srs;
+
+        void recalculateGrid();
+    };
+}
+
+#endif // _OSGGISPROJECTS_MAP_LAYER_H_
+

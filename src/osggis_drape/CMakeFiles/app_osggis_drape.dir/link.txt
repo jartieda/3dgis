@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/app_osggis_drape.dir/osggis_drape.o  -o ../../bin/osggis_draped -rdynamic -L/home/jatrigueros/programas/RALine/osggis/lib -losgGISd -losgViewerd -losgGAd 

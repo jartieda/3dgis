@@ -1,0 +1,253 @@
+/* -*-c++-*- */
+/* osgGIS - GIS Library for OpenSceneGraph
+ * Copyright 2007-2008 Glenn Waldron and Pelican Ventures, Inc.
+ * http://osggis.org
+ *
+ * osgGIS is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+
+#ifndef _OSGGIS_UTILS_H_
+#define _OSGGIS_UTILS_H_ 1
+
+#include <osgGIS/Common>
+#include <osgGIS/ImageUtils>
+#include <osgGIS/GeoShape>
+#include <osgGIS/SmartReadCallback>
+#include <osgGIS/SpatialReference>
+#include <osgGIS/GeoPoint>
+#include <osgGIS/LineSegmentIntersector2>
+#include <osgDB/Archive>
+#include <osgUtil/IntersectionVisitor>
+#include <osg/Timer>
+#include <string>
+
+namespace osgGIS
+{
+    /*(internal)
+     */
+    struct OSGGIS_EXPORT TimeUtils
+    {
+        /**
+         * Convert a ticks duration to approximate HMS.
+         */
+        static void getHMSDuration(
+            double total_seconds,
+            unsigned int& out_hours,
+            unsigned int& out_minutes,
+            unsigned int& out_seconds );
+    };
+
+    /* (internal)
+     */
+    struct OSGGIS_EXPORT StringUtils
+    {
+        /**
+         * Returns true if one string starts with another string.
+         */
+        static bool startsWith(
+            const std::string& str,
+            const std::string& prefix,
+            bool  case_sensitive =false );
+
+        /** 
+         *  Returns true if one string ends with another string.
+         */
+        static bool endsWith( 
+            const std::string& str,
+            const std::string& suffix,
+            bool  case_sensitive =false );
+
+        /**
+         * Replaces all occurances of "sub" within "s" with "other", in place.
+         */
+        static std::string& replaceIn( 
+            std::string& s, 
+            const std::string& sub,
+            const std::string& other );
+
+        /**
+         * Returns a copy of the input string with all the characters converted
+         * to lower case.
+         */
+        static std::string toLower(
+            const std::string& in );
+
+        /**
+         * Returns a copy of the input string with all leading and trailing
+         * spaces removed.
+         */
+        static std::string trim(
+            const std::string& in );
+    };
+    
+    /* (internal)
+     */
+    struct OSGGIS_EXPORT PathUtils
+    {
+        static bool isAbsPath(
+            const std::string& path );
+            
+        static std::string getAbsPath(
+            const std::string& base_path,
+            const std::string& input_path );
+            
+        static std::string combinePaths(
+            const std::string& left,
+            const std::string& right );
+    };
+    
+    /* (internal)
+     */
+    struct OSGGIS_EXPORT FileUtils
+    {
+        static long getFileTimeUTC(
+            const std::string& path );
+    };
+    
+    /* (internal)
+     */
+    struct OSGGIS_EXPORT GeomUtils
+    {
+        /**
+         * Returns true if the point lies inside the polygon.
+         *
+         * Note: SRS are ignored; the method assumes the point and the
+         * polygon share the same SRS
+         */
+        static bool isPointInPolygon(
+            const GeoPoint& point,
+            const GeoPointList& polygon );
+            
+        /**
+         * Returns true if the polygon is wound clockwise.
+         */
+        static bool isPolygonCW( const GeoPointList& polygon );
+
+        /**
+         * Returns true if the polygon is wound counter-clockwise.
+         */
+        static bool isPolygonCCW( const GeoPointList& polygon );
+
+        /**
+         * Gets the area of a polygon. Note, the result may be negative (if the poly
+         * is wound clockwise) so be sure to take the abs is necessary.
+         */
+        static double getPolygonArea2D( const GeoPointList& polygon );
+
+        /**
+         * "Opens" a polygon in place; i.e. removes the endpoint if it matches the
+         * first point.
+         */
+        static void openPolygon( GeoPointList& polygon );
+        
+        /**
+         * "Closes" a polygon in place; i.e. makes sure the last point is a duplicate
+         * of the last point.
+         */
+        static void closePolygon( GeoPointList& polygon );
+
+        /**
+         * Returns true if the subgraph contains one or more geodes, proxy nodes, or
+         * paged LODs (i.e. the potential for geometry).
+         */
+        static bool hasDrawables( osg::Node* node );
+
+        /**
+         * Sets the data variance for all nodes/drawables in a scene graph.
+         */
+        static void setDataVarianceRecursively(
+            osg::Node* node,
+            const osg::Object::DataVariance& variance );
+
+        /**
+         * Searches a node graph for the first node with the given name.
+         */
+        static osg::Node* findNamedNode(
+            const std::string& name,
+            osg::Node* tree );
+
+        /**
+         * Clamps a point to the terrain.
+         */
+        static GeoPoint clampToTerrain(
+            const GeoPoint& input,
+            osg::Node* terrain,
+            SpatialReference* terrain_srs,
+            SmartReadCallback* read_cb );
+            
+            
+        static LineSegmentIntersector2* createClampingIntersector(
+            const GeoPoint& p, double& out_hat );
+    };
+
+
+    // custom intersection visitor that can "fall back" on lower resolution tiles when
+    // a pages lod subtile cannot be found.
+    class RelaxedIntersectionVisitor : public osgUtil::IntersectionVisitor
+    {
+    public:
+        RelaxedIntersectionVisitor() : checked_for_min_range(false), min_isect_range(0.0f) { }
+        
+        virtual void apply( osg::PagedLOD& plod ) // override
+        {
+            if (!enter(plod)) return;
+
+            if (plod.getNumFileNames()>0)
+            {
+                osg::ref_ptr<osg::Node> highestResChild;
+                
+                if ( !checked_for_min_range )
+                {
+                    checked_for_min_range = true;
+                    SmartReadCallback* smart = dynamic_cast<SmartReadCallback*>(_readCallback.get());
+                    if ( smart )
+                        min_isect_range = smart->getMinRange();
+                }
+
+                if (plod.getNumFileNames() != plod.getNumChildren() && _readCallback.valid())
+                {
+                    unsigned int last_filename_index = plod.getNumFileNames()-1;
+                    float child_max_range = plod.getMaxRange( last_filename_index );
+                    if ( child_max_range >= min_isect_range )
+                    {
+                        highestResChild = _readCallback->readNodeFile( plod.getDatabasePath() + plod.getFileName(last_filename_index) );
+                    }
+                    else
+                    {
+                        //osgGIS::warn() << "---------Selected midrange LOD---------------" << std::endl;
+                    }
+                }
+
+                if ( !highestResChild.valid() && plod.getNumChildren() > 0 )
+                {
+                    highestResChild = plod.getChild( plod.getNumChildren()-1 );
+                }
+
+                if (highestResChild.valid())
+                {
+                    highestResChild->accept(*this);
+                }
+            }
+
+            leave();
+        }
+        
+    private:
+        bool checked_for_min_range;
+        float min_isect_range;
+    };
+}
+
+#endif //_OSGGIS_TERRAIN_UTILS_H_
+

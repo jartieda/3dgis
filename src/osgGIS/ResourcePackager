@@ -1,0 +1,82 @@
+/* -*-c++-*- */
+/* osgGIS - GIS Library for OpenSceneGraph
+ * Copyright 2007-2008 Glenn Waldron and Pelican Ventures, Inc.
+ * http://osggis.org
+ *
+ * osgGIS is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+
+#ifndef _OSGGIS_RESOURCE_PACKAGER_H_
+#define _OSGGIS_RESOURCE_PACKAGER_H_ 1
+
+#include <osgGIS/Common>
+#include <osgGIS/Session>
+#include <osgGIS/FilterEnv>
+#include <osgGIS/Report>
+#include <osgDB/Archive>
+#include <string>
+
+namespace osgGIS
+{
+    /* (todo: refactor this into the osgGISProjects library, along with
+     *        all the various layer compilers)
+     * Copies referenced resources from the resource library to an output
+     * location.
+     */
+    class OSGGIS_EXPORT ResourcePackager : public osg::Referenced
+    {
+    public:
+        ResourcePackager();
+        
+        ResourcePackager* clone() const;
+
+        void setArchive( osgDB::Archive* archive );
+
+        void setOutputLocation( const std::string& output_location );
+
+        void setMaxTextureSize( unsigned int size );
+
+        unsigned int getMaxTextureSize() const;
+
+        void setCompressTextures( bool value );
+
+        bool getCompressTextures() const;
+
+        void setInlineTextures( bool value );
+
+        bool getInlineTextures() const;
+        
+        void setFixMipmaps( bool value );
+        
+        bool getFixMipmaps() const;
+
+        void rewriteResourceReferences( osg::Node* node );
+
+        void packageResources( ResourceCache* resources, Report* report );
+
+        bool packageNode( 
+            osg::Node* node,
+            const std::string& abs_uri);
+
+    private:
+        std::string output_location;
+        osg::ref_ptr<osgDB::Archive> archive;
+        bool compress_textures;
+        bool inline_textures;
+        bool fix_mipmaps;
+        unsigned int max_tex_size;
+    };
+}
+
+#endif // _OSGGIS_RESOURCE_PACKAGER_H_

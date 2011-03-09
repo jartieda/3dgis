@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="OSGGIS" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\CMakeModules\;CMake Files\src\;CMake Files\src\osgGIS\;CMake Files\src\osgGISProjects\;CMake Files\src\osggis_build\;CMake Files\src\osggis_makelayer\;CMake Files\src\osggis_simple\;CMake Files\src\osggis_viewer\;CMake Files\src\osggis_mapper\;CMake Files\src\osggis_drape\;CMake Files\tests\;CMake Files\tests\encode\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install">
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; install" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/local">
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; install/local" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="install/strip">
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; install/strip" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="list_install_components">
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; list_install_components" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="test">
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; test" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="uninstall">
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; uninstall" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="osgGIS">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/lib/libosgGISd.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/src/osgGIS" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Makefile&quot; osgGIS" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="osgGIS/fast">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/lib/libosgGISd.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/src/osgGIS" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Makefile&quot; osgGIS/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="osgGISProjects">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/lib/libosgGISProjectsd.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Makefile&quot; osgGISProjects" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="osgGISProjects/fast">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/lib/libosgGISProjectsd.so" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects" />
+         <Option object_output="./" />
+         <Option type="3" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Makefile&quot; osgGISProjects/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app_osggis_build">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_buildd" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_build/Makefile&quot; app_osggis_build" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_build/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_build/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_build/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app_osggis_build/fast">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_buildd" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_build/Makefile&quot; app_osggis_build/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_build/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_build/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_build/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app_osggis_makelayer">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_makelayerd" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_makelayer/Makefile&quot; app_osggis_makelayer" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_makelayer/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_makelayer/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_makelayer/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app_osggis_makelayer/fast">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_makelayerd" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_makelayer/Makefile&quot; app_osggis_makelayer/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_makelayer/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_makelayer/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_makelayer/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app_osggis_simple">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_simpled" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_simple/Makefile&quot; app_osggis_simple" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_simple/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_simple/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_simple/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app_osggis_simple/fast">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_simpled" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_simple/Makefile&quot; app_osggis_simple/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_simple/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_simple/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_simple/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app_osggis_viewer">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_viewerd" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_viewer/Makefile&quot; app_osggis_viewer" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_viewer/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_viewer/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_viewer/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app_osggis_viewer/fast">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_viewerd" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_viewer/Makefile&quot; app_osggis_viewer/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_viewer/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_viewer/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_viewer/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app_osggis_mapper">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_mapperd" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_mapper/Makefile&quot; app_osggis_mapper" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_mapper/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_mapper/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_mapper/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app_osggis_mapper/fast">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_mapperd" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_mapper/Makefile&quot; app_osggis_mapper/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_mapper/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_mapper/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_mapper/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app_osggis_drape">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_draped" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_drape/Makefile&quot; app_osggis_drape" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_drape/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_drape/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_drape/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="app_osggis_drape/fast">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_draped" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_drape/Makefile&quot; app_osggis_drape/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_drape/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_drape/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/src/osggis_drape/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="osggis_test_encode">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_test_encoded" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/tests/encode/Makefile&quot; osggis_test_encode" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/tests/encode/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/tests/encode/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/tests/encode/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="osggis_test_encode/fast">
+         <Option output="/home/jatrigueros/programas/RALine/osggis/bin/osggis_test_encoded" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/jatrigueros/programas/RALine/osggis/bin" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/usr/include" />
+            <Add directory="/home/jatrigueros/programas/RALine/osggis/src" />
+            <Add directory="/usr/include/lua5.1" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/tests/encode/Makefile&quot; osggis_test_encode/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/tests/encode/Makefile&quot; &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/tests/encode/Makefile&quot; clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/jatrigueros/programas/RALine/osggis/tests/encode/Makefile&quot; clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/AlignFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Attribute.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/AttributedNode.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/BufferFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildGeomFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildLabelsFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildNodesFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ChangeShapeTypeFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ClampFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/CollectionFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/CollectionFilterState.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/CombineLinesFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ConvexHullFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/CropFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/DecimateFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/DefaultFeatureStoreFactory.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/DefaultRasterStoreFactory.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/DensifyFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ElevationResource.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Ellipsoid.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ExtrudeGeomFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FadeHelper.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Feature.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureCursor.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureFilterState.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayer.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayerCompiler.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayerResource.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureStoreCompiler.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Filter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterEnv.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterGraph.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterState.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Fragment.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FragmentFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FragmentFilterState.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GDAL_RasterStore.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoExtent.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoPoint.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoShape.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeocentricSpatialReference.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeometryCleaner.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GriddedLayerCompiler.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GroupFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ImageUtils.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/LayerCompiler.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/LineSegmentIntersector2.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/LocalizeNodesFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Lua_ScriptEngine.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Lua_ScriptEngine_tolua.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ModelResource.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/NodeFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/NodeFilterState.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Notify.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_Feature.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_FeatureStore.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_SpatialReference.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_SpatialReferenceFactory.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_Utils.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OptimizerHints.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/PagedLayerCompiler.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/PathResource.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Property.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RTreeSpatialIndex.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RandomGroupingFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RasterResource.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RecalculateExtentFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Registry.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RemoveHolesFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Report.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Resource.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourceCache.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourceLibrary.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourcePackager.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SRSResource.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Script.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SelectFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Session.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleFeature.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleLayerCompiler.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleSpatialIndex.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SkinResource.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SmartReadCallback.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SpatialReference.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SubstituteModelFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Task.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/TaskManager.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/TerrainUtils.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/TransformFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Units.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Utils.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/WriteFeaturesFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/WriteTextFilter.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Build.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/BuildLayer.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/BuildLayerSlice.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/BuildTarget.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Builder.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Cell.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/CellCompiler.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Document.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/GriddedMapLayerCompiler.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/MapLayer.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/MapLayerCompiler.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/MapLayerLevelOfDetail.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Project.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/QuadKey.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/QuadTreeMapLayerCompiler.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/RuntimeMap.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/RuntimeMapLayer.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Serializer.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/SimpleMapLayerCompiler.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Source.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Terrain.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/XmlDOM.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/XmlDocument.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/XmlSerializer.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osggis_build/osggis_build.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osggis_drape/osggis_drape.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osggis_makelayer/osggis_makelayer.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osggis_mapper/osggis_mapper.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osggis_simple/osggis_simple.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osggis_viewer/osggis_viewer.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/tests/encode/main.cpp">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/AlignFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Attribute">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/AttributeIndex">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/AttributedNode">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/AutoResetBlock">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/BufferFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildGeomFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildLabelsFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildNodesFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ChangeShapeTypeFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ClampFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/CollectionFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/CollectionFilterState">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/CombineLinesFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Common">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ConvexHullFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/CropFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/DecimateFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/DefaultFeatureStoreFactory">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/DefaultRasterStoreFactory">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/DensifyFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ElevationGrid">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ElevationResource">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Ellipsoid">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Export">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ExtrudeGeomFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FadeHelper">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Feature">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureCursor">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureFilterState">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayer">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayerCompiler">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayerResource">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureStore">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureStoreCompiler">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureStoreFactory">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Filter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterEnv">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterGraph">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterState">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Fragment">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FragmentFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FragmentFilterState">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GDAL_RasterStore">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoExtent">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoPoint">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoShape">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeocentricSpatialReference">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeometryCleaner">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GriddedLayerCompiler">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GroupFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ImageUtils">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/LayerCompiler">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/LineSegmentIntersector2">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/LocalizeNodesFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Lua_ScriptEngine">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Lua_ScriptEngine_tolua">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ModelResource">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/NodeFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/NodeFilterState">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Notify">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_Feature">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_FeatureStore">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_SpatialReference">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_SpatialReferenceFactory">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_Utils">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OptimizerHints">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/PagedLayerCompiler">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/PathResource">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Property">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RTree">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RTreeSpatialIndex">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RandomGroupingFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RasterResource">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RasterStore">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RasterStoreFactory">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RecalculateExtentFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Registry">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RemoveHolesFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Report">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Resource">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourceCache">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourceLibrary">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourcePackager">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SRSResource">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Script">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ScriptEngine">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SelectFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Session">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleFeature">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleLayerCompiler">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleSpatialIndex">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SkinResource">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SmartReadCallback">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SpatialIndex">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SpatialReference">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SpatialReferenceBase">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SpatialReferenceFactory">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/StubSpatialIndex">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SubstituteModelFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Tags">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Task">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/TaskManager">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/TerrainUtils">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/TransformFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Units">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Utils">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/WriteFeaturesFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/WriteTextFilter">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Build">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/BuildLayer">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/BuildLayerSlice">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/BuildTarget">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Builder">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Cell">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/CellCompiler">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Common">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Document">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Export">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/GriddedMapLayerCompiler">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/MapLayer">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/MapLayerCompiler">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/MapLayerLevelOfDetail">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Project">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/QuadKey">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/QuadTreeMapLayerCompiler">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/RuntimeMap">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/RuntimeMapLayer">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Serializer">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/SimpleMapLayerCompiler">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Source">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Terrain">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/XmlDOM">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/XmlDocument">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/XmlSerializer">
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/CMakeModules/FindOSG.cmake">
+          <Option virtualFolder="CMake Files\CMakeModules\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/CMakeModules/FindGDAL.cmake">
+          <Option virtualFolder="CMake Files\CMakeModules\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/CMakeModules/FindLUA.cmake">
+          <Option virtualFolder="CMake Files\CMakeModules\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/CMakeModules/FindTOLUA.cmake">
+          <Option virtualFolder="CMake Files\CMakeModules\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/CMakeModules/OsgGISMacroUtils.cmake">
+          <Option virtualFolder="CMake Files\CMakeModules\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/CMakeModules/cmake_uninstall.cmake.in">
+          <Option virtualFolder="CMake Files\CMakeModules\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/CMakeModules/ModuleInstall.cmake">
+          <Option virtualFolder="CMake Files\CMakeModules\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/CMakeModules/ModuleInstall.cmake">
+          <Option virtualFolder="CMake Files\CMakeModules\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGIS/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\osgGIS\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\osgGISProjects\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osggis_build/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\osggis_build\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osggis_makelayer/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\osggis_makelayer\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osggis_simple/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\osggis_simple\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osggis_viewer/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\osggis_viewer\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osggis_mapper/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\osggis_mapper\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/src/osggis_drape/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\src\osggis_drape\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/tests/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\tests\" />
+      </Unit>
+      <Unit filename="/home/jatrigueros/programas/RALine/osggis/tests/encode/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\tests\encode\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/app_osggis_mapper.dir/osggis_mapper.o  -o ../../bin/osggis_mapperd -rdynamic -L/home/jatrigueros/programas/RALine/osggis/lib -losgGISd -losgGISProjectsd -losgGAd -losgViewerd -losgSimd 

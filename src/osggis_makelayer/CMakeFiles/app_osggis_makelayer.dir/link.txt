@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/app_osggis_makelayer.dir/osggis_makelayer.o  -o ../../bin/osggis_makelayerd -rdynamic -L/home/jatrigueros/programas/RALine/osggis/lib -losgGISd 

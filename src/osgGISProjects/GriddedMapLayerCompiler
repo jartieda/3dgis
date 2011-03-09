@@ -1,0 +1,120 @@
+/* -*-c++-*- */
+/* osgGIS - GIS Library for OpenSceneGraph
+ * Copyright 2007-2008 Glenn Waldron and Pelican Ventures, Inc.
+ * http://osggis.org
+ *
+ * osgGIS is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+
+#ifndef _OSGGISPROJECTS_GRIDDED_MAP_LAYER_COMPILER_
+#define _OSGGISPROJECTS_GRIDDED_MAP_LAYER_COMPILER_ 1
+
+#include <osgGISProjects/Common>
+#include <osgGISProjects/MapLayerCompiler>
+#include <osgGISProjects/MapLayer>
+#include <osgGISProjects/QuadKey>
+#include <osgGISProjects/Cell>
+#include <osgGIS/ResourcePackager>
+#include <osgGIS/TaskManager>
+#include <osgGIS/SmartReadCallback>
+#include <osgDB/Archive>
+
+using namespace osgGIS;
+
+namespace osgGISProjects
+{
+    class OSGGISPROJECTS_EXPORT GridProfile : public Profile
+    {
+    public:
+        GridProfile( const GeoExtent& bounds );
+        void initByCellSize( double col_size, double row_size );
+        void initByCellCount( unsigned int _num_cols, unsigned int _num_rows );
+        const GeoExtent& getBounds() const;
+        unsigned int getNumColumns() const;
+        unsigned int getNumRows() const;
+        double getColumnSize( unsigned int col ) const;
+        double getRowSize( unsigned int row ) const;
+        GeoExtent getExtent( unsigned int col, unsigned int row ) const;
+        std::string getCellId( unsigned int col, unsigned int row, unsigned int depth ) const;
+
+    private:
+        GeoExtent bounds;
+        double dx, last_dx, dy, last_dy;
+        unsigned int num_rows, num_cols;
+    };
+
+    class OSGGISPROJECTS_EXPORT GridCell : public Cell
+    {
+    public:
+        GridCell( const std::string& id, unsigned int col, unsigned int row, unsigned int depth, const GeoExtent& extent, const CellStatus& status );
+
+        unsigned int getColumn() const;
+        unsigned int getRow() const;
+        unsigned int getDepth() const;
+
+    private:
+        unsigned int col, row, depth;
+    };
+
+    class GridCellCursor : public CellCursor
+    {
+    public:
+        GridCellCursor( GridProfile* profile, MapLayerCompiler* compiler );
+
+    public: // CellCursor
+        bool hasNext() const;
+        osg::ref_ptr<Cell> next();
+
+    private:
+        osg::ref_ptr<GridProfile> profile;
+        osg::ref_ptr<MapLayerCompiler> compiler;
+        unsigned int lod_i, col_i, row_i;
+    };
+
+    /**
+     * .
+     */
+    class OSGGISPROJECTS_EXPORT GriddedMapLayerCompiler : public MapLayerCompiler
+    {
+    public:
+        /**
+         * Constructs a new compiler.
+         *
+         * @param map_layer
+         *      Layer that we are going to compile.
+         *
+         * @param session
+         *      Session under which to compiler the map layer
+         */
+        GriddedMapLayerCompiler( MapLayer* map_layer, Session* session =NULL );
+
+    public: // MapLayerCompiler interface
+
+        Profile* createProfile();
+
+        CellCursor* createCellCursor( Profile* profile );
+        
+    protected:
+
+        //virtual void collectCellKeys( Profile* profile );
+
+        virtual unsigned int queueTasks( Profile* profile, TaskManager* task_man );
+
+        virtual void buildIndex( Profile* profile, osg::Group* scene_graph );
+
+    };
+}
+
+#endif // _OSGGISPROJECTS_GRIDDED_MAP_LAYER_COMPILER_
+
