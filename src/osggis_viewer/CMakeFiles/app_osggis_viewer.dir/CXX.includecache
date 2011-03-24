@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jatrigueros/src/osggis/src/osggis_viewer/osggis_viewer.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osggis_viewer/osggis_viewer.cpp
 osg/ArgumentParser
 -
 osgDB/FileUtils
@@ -64,6 +64,20 @@ OpenThreads/Thread
 iostream
 -
 osgGIS/Utils
+-
+osgGA/TrackballManipulator
+-
+osgGA/FlightManipulator
+-
+osgGA/DriveManipulator
+-
+osgGA/KeySwitchMatrixManipulator
+-
+osgGA/StateSetManipulator
+-
+osgGA/AnimationPathManipulator
+-
+osgGA/TerrainManipulator
 -
 
 src/osgGIS/Common

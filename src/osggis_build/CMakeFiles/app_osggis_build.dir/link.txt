@@ -1,1 +1,1 @@
-/usr/bin/c++   -g   CMakeFiles/app_osggis_build.dir/osggis_build.o  -o ../../bin/osggis_buildd -rdynamic -L/home/jatrigueros/programas/RALine/osggis/lib -losgGISd -losgGISProjectsd 
+/usr/bin/c++   -g   CMakeFiles/app_osggis_build.dir/osggis_build.o  -o ../../bin/osggis_buildd -rdynamic -L/home/jatrigueros/programas/osggis_googlecode/3dgis/lib -losgGISd -losgGISProjectsd 

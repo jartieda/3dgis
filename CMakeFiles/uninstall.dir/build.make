@@ -35,15 +35,15 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jatrigueros/programas/RALine/osggis
+CMAKE_SOURCE_DIR = /home/jatrigueros/programas/osggis_googlecode/3dgis
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jatrigueros/programas/RALine/osggis
+CMAKE_BINARY_DIR = /home/jatrigueros/programas/osggis_googlecode/3dgis
 
 # Utility rule file for uninstall.
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /home/jatrigueros/programas/RALine/osggis/cmake_uninstall.cmake
+	/usr/bin/cmake -P /home/jatrigueros/programas/osggis_googlecode/3dgis/cmake_uninstall.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -58,6 +58,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/jatrigueros/programas/RALine/osggis && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jatrigueros/programas/RALine/osggis /home/jatrigueros/programas/RALine/osggis /home/jatrigueros/programas/RALine/osggis /home/jatrigueros/programas/RALine/osggis /home/jatrigueros/programas/RALine/osggis/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jatrigueros/programas/osggis_googlecode/3dgis /home/jatrigueros/programas/osggis_googlecode/3dgis /home/jatrigueros/programas/osggis_googlecode/3dgis /home/jatrigueros/programas/osggis_googlecode/3dgis /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

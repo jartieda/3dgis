@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jatrigueros/src/osggis/src/osggis_mapper/osggis_mapper.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osggis_mapper/osggis_mapper.cpp
 osg/ArgumentParser
 -
 osgDB/FileUtils
@@ -92,6 +92,20 @@ osgGIS/SimpleLayerCompiler
 osgGISProjects/Project
 -
 osgGISProjects/XmlSerializer
+-
+osgGA/TrackballManipulator
+-
+osgGA/FlightManipulator
+-
+osgGA/DriveManipulator
+-
+osgGA/KeySwitchMatrixManipulator
+-
+osgGA/StateSetManipulator
+-
+osgGA/AnimationPathManipulator
+-
+osgGA/TerrainManipulator
 -
 
 src/osgGIS/Attribute

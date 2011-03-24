@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jatrigueros/programas/RALine/osggis
+CMAKE_SOURCE_DIR = /home/jatrigueros/programas/osggis_googlecode/3dgis
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jatrigueros/programas/RALine/osggis
+CMAKE_BINARY_DIR = /home/jatrigueros/programas/osggis_googlecode/3dgis
 
 # Include any dependencies generated for this target.
 include src/osgGIS/CMakeFiles/osgGIS.dir/depend.make
@@ -51,17 +51,17 @@ include src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 
 src/osgGIS/CMakeFiles/osgGIS.dir/AlignFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/AlignFilter.o: src/osgGIS/AlignFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/AlignFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/AlignFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/AlignFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/AlignFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/AlignFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/AlignFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/AlignFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/AlignFilter.cpp > CMakeFiles/osgGIS.dir/AlignFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/AlignFilter.cpp > CMakeFiles/osgGIS.dir/AlignFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/AlignFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/AlignFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/AlignFilter.cpp -o CMakeFiles/osgGIS.dir/AlignFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/AlignFilter.cpp -o CMakeFiles/osgGIS.dir/AlignFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/AlignFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/AlignFilter.o.requires
@@ -75,17 +75,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/AlignFilter.o.provides.build: src/osgGIS/CMakeF
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Attribute.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Attribute.o: src/osgGIS/Attribute.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Attribute.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Attribute.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Attribute.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Attribute.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Attribute.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Attribute.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Attribute.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Attribute.cpp > CMakeFiles/osgGIS.dir/Attribute.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Attribute.cpp > CMakeFiles/osgGIS.dir/Attribute.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Attribute.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Attribute.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Attribute.cpp -o CMakeFiles/osgGIS.dir/Attribute.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Attribute.cpp -o CMakeFiles/osgGIS.dir/Attribute.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Attribute.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Attribute.o.requires
@@ -99,17 +99,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Attribute.o.provides.build: src/osgGIS/CMakeFil
 
 src/osgGIS/CMakeFiles/osgGIS.dir/AttributedNode.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/AttributedNode.o: src/osgGIS/AttributedNode.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/AttributedNode.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/AttributedNode.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/AttributedNode.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/AttributedNode.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/AttributedNode.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/AttributedNode.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/AttributedNode.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/AttributedNode.cpp > CMakeFiles/osgGIS.dir/AttributedNode.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/AttributedNode.cpp > CMakeFiles/osgGIS.dir/AttributedNode.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/AttributedNode.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/AttributedNode.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/AttributedNode.cpp -o CMakeFiles/osgGIS.dir/AttributedNode.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/AttributedNode.cpp -o CMakeFiles/osgGIS.dir/AttributedNode.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/AttributedNode.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/AttributedNode.o.requires
@@ -123,17 +123,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/AttributedNode.o.provides.build: src/osgGIS/CMa
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BufferFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/BufferFilter.o: src/osgGIS/BufferFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/BufferFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/BufferFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/BufferFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/BufferFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BufferFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BufferFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/BufferFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/BufferFilter.cpp > CMakeFiles/osgGIS.dir/BufferFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BufferFilter.cpp > CMakeFiles/osgGIS.dir/BufferFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BufferFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/BufferFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/BufferFilter.cpp -o CMakeFiles/osgGIS.dir/BufferFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BufferFilter.cpp -o CMakeFiles/osgGIS.dir/BufferFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BufferFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/BufferFilter.o.requires
@@ -147,17 +147,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/BufferFilter.o.provides.build: src/osgGIS/CMake
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildGeomFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildGeomFilter.o: src/osgGIS/BuildGeomFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/BuildGeomFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/BuildGeomFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildGeomFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/BuildGeomFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BuildGeomFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildGeomFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/BuildGeomFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildGeomFilter.cpp > CMakeFiles/osgGIS.dir/BuildGeomFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BuildGeomFilter.cpp > CMakeFiles/osgGIS.dir/BuildGeomFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildGeomFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/BuildGeomFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildGeomFilter.cpp -o CMakeFiles/osgGIS.dir/BuildGeomFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BuildGeomFilter.cpp -o CMakeFiles/osgGIS.dir/BuildGeomFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildGeomFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/BuildGeomFilter.o.requires
@@ -171,17 +171,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/BuildGeomFilter.o.provides.build: src/osgGIS/CM
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildLabelsFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildLabelsFilter.o: src/osgGIS/BuildLabelsFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/BuildLabelsFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/BuildLabelsFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildLabelsFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/BuildLabelsFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BuildLabelsFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildLabelsFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/BuildLabelsFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildLabelsFilter.cpp > CMakeFiles/osgGIS.dir/BuildLabelsFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BuildLabelsFilter.cpp > CMakeFiles/osgGIS.dir/BuildLabelsFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildLabelsFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/BuildLabelsFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildLabelsFilter.cpp -o CMakeFiles/osgGIS.dir/BuildLabelsFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BuildLabelsFilter.cpp -o CMakeFiles/osgGIS.dir/BuildLabelsFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildLabelsFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/BuildLabelsFilter.o.requires
@@ -195,17 +195,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/BuildLabelsFilter.o.provides.build: src/osgGIS/
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildNodesFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildNodesFilter.o: src/osgGIS/BuildNodesFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/BuildNodesFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/BuildNodesFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildNodesFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/BuildNodesFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BuildNodesFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildNodesFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/BuildNodesFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildNodesFilter.cpp > CMakeFiles/osgGIS.dir/BuildNodesFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BuildNodesFilter.cpp > CMakeFiles/osgGIS.dir/BuildNodesFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildNodesFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/BuildNodesFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildNodesFilter.cpp -o CMakeFiles/osgGIS.dir/BuildNodesFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BuildNodesFilter.cpp -o CMakeFiles/osgGIS.dir/BuildNodesFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/BuildNodesFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/BuildNodesFilter.o.requires
@@ -219,17 +219,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/BuildNodesFilter.o.provides.build: src/osgGIS/C
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.o: src/osgGIS/ChangeShapeTypeFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ChangeShapeTypeFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ChangeShapeTypeFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ChangeShapeTypeFilter.cpp > CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ChangeShapeTypeFilter.cpp > CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ChangeShapeTypeFilter.cpp -o CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ChangeShapeTypeFilter.cpp -o CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.o.requires
@@ -243,17 +243,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/ChangeShapeTypeFilter.o.provides.build: src/osg
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ClampFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/ClampFilter.o: src/osgGIS/ClampFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/ClampFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ClampFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ClampFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ClampFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ClampFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ClampFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/ClampFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ClampFilter.cpp > CMakeFiles/osgGIS.dir/ClampFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ClampFilter.cpp > CMakeFiles/osgGIS.dir/ClampFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ClampFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/ClampFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ClampFilter.cpp -o CMakeFiles/osgGIS.dir/ClampFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ClampFilter.cpp -o CMakeFiles/osgGIS.dir/ClampFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ClampFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/ClampFilter.o.requires
@@ -267,17 +267,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/ClampFilter.o.provides.build: src/osgGIS/CMakeF
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilter.o: src/osgGIS/CollectionFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/CollectionFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/CollectionFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/CollectionFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CollectionFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/CollectionFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/CollectionFilter.cpp > CMakeFiles/osgGIS.dir/CollectionFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CollectionFilter.cpp > CMakeFiles/osgGIS.dir/CollectionFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/CollectionFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/CollectionFilter.cpp -o CMakeFiles/osgGIS.dir/CollectionFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CollectionFilter.cpp -o CMakeFiles/osgGIS.dir/CollectionFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilter.o.requires
@@ -291,17 +291,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilter.o.provides.build: src/osgGIS/C
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilterState.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilterState.o: src/osgGIS/CollectionFilterState.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilterState.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/CollectionFilterState.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/CollectionFilterState.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/CollectionFilterState.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CollectionFilterState.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilterState.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/CollectionFilterState.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/CollectionFilterState.cpp > CMakeFiles/osgGIS.dir/CollectionFilterState.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CollectionFilterState.cpp > CMakeFiles/osgGIS.dir/CollectionFilterState.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilterState.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/CollectionFilterState.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/CollectionFilterState.cpp -o CMakeFiles/osgGIS.dir/CollectionFilterState.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CollectionFilterState.cpp -o CMakeFiles/osgGIS.dir/CollectionFilterState.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilterState.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilterState.o.requires
@@ -315,17 +315,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/CollectionFilterState.o.provides.build: src/osg
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CombineLinesFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/CombineLinesFilter.o: src/osgGIS/CombineLinesFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/CombineLinesFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/CombineLinesFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/CombineLinesFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/CombineLinesFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CombineLinesFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CombineLinesFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/CombineLinesFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/CombineLinesFilter.cpp > CMakeFiles/osgGIS.dir/CombineLinesFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CombineLinesFilter.cpp > CMakeFiles/osgGIS.dir/CombineLinesFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CombineLinesFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/CombineLinesFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/CombineLinesFilter.cpp -o CMakeFiles/osgGIS.dir/CombineLinesFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CombineLinesFilter.cpp -o CMakeFiles/osgGIS.dir/CombineLinesFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CombineLinesFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/CombineLinesFilter.o.requires
@@ -339,17 +339,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/CombineLinesFilter.o.provides.build: src/osgGIS
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ConvexHullFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/ConvexHullFilter.o: src/osgGIS/ConvexHullFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/ConvexHullFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ConvexHullFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ConvexHullFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ConvexHullFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ConvexHullFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ConvexHullFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/ConvexHullFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ConvexHullFilter.cpp > CMakeFiles/osgGIS.dir/ConvexHullFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ConvexHullFilter.cpp > CMakeFiles/osgGIS.dir/ConvexHullFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ConvexHullFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/ConvexHullFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ConvexHullFilter.cpp -o CMakeFiles/osgGIS.dir/ConvexHullFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ConvexHullFilter.cpp -o CMakeFiles/osgGIS.dir/ConvexHullFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ConvexHullFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/ConvexHullFilter.o.requires
@@ -363,17 +363,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/ConvexHullFilter.o.provides.build: src/osgGIS/C
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CropFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/CropFilter.o: src/osgGIS/CropFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/CropFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/CropFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/CropFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/CropFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CropFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CropFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/CropFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/CropFilter.cpp > CMakeFiles/osgGIS.dir/CropFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CropFilter.cpp > CMakeFiles/osgGIS.dir/CropFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CropFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/CropFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/CropFilter.cpp -o CMakeFiles/osgGIS.dir/CropFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CropFilter.cpp -o CMakeFiles/osgGIS.dir/CropFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/CropFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/CropFilter.o.requires
@@ -387,17 +387,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/CropFilter.o.provides.build: src/osgGIS/CMakeFi
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DecimateFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/DecimateFilter.o: src/osgGIS/DecimateFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/DecimateFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/DecimateFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/DecimateFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/DecimateFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DecimateFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DecimateFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/DecimateFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/DecimateFilter.cpp > CMakeFiles/osgGIS.dir/DecimateFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DecimateFilter.cpp > CMakeFiles/osgGIS.dir/DecimateFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DecimateFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/DecimateFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/DecimateFilter.cpp -o CMakeFiles/osgGIS.dir/DecimateFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DecimateFilter.cpp -o CMakeFiles/osgGIS.dir/DecimateFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DecimateFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/DecimateFilter.o.requires
@@ -411,17 +411,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/DecimateFilter.o.provides.build: src/osgGIS/CMa
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.o: src/osgGIS/DefaultFeatureStoreFactory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/DefaultFeatureStoreFactory.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DefaultFeatureStoreFactory.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/DefaultFeatureStoreFactory.cpp > CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DefaultFeatureStoreFactory.cpp > CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/DefaultFeatureStoreFactory.cpp -o CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DefaultFeatureStoreFactory.cpp -o CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.o.requires
@@ -435,17 +435,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/DefaultFeatureStoreFactory.o.provides.build: sr
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.o: src/osgGIS/DefaultRasterStoreFactory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/DefaultRasterStoreFactory.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DefaultRasterStoreFactory.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/DefaultRasterStoreFactory.cpp > CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DefaultRasterStoreFactory.cpp > CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/DefaultRasterStoreFactory.cpp -o CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DefaultRasterStoreFactory.cpp -o CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.o.requires
@@ -459,17 +459,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/DefaultRasterStoreFactory.o.provides.build: src
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DensifyFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/DensifyFilter.o: src/osgGIS/DensifyFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/DensifyFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/DensifyFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/DensifyFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/DensifyFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DensifyFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DensifyFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/DensifyFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/DensifyFilter.cpp > CMakeFiles/osgGIS.dir/DensifyFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DensifyFilter.cpp > CMakeFiles/osgGIS.dir/DensifyFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DensifyFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/DensifyFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/DensifyFilter.cpp -o CMakeFiles/osgGIS.dir/DensifyFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DensifyFilter.cpp -o CMakeFiles/osgGIS.dir/DensifyFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/DensifyFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/DensifyFilter.o.requires
@@ -483,17 +483,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/DensifyFilter.o.provides.build: src/osgGIS/CMak
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ElevationResource.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/ElevationResource.o: src/osgGIS/ElevationResource.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/ElevationResource.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ElevationResource.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ElevationResource.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ElevationResource.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ElevationResource.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ElevationResource.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/ElevationResource.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ElevationResource.cpp > CMakeFiles/osgGIS.dir/ElevationResource.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ElevationResource.cpp > CMakeFiles/osgGIS.dir/ElevationResource.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ElevationResource.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/ElevationResource.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ElevationResource.cpp -o CMakeFiles/osgGIS.dir/ElevationResource.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ElevationResource.cpp -o CMakeFiles/osgGIS.dir/ElevationResource.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ElevationResource.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/ElevationResource.o.requires
@@ -507,17 +507,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/ElevationResource.o.provides.build: src/osgGIS/
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Ellipsoid.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Ellipsoid.o: src/osgGIS/Ellipsoid.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Ellipsoid.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Ellipsoid.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Ellipsoid.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Ellipsoid.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Ellipsoid.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Ellipsoid.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Ellipsoid.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Ellipsoid.cpp > CMakeFiles/osgGIS.dir/Ellipsoid.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Ellipsoid.cpp > CMakeFiles/osgGIS.dir/Ellipsoid.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Ellipsoid.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Ellipsoid.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Ellipsoid.cpp -o CMakeFiles/osgGIS.dir/Ellipsoid.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Ellipsoid.cpp -o CMakeFiles/osgGIS.dir/Ellipsoid.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Ellipsoid.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Ellipsoid.o.requires
@@ -531,17 +531,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Ellipsoid.o.provides.build: src/osgGIS/CMakeFil
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.o: src/osgGIS/ExtrudeGeomFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ExtrudeGeomFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ExtrudeGeomFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ExtrudeGeomFilter.cpp > CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ExtrudeGeomFilter.cpp > CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ExtrudeGeomFilter.cpp -o CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ExtrudeGeomFilter.cpp -o CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.o.requires
@@ -555,17 +555,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/ExtrudeGeomFilter.o.provides.build: src/osgGIS/
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FadeHelper.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/FadeHelper.o: src/osgGIS/FadeHelper.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/FadeHelper.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FadeHelper.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FadeHelper.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FadeHelper.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FadeHelper.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FadeHelper.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/FadeHelper.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FadeHelper.cpp > CMakeFiles/osgGIS.dir/FadeHelper.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FadeHelper.cpp > CMakeFiles/osgGIS.dir/FadeHelper.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FadeHelper.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/FadeHelper.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FadeHelper.cpp -o CMakeFiles/osgGIS.dir/FadeHelper.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FadeHelper.cpp -o CMakeFiles/osgGIS.dir/FadeHelper.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FadeHelper.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/FadeHelper.o.requires
@@ -579,17 +579,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/FadeHelper.o.provides.build: src/osgGIS/CMakeFi
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Feature.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Feature.o: src/osgGIS/Feature.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_23)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_23)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Feature.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Feature.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Feature.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Feature.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Feature.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Feature.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Feature.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Feature.cpp > CMakeFiles/osgGIS.dir/Feature.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Feature.cpp > CMakeFiles/osgGIS.dir/Feature.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Feature.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Feature.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Feature.cpp -o CMakeFiles/osgGIS.dir/Feature.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Feature.cpp -o CMakeFiles/osgGIS.dir/Feature.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Feature.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Feature.o.requires
@@ -603,17 +603,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Feature.o.provides.build: src/osgGIS/CMakeFiles
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureCursor.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureCursor.o: src/osgGIS/FeatureCursor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_24)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/FeatureCursor.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureCursor.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureCursor.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureCursor.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureCursor.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureCursor.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/FeatureCursor.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureCursor.cpp > CMakeFiles/osgGIS.dir/FeatureCursor.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureCursor.cpp > CMakeFiles/osgGIS.dir/FeatureCursor.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureCursor.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/FeatureCursor.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureCursor.cpp -o CMakeFiles/osgGIS.dir/FeatureCursor.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureCursor.cpp -o CMakeFiles/osgGIS.dir/FeatureCursor.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureCursor.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/FeatureCursor.o.requires
@@ -627,17 +627,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/FeatureCursor.o.provides.build: src/osgGIS/CMak
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilter.o: src/osgGIS/FeatureFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/FeatureFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureFilter.cpp > CMakeFiles/osgGIS.dir/FeatureFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureFilter.cpp > CMakeFiles/osgGIS.dir/FeatureFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/FeatureFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureFilter.cpp -o CMakeFiles/osgGIS.dir/FeatureFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureFilter.cpp -o CMakeFiles/osgGIS.dir/FeatureFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilter.o.requires
@@ -651,17 +651,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilter.o.provides.build: src/osgGIS/CMak
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilterState.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilterState.o: src/osgGIS/FeatureFilterState.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilterState.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureFilterState.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureFilterState.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureFilterState.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureFilterState.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilterState.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/FeatureFilterState.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureFilterState.cpp > CMakeFiles/osgGIS.dir/FeatureFilterState.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureFilterState.cpp > CMakeFiles/osgGIS.dir/FeatureFilterState.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilterState.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/FeatureFilterState.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureFilterState.cpp -o CMakeFiles/osgGIS.dir/FeatureFilterState.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureFilterState.cpp -o CMakeFiles/osgGIS.dir/FeatureFilterState.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilterState.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilterState.o.requires
@@ -675,17 +675,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/FeatureFilterState.o.provides.build: src/osgGIS
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayer.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayer.o: src/osgGIS/FeatureLayer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayer.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureLayer.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayer.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureLayer.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureLayer.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayer.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/FeatureLayer.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayer.cpp > CMakeFiles/osgGIS.dir/FeatureLayer.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureLayer.cpp > CMakeFiles/osgGIS.dir/FeatureLayer.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayer.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/FeatureLayer.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayer.cpp -o CMakeFiles/osgGIS.dir/FeatureLayer.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureLayer.cpp -o CMakeFiles/osgGIS.dir/FeatureLayer.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayer.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayer.o.requires
@@ -699,17 +699,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayer.o.provides.build: src/osgGIS/CMake
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerCompiler.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerCompiler.o: src/osgGIS/FeatureLayerCompiler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerCompiler.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureLayerCompiler.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayerCompiler.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureLayerCompiler.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureLayerCompiler.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerCompiler.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/FeatureLayerCompiler.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayerCompiler.cpp > CMakeFiles/osgGIS.dir/FeatureLayerCompiler.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureLayerCompiler.cpp > CMakeFiles/osgGIS.dir/FeatureLayerCompiler.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerCompiler.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/FeatureLayerCompiler.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayerCompiler.cpp -o CMakeFiles/osgGIS.dir/FeatureLayerCompiler.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureLayerCompiler.cpp -o CMakeFiles/osgGIS.dir/FeatureLayerCompiler.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerCompiler.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerCompiler.o.requires
@@ -723,17 +723,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerCompiler.o.provides.build: src/osgG
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerResource.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerResource.o: src/osgGIS/FeatureLayerResource.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerResource.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureLayerResource.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayerResource.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureLayerResource.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureLayerResource.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerResource.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/FeatureLayerResource.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayerResource.cpp > CMakeFiles/osgGIS.dir/FeatureLayerResource.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureLayerResource.cpp > CMakeFiles/osgGIS.dir/FeatureLayerResource.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerResource.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/FeatureLayerResource.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayerResource.cpp -o CMakeFiles/osgGIS.dir/FeatureLayerResource.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureLayerResource.cpp -o CMakeFiles/osgGIS.dir/FeatureLayerResource.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerResource.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerResource.o.requires
@@ -747,17 +747,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/FeatureLayerResource.o.provides.build: src/osgG
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureStoreCompiler.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureStoreCompiler.o: src/osgGIS/FeatureStoreCompiler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/FeatureStoreCompiler.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureStoreCompiler.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureStoreCompiler.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FeatureStoreCompiler.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureStoreCompiler.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureStoreCompiler.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/FeatureStoreCompiler.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureStoreCompiler.cpp > CMakeFiles/osgGIS.dir/FeatureStoreCompiler.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureStoreCompiler.cpp > CMakeFiles/osgGIS.dir/FeatureStoreCompiler.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureStoreCompiler.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/FeatureStoreCompiler.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureStoreCompiler.cpp -o CMakeFiles/osgGIS.dir/FeatureStoreCompiler.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureStoreCompiler.cpp -o CMakeFiles/osgGIS.dir/FeatureStoreCompiler.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FeatureStoreCompiler.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/FeatureStoreCompiler.o.requires
@@ -771,17 +771,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/FeatureStoreCompiler.o.provides.build: src/osgG
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Filter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Filter.o: src/osgGIS/Filter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Filter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Filter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Filter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Filter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Filter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Filter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Filter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Filter.cpp > CMakeFiles/osgGIS.dir/Filter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Filter.cpp > CMakeFiles/osgGIS.dir/Filter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Filter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Filter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Filter.cpp -o CMakeFiles/osgGIS.dir/Filter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Filter.cpp -o CMakeFiles/osgGIS.dir/Filter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Filter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Filter.o.requires
@@ -795,17 +795,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Filter.o.provides.build: src/osgGIS/CMakeFiles/
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterGraph.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterGraph.o: src/osgGIS/FilterGraph.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/FilterGraph.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FilterGraph.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterGraph.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FilterGraph.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FilterGraph.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterGraph.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/FilterGraph.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterGraph.cpp > CMakeFiles/osgGIS.dir/FilterGraph.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FilterGraph.cpp > CMakeFiles/osgGIS.dir/FilterGraph.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterGraph.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/FilterGraph.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterGraph.cpp -o CMakeFiles/osgGIS.dir/FilterGraph.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FilterGraph.cpp -o CMakeFiles/osgGIS.dir/FilterGraph.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterGraph.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/FilterGraph.o.requires
@@ -819,17 +819,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/FilterGraph.o.provides.build: src/osgGIS/CMakeF
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterState.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterState.o: src/osgGIS/FilterState.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/FilterState.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FilterState.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterState.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FilterState.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FilterState.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterState.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/FilterState.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterState.cpp > CMakeFiles/osgGIS.dir/FilterState.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FilterState.cpp > CMakeFiles/osgGIS.dir/FilterState.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterState.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/FilterState.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterState.cpp -o CMakeFiles/osgGIS.dir/FilterState.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FilterState.cpp -o CMakeFiles/osgGIS.dir/FilterState.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterState.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/FilterState.o.requires
@@ -843,17 +843,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/FilterState.o.provides.build: src/osgGIS/CMakeF
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterEnv.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterEnv.o: src/osgGIS/FilterEnv.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/FilterEnv.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FilterEnv.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterEnv.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FilterEnv.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FilterEnv.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterEnv.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/FilterEnv.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterEnv.cpp > CMakeFiles/osgGIS.dir/FilterEnv.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FilterEnv.cpp > CMakeFiles/osgGIS.dir/FilterEnv.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterEnv.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/FilterEnv.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterEnv.cpp -o CMakeFiles/osgGIS.dir/FilterEnv.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FilterEnv.cpp -o CMakeFiles/osgGIS.dir/FilterEnv.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FilterEnv.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/FilterEnv.o.requires
@@ -867,17 +867,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/FilterEnv.o.provides.build: src/osgGIS/CMakeFil
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Fragment.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Fragment.o: src/osgGIS/Fragment.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Fragment.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Fragment.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Fragment.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Fragment.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Fragment.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Fragment.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Fragment.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Fragment.cpp > CMakeFiles/osgGIS.dir/Fragment.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Fragment.cpp > CMakeFiles/osgGIS.dir/Fragment.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Fragment.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Fragment.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Fragment.cpp -o CMakeFiles/osgGIS.dir/Fragment.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Fragment.cpp -o CMakeFiles/osgGIS.dir/Fragment.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Fragment.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Fragment.o.requires
@@ -891,17 +891,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Fragment.o.provides.build: src/osgGIS/CMakeFile
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilter.o: src/osgGIS/FragmentFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FragmentFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FragmentFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FragmentFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FragmentFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/FragmentFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FragmentFilter.cpp > CMakeFiles/osgGIS.dir/FragmentFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FragmentFilter.cpp > CMakeFiles/osgGIS.dir/FragmentFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/FragmentFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FragmentFilter.cpp -o CMakeFiles/osgGIS.dir/FragmentFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FragmentFilter.cpp -o CMakeFiles/osgGIS.dir/FragmentFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilter.o.requires
@@ -915,17 +915,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilter.o.provides.build: src/osgGIS/CMa
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilterState.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilterState.o: src/osgGIS/FragmentFilterState.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilterState.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FragmentFilterState.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FragmentFilterState.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/FragmentFilterState.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FragmentFilterState.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilterState.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/FragmentFilterState.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FragmentFilterState.cpp > CMakeFiles/osgGIS.dir/FragmentFilterState.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FragmentFilterState.cpp > CMakeFiles/osgGIS.dir/FragmentFilterState.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilterState.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/FragmentFilterState.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/FragmentFilterState.cpp -o CMakeFiles/osgGIS.dir/FragmentFilterState.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FragmentFilterState.cpp -o CMakeFiles/osgGIS.dir/FragmentFilterState.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilterState.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilterState.o.requires
@@ -939,17 +939,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/FragmentFilterState.o.provides.build: src/osgGI
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GDAL_RasterStore.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/GDAL_RasterStore.o: src/osgGIS/GDAL_RasterStore.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/GDAL_RasterStore.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GDAL_RasterStore.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GDAL_RasterStore.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GDAL_RasterStore.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GDAL_RasterStore.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GDAL_RasterStore.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/GDAL_RasterStore.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GDAL_RasterStore.cpp > CMakeFiles/osgGIS.dir/GDAL_RasterStore.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GDAL_RasterStore.cpp > CMakeFiles/osgGIS.dir/GDAL_RasterStore.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GDAL_RasterStore.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/GDAL_RasterStore.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GDAL_RasterStore.cpp -o CMakeFiles/osgGIS.dir/GDAL_RasterStore.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GDAL_RasterStore.cpp -o CMakeFiles/osgGIS.dir/GDAL_RasterStore.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GDAL_RasterStore.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/GDAL_RasterStore.o.requires
@@ -963,17 +963,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/GDAL_RasterStore.o.provides.build: src/osgGIS/C
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeocentricSpatialReference.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/GeocentricSpatialReference.o: src/osgGIS/GeocentricSpatialReference.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/GeocentricSpatialReference.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GeocentricSpatialReference.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeocentricSpatialReference.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GeocentricSpatialReference.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeocentricSpatialReference.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeocentricSpatialReference.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/GeocentricSpatialReference.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeocentricSpatialReference.cpp > CMakeFiles/osgGIS.dir/GeocentricSpatialReference.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeocentricSpatialReference.cpp > CMakeFiles/osgGIS.dir/GeocentricSpatialReference.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeocentricSpatialReference.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/GeocentricSpatialReference.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeocentricSpatialReference.cpp -o CMakeFiles/osgGIS.dir/GeocentricSpatialReference.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeocentricSpatialReference.cpp -o CMakeFiles/osgGIS.dir/GeocentricSpatialReference.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeocentricSpatialReference.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/GeocentricSpatialReference.o.requires
@@ -987,17 +987,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/GeocentricSpatialReference.o.provides.build: sr
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoExtent.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoExtent.o: src/osgGIS/GeoExtent.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/GeoExtent.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GeoExtent.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoExtent.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GeoExtent.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeoExtent.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoExtent.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/GeoExtent.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoExtent.cpp > CMakeFiles/osgGIS.dir/GeoExtent.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeoExtent.cpp > CMakeFiles/osgGIS.dir/GeoExtent.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoExtent.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/GeoExtent.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoExtent.cpp -o CMakeFiles/osgGIS.dir/GeoExtent.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeoExtent.cpp -o CMakeFiles/osgGIS.dir/GeoExtent.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoExtent.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/GeoExtent.o.requires
@@ -1011,17 +1011,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/GeoExtent.o.provides.build: src/osgGIS/CMakeFil
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeometryCleaner.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/GeometryCleaner.o: src/osgGIS/GeometryCleaner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/GeometryCleaner.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GeometryCleaner.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeometryCleaner.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GeometryCleaner.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeometryCleaner.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeometryCleaner.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/GeometryCleaner.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeometryCleaner.cpp > CMakeFiles/osgGIS.dir/GeometryCleaner.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeometryCleaner.cpp > CMakeFiles/osgGIS.dir/GeometryCleaner.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeometryCleaner.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/GeometryCleaner.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeometryCleaner.cpp -o CMakeFiles/osgGIS.dir/GeometryCleaner.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeometryCleaner.cpp -o CMakeFiles/osgGIS.dir/GeometryCleaner.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeometryCleaner.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/GeometryCleaner.o.requires
@@ -1035,17 +1035,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/GeometryCleaner.o.provides.build: src/osgGIS/CM
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoPoint.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoPoint.o: src/osgGIS/GeoPoint.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/GeoPoint.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GeoPoint.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoPoint.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GeoPoint.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeoPoint.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoPoint.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/GeoPoint.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoPoint.cpp > CMakeFiles/osgGIS.dir/GeoPoint.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeoPoint.cpp > CMakeFiles/osgGIS.dir/GeoPoint.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoPoint.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/GeoPoint.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoPoint.cpp -o CMakeFiles/osgGIS.dir/GeoPoint.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeoPoint.cpp -o CMakeFiles/osgGIS.dir/GeoPoint.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoPoint.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/GeoPoint.o.requires
@@ -1059,17 +1059,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/GeoPoint.o.provides.build: src/osgGIS/CMakeFile
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoShape.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoShape.o: src/osgGIS/GeoShape.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/GeoShape.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GeoShape.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoShape.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GeoShape.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeoShape.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoShape.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/GeoShape.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoShape.cpp > CMakeFiles/osgGIS.dir/GeoShape.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeoShape.cpp > CMakeFiles/osgGIS.dir/GeoShape.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoShape.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/GeoShape.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoShape.cpp -o CMakeFiles/osgGIS.dir/GeoShape.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeoShape.cpp -o CMakeFiles/osgGIS.dir/GeoShape.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GeoShape.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/GeoShape.o.requires
@@ -1083,17 +1083,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/GeoShape.o.provides.build: src/osgGIS/CMakeFile
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GriddedLayerCompiler.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/GriddedLayerCompiler.o: src/osgGIS/GriddedLayerCompiler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/GriddedLayerCompiler.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GriddedLayerCompiler.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GriddedLayerCompiler.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GriddedLayerCompiler.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GriddedLayerCompiler.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GriddedLayerCompiler.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/GriddedLayerCompiler.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GriddedLayerCompiler.cpp > CMakeFiles/osgGIS.dir/GriddedLayerCompiler.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GriddedLayerCompiler.cpp > CMakeFiles/osgGIS.dir/GriddedLayerCompiler.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GriddedLayerCompiler.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/GriddedLayerCompiler.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GriddedLayerCompiler.cpp -o CMakeFiles/osgGIS.dir/GriddedLayerCompiler.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GriddedLayerCompiler.cpp -o CMakeFiles/osgGIS.dir/GriddedLayerCompiler.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GriddedLayerCompiler.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/GriddedLayerCompiler.o.requires
@@ -1107,17 +1107,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/GriddedLayerCompiler.o.provides.build: src/osgG
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GroupFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/GroupFilter.o: src/osgGIS/GroupFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/GroupFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GroupFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GroupFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/GroupFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GroupFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GroupFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/GroupFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GroupFilter.cpp > CMakeFiles/osgGIS.dir/GroupFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GroupFilter.cpp > CMakeFiles/osgGIS.dir/GroupFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GroupFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/GroupFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/GroupFilter.cpp -o CMakeFiles/osgGIS.dir/GroupFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GroupFilter.cpp -o CMakeFiles/osgGIS.dir/GroupFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/GroupFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/GroupFilter.o.requires
@@ -1131,17 +1131,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/GroupFilter.o.provides.build: src/osgGIS/CMakeF
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ImageUtils.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/ImageUtils.o: src/osgGIS/ImageUtils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/ImageUtils.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ImageUtils.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ImageUtils.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ImageUtils.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ImageUtils.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ImageUtils.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/ImageUtils.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ImageUtils.cpp > CMakeFiles/osgGIS.dir/ImageUtils.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ImageUtils.cpp > CMakeFiles/osgGIS.dir/ImageUtils.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ImageUtils.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/ImageUtils.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ImageUtils.cpp -o CMakeFiles/osgGIS.dir/ImageUtils.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ImageUtils.cpp -o CMakeFiles/osgGIS.dir/ImageUtils.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ImageUtils.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/ImageUtils.o.requires
@@ -1155,17 +1155,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/ImageUtils.o.provides.build: src/osgGIS/CMakeFi
 
 src/osgGIS/CMakeFiles/osgGIS.dir/LayerCompiler.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/LayerCompiler.o: src/osgGIS/LayerCompiler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_47)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/LayerCompiler.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/LayerCompiler.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/LayerCompiler.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/LayerCompiler.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/LayerCompiler.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/LayerCompiler.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/LayerCompiler.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/LayerCompiler.cpp > CMakeFiles/osgGIS.dir/LayerCompiler.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/LayerCompiler.cpp > CMakeFiles/osgGIS.dir/LayerCompiler.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/LayerCompiler.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/LayerCompiler.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/LayerCompiler.cpp -o CMakeFiles/osgGIS.dir/LayerCompiler.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/LayerCompiler.cpp -o CMakeFiles/osgGIS.dir/LayerCompiler.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/LayerCompiler.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/LayerCompiler.o.requires
@@ -1179,17 +1179,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/LayerCompiler.o.provides.build: src/osgGIS/CMak
 
 src/osgGIS/CMakeFiles/osgGIS.dir/LineSegmentIntersector2.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/LineSegmentIntersector2.o: src/osgGIS/LineSegmentIntersector2.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/LineSegmentIntersector2.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/LineSegmentIntersector2.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/LineSegmentIntersector2.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/LineSegmentIntersector2.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/LineSegmentIntersector2.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/LineSegmentIntersector2.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/LineSegmentIntersector2.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/LineSegmentIntersector2.cpp > CMakeFiles/osgGIS.dir/LineSegmentIntersector2.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/LineSegmentIntersector2.cpp > CMakeFiles/osgGIS.dir/LineSegmentIntersector2.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/LineSegmentIntersector2.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/LineSegmentIntersector2.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/LineSegmentIntersector2.cpp -o CMakeFiles/osgGIS.dir/LineSegmentIntersector2.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/LineSegmentIntersector2.cpp -o CMakeFiles/osgGIS.dir/LineSegmentIntersector2.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/LineSegmentIntersector2.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/LineSegmentIntersector2.o.requires
@@ -1203,17 +1203,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/LineSegmentIntersector2.o.provides.build: src/o
 
 src/osgGIS/CMakeFiles/osgGIS.dir/LocalizeNodesFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/LocalizeNodesFilter.o: src/osgGIS/LocalizeNodesFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_49)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_49)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/LocalizeNodesFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/LocalizeNodesFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/LocalizeNodesFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/LocalizeNodesFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/LocalizeNodesFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/LocalizeNodesFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/LocalizeNodesFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/LocalizeNodesFilter.cpp > CMakeFiles/osgGIS.dir/LocalizeNodesFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/LocalizeNodesFilter.cpp > CMakeFiles/osgGIS.dir/LocalizeNodesFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/LocalizeNodesFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/LocalizeNodesFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/LocalizeNodesFilter.cpp -o CMakeFiles/osgGIS.dir/LocalizeNodesFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/LocalizeNodesFilter.cpp -o CMakeFiles/osgGIS.dir/LocalizeNodesFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/LocalizeNodesFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/LocalizeNodesFilter.o.requires
@@ -1227,17 +1227,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/LocalizeNodesFilter.o.provides.build: src/osgGI
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine.o: src/osgGIS/Lua_ScriptEngine.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_50)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_50)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Lua_ScriptEngine.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Lua_ScriptEngine.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Lua_ScriptEngine.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Lua_ScriptEngine.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Lua_ScriptEngine.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Lua_ScriptEngine.cpp > CMakeFiles/osgGIS.dir/Lua_ScriptEngine.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Lua_ScriptEngine.cpp > CMakeFiles/osgGIS.dir/Lua_ScriptEngine.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Lua_ScriptEngine.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Lua_ScriptEngine.cpp -o CMakeFiles/osgGIS.dir/Lua_ScriptEngine.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Lua_ScriptEngine.cpp -o CMakeFiles/osgGIS.dir/Lua_ScriptEngine.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine.o.requires
@@ -1251,17 +1251,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine.o.provides.build: src/osgGIS/C
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.o: src/osgGIS/Lua_ScriptEngine_tolua.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_51)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_51)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Lua_ScriptEngine_tolua.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Lua_ScriptEngine_tolua.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Lua_ScriptEngine_tolua.cpp > CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Lua_ScriptEngine_tolua.cpp > CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Lua_ScriptEngine_tolua.cpp -o CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Lua_ScriptEngine_tolua.cpp -o CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.o.requires
@@ -1275,17 +1275,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Lua_ScriptEngine_tolua.o.provides.build: src/os
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ModelResource.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/ModelResource.o: src/osgGIS/ModelResource.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/ModelResource.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ModelResource.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ModelResource.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ModelResource.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ModelResource.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ModelResource.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/ModelResource.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ModelResource.cpp > CMakeFiles/osgGIS.dir/ModelResource.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ModelResource.cpp > CMakeFiles/osgGIS.dir/ModelResource.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ModelResource.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/ModelResource.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ModelResource.cpp -o CMakeFiles/osgGIS.dir/ModelResource.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ModelResource.cpp -o CMakeFiles/osgGIS.dir/ModelResource.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ModelResource.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/ModelResource.o.requires
@@ -1299,17 +1299,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/ModelResource.o.provides.build: src/osgGIS/CMak
 
 src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilter.o: src/osgGIS/NodeFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_53)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/NodeFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/NodeFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/NodeFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/NodeFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/NodeFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/NodeFilter.cpp > CMakeFiles/osgGIS.dir/NodeFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/NodeFilter.cpp > CMakeFiles/osgGIS.dir/NodeFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/NodeFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/NodeFilter.cpp -o CMakeFiles/osgGIS.dir/NodeFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/NodeFilter.cpp -o CMakeFiles/osgGIS.dir/NodeFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilter.o.requires
@@ -1323,17 +1323,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilter.o.provides.build: src/osgGIS/CMakeFi
 
 src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilterState.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilterState.o: src/osgGIS/NodeFilterState.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_54)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilterState.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/NodeFilterState.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/NodeFilterState.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/NodeFilterState.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/NodeFilterState.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilterState.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/NodeFilterState.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/NodeFilterState.cpp > CMakeFiles/osgGIS.dir/NodeFilterState.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/NodeFilterState.cpp > CMakeFiles/osgGIS.dir/NodeFilterState.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilterState.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/NodeFilterState.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/NodeFilterState.cpp -o CMakeFiles/osgGIS.dir/NodeFilterState.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/NodeFilterState.cpp -o CMakeFiles/osgGIS.dir/NodeFilterState.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilterState.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilterState.o.requires
@@ -1347,17 +1347,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/NodeFilterState.o.provides.build: src/osgGIS/CM
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Notify.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Notify.o: src/osgGIS/Notify.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_55)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Notify.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Notify.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Notify.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Notify.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Notify.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Notify.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Notify.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Notify.cpp > CMakeFiles/osgGIS.dir/Notify.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Notify.cpp > CMakeFiles/osgGIS.dir/Notify.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Notify.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Notify.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Notify.cpp -o CMakeFiles/osgGIS.dir/Notify.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Notify.cpp -o CMakeFiles/osgGIS.dir/Notify.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Notify.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Notify.o.requires
@@ -1371,17 +1371,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Notify.o.provides.build: src/osgGIS/CMakeFiles/
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Feature.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Feature.o: src/osgGIS/OGR_Feature.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Feature.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/OGR_Feature.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_Feature.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/OGR_Feature.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_Feature.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Feature.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/OGR_Feature.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_Feature.cpp > CMakeFiles/osgGIS.dir/OGR_Feature.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_Feature.cpp > CMakeFiles/osgGIS.dir/OGR_Feature.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Feature.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/OGR_Feature.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_Feature.cpp -o CMakeFiles/osgGIS.dir/OGR_Feature.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_Feature.cpp -o CMakeFiles/osgGIS.dir/OGR_Feature.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Feature.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Feature.o.requires
@@ -1395,17 +1395,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Feature.o.provides.build: src/osgGIS/CMakeF
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_FeatureStore.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_FeatureStore.o: src/osgGIS/OGR_FeatureStore.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/OGR_FeatureStore.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/OGR_FeatureStore.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_FeatureStore.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/OGR_FeatureStore.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_FeatureStore.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_FeatureStore.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/OGR_FeatureStore.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_FeatureStore.cpp > CMakeFiles/osgGIS.dir/OGR_FeatureStore.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_FeatureStore.cpp > CMakeFiles/osgGIS.dir/OGR_FeatureStore.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_FeatureStore.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/OGR_FeatureStore.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_FeatureStore.cpp -o CMakeFiles/osgGIS.dir/OGR_FeatureStore.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_FeatureStore.cpp -o CMakeFiles/osgGIS.dir/OGR_FeatureStore.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_FeatureStore.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/OGR_FeatureStore.o.requires
@@ -1419,17 +1419,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/OGR_FeatureStore.o.provides.build: src/osgGIS/C
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReference.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReference.o: src/osgGIS/OGR_SpatialReference.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_58)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReference.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/OGR_SpatialReference.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_SpatialReference.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/OGR_SpatialReference.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_SpatialReference.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReference.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/OGR_SpatialReference.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_SpatialReference.cpp > CMakeFiles/osgGIS.dir/OGR_SpatialReference.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_SpatialReference.cpp > CMakeFiles/osgGIS.dir/OGR_SpatialReference.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReference.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/OGR_SpatialReference.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_SpatialReference.cpp -o CMakeFiles/osgGIS.dir/OGR_SpatialReference.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_SpatialReference.cpp -o CMakeFiles/osgGIS.dir/OGR_SpatialReference.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReference.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReference.o.requires
@@ -1443,17 +1443,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReference.o.provides.build: src/osgG
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.o: src/osgGIS/OGR_SpatialReferenceFactory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_59)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_SpatialReferenceFactory.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_SpatialReferenceFactory.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_SpatialReferenceFactory.cpp > CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_SpatialReferenceFactory.cpp > CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_SpatialReferenceFactory.cpp -o CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_SpatialReferenceFactory.cpp -o CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.o.requires
@@ -1467,17 +1467,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/OGR_SpatialReferenceFactory.o.provides.build: s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Utils.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Utils.o: src/osgGIS/OGR_Utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_60)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Utils.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/OGR_Utils.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_Utils.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/OGR_Utils.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_Utils.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Utils.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/OGR_Utils.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_Utils.cpp > CMakeFiles/osgGIS.dir/OGR_Utils.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_Utils.cpp > CMakeFiles/osgGIS.dir/OGR_Utils.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Utils.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/OGR_Utils.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_Utils.cpp -o CMakeFiles/osgGIS.dir/OGR_Utils.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_Utils.cpp -o CMakeFiles/osgGIS.dir/OGR_Utils.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Utils.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Utils.o.requires
@@ -1491,17 +1491,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/OGR_Utils.o.provides.build: src/osgGIS/CMakeFil
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OptimizerHints.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/OptimizerHints.o: src/osgGIS/OptimizerHints.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_61)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_61)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/OptimizerHints.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/OptimizerHints.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OptimizerHints.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/OptimizerHints.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OptimizerHints.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OptimizerHints.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/OptimizerHints.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OptimizerHints.cpp > CMakeFiles/osgGIS.dir/OptimizerHints.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OptimizerHints.cpp > CMakeFiles/osgGIS.dir/OptimizerHints.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OptimizerHints.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/OptimizerHints.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/OptimizerHints.cpp -o CMakeFiles/osgGIS.dir/OptimizerHints.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OptimizerHints.cpp -o CMakeFiles/osgGIS.dir/OptimizerHints.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/OptimizerHints.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/OptimizerHints.o.requires
@@ -1515,17 +1515,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/OptimizerHints.o.provides.build: src/osgGIS/CMa
 
 src/osgGIS/CMakeFiles/osgGIS.dir/PagedLayerCompiler.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/PagedLayerCompiler.o: src/osgGIS/PagedLayerCompiler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_62)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_62)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/PagedLayerCompiler.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/PagedLayerCompiler.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/PagedLayerCompiler.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/PagedLayerCompiler.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/PagedLayerCompiler.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/PagedLayerCompiler.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/PagedLayerCompiler.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/PagedLayerCompiler.cpp > CMakeFiles/osgGIS.dir/PagedLayerCompiler.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/PagedLayerCompiler.cpp > CMakeFiles/osgGIS.dir/PagedLayerCompiler.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/PagedLayerCompiler.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/PagedLayerCompiler.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/PagedLayerCompiler.cpp -o CMakeFiles/osgGIS.dir/PagedLayerCompiler.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/PagedLayerCompiler.cpp -o CMakeFiles/osgGIS.dir/PagedLayerCompiler.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/PagedLayerCompiler.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/PagedLayerCompiler.o.requires
@@ -1539,17 +1539,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/PagedLayerCompiler.o.provides.build: src/osgGIS
 
 src/osgGIS/CMakeFiles/osgGIS.dir/PathResource.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/PathResource.o: src/osgGIS/PathResource.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_63)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_63)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/PathResource.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/PathResource.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/PathResource.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/PathResource.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/PathResource.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/PathResource.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/PathResource.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/PathResource.cpp > CMakeFiles/osgGIS.dir/PathResource.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/PathResource.cpp > CMakeFiles/osgGIS.dir/PathResource.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/PathResource.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/PathResource.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/PathResource.cpp -o CMakeFiles/osgGIS.dir/PathResource.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/PathResource.cpp -o CMakeFiles/osgGIS.dir/PathResource.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/PathResource.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/PathResource.o.requires
@@ -1563,17 +1563,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/PathResource.o.provides.build: src/osgGIS/CMake
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Property.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Property.o: src/osgGIS/Property.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_64)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_64)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Property.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Property.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Property.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Property.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Property.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Property.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Property.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Property.cpp > CMakeFiles/osgGIS.dir/Property.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Property.cpp > CMakeFiles/osgGIS.dir/Property.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Property.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Property.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Property.cpp -o CMakeFiles/osgGIS.dir/Property.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Property.cpp -o CMakeFiles/osgGIS.dir/Property.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Property.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Property.o.requires
@@ -1587,17 +1587,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Property.o.provides.build: src/osgGIS/CMakeFile
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RandomGroupingFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/RandomGroupingFilter.o: src/osgGIS/RandomGroupingFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_65)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/RandomGroupingFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/RandomGroupingFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RandomGroupingFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/RandomGroupingFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RandomGroupingFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RandomGroupingFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/RandomGroupingFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RandomGroupingFilter.cpp > CMakeFiles/osgGIS.dir/RandomGroupingFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RandomGroupingFilter.cpp > CMakeFiles/osgGIS.dir/RandomGroupingFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RandomGroupingFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/RandomGroupingFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RandomGroupingFilter.cpp -o CMakeFiles/osgGIS.dir/RandomGroupingFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RandomGroupingFilter.cpp -o CMakeFiles/osgGIS.dir/RandomGroupingFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RandomGroupingFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/RandomGroupingFilter.o.requires
@@ -1611,17 +1611,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/RandomGroupingFilter.o.provides.build: src/osgG
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RasterResource.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/RasterResource.o: src/osgGIS/RasterResource.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_66)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_66)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/RasterResource.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/RasterResource.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RasterResource.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/RasterResource.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RasterResource.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RasterResource.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/RasterResource.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RasterResource.cpp > CMakeFiles/osgGIS.dir/RasterResource.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RasterResource.cpp > CMakeFiles/osgGIS.dir/RasterResource.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RasterResource.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/RasterResource.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RasterResource.cpp -o CMakeFiles/osgGIS.dir/RasterResource.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RasterResource.cpp -o CMakeFiles/osgGIS.dir/RasterResource.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RasterResource.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/RasterResource.o.requires
@@ -1635,17 +1635,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/RasterResource.o.provides.build: src/osgGIS/CMa
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RecalculateExtentFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/RecalculateExtentFilter.o: src/osgGIS/RecalculateExtentFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_67)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_67)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/RecalculateExtentFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/RecalculateExtentFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RecalculateExtentFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/RecalculateExtentFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RecalculateExtentFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RecalculateExtentFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/RecalculateExtentFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RecalculateExtentFilter.cpp > CMakeFiles/osgGIS.dir/RecalculateExtentFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RecalculateExtentFilter.cpp > CMakeFiles/osgGIS.dir/RecalculateExtentFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RecalculateExtentFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/RecalculateExtentFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RecalculateExtentFilter.cpp -o CMakeFiles/osgGIS.dir/RecalculateExtentFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RecalculateExtentFilter.cpp -o CMakeFiles/osgGIS.dir/RecalculateExtentFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RecalculateExtentFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/RecalculateExtentFilter.o.requires
@@ -1659,17 +1659,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/RecalculateExtentFilter.o.provides.build: src/o
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Registry.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Registry.o: src/osgGIS/Registry.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_68)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_68)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Registry.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Registry.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Registry.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Registry.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Registry.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Registry.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Registry.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Registry.cpp > CMakeFiles/osgGIS.dir/Registry.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Registry.cpp > CMakeFiles/osgGIS.dir/Registry.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Registry.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Registry.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Registry.cpp -o CMakeFiles/osgGIS.dir/Registry.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Registry.cpp -o CMakeFiles/osgGIS.dir/Registry.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Registry.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Registry.o.requires
@@ -1683,17 +1683,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Registry.o.provides.build: src/osgGIS/CMakeFile
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RemoveHolesFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/RemoveHolesFilter.o: src/osgGIS/RemoveHolesFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_69)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_69)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/RemoveHolesFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/RemoveHolesFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RemoveHolesFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/RemoveHolesFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RemoveHolesFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RemoveHolesFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/RemoveHolesFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RemoveHolesFilter.cpp > CMakeFiles/osgGIS.dir/RemoveHolesFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RemoveHolesFilter.cpp > CMakeFiles/osgGIS.dir/RemoveHolesFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RemoveHolesFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/RemoveHolesFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RemoveHolesFilter.cpp -o CMakeFiles/osgGIS.dir/RemoveHolesFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RemoveHolesFilter.cpp -o CMakeFiles/osgGIS.dir/RemoveHolesFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RemoveHolesFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/RemoveHolesFilter.o.requires
@@ -1707,17 +1707,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/RemoveHolesFilter.o.provides.build: src/osgGIS/
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Report.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Report.o: src/osgGIS/Report.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_70)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_70)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Report.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Report.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Report.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Report.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Report.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Report.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Report.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Report.cpp > CMakeFiles/osgGIS.dir/Report.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Report.cpp > CMakeFiles/osgGIS.dir/Report.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Report.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Report.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Report.cpp -o CMakeFiles/osgGIS.dir/Report.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Report.cpp -o CMakeFiles/osgGIS.dir/Report.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Report.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Report.o.requires
@@ -1731,17 +1731,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Report.o.provides.build: src/osgGIS/CMakeFiles/
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Resource.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Resource.o: src/osgGIS/Resource.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_71)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_71)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Resource.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Resource.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Resource.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Resource.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Resource.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Resource.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Resource.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Resource.cpp > CMakeFiles/osgGIS.dir/Resource.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Resource.cpp > CMakeFiles/osgGIS.dir/Resource.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Resource.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Resource.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Resource.cpp -o CMakeFiles/osgGIS.dir/Resource.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Resource.cpp -o CMakeFiles/osgGIS.dir/Resource.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Resource.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Resource.o.requires
@@ -1755,17 +1755,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Resource.o.provides.build: src/osgGIS/CMakeFile
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourceCache.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourceCache.o: src/osgGIS/ResourceCache.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_72)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_72)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/ResourceCache.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ResourceCache.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourceCache.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ResourceCache.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ResourceCache.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourceCache.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/ResourceCache.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourceCache.cpp > CMakeFiles/osgGIS.dir/ResourceCache.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ResourceCache.cpp > CMakeFiles/osgGIS.dir/ResourceCache.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourceCache.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/ResourceCache.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourceCache.cpp -o CMakeFiles/osgGIS.dir/ResourceCache.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ResourceCache.cpp -o CMakeFiles/osgGIS.dir/ResourceCache.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourceCache.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/ResourceCache.o.requires
@@ -1779,17 +1779,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/ResourceCache.o.provides.build: src/osgGIS/CMak
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourceLibrary.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourceLibrary.o: src/osgGIS/ResourceLibrary.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_73)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_73)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/ResourceLibrary.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ResourceLibrary.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourceLibrary.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ResourceLibrary.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ResourceLibrary.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourceLibrary.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/ResourceLibrary.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourceLibrary.cpp > CMakeFiles/osgGIS.dir/ResourceLibrary.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ResourceLibrary.cpp > CMakeFiles/osgGIS.dir/ResourceLibrary.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourceLibrary.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/ResourceLibrary.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourceLibrary.cpp -o CMakeFiles/osgGIS.dir/ResourceLibrary.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ResourceLibrary.cpp -o CMakeFiles/osgGIS.dir/ResourceLibrary.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourceLibrary.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/ResourceLibrary.o.requires
@@ -1803,17 +1803,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/ResourceLibrary.o.provides.build: src/osgGIS/CM
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourcePackager.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourcePackager.o: src/osgGIS/ResourcePackager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_74)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_74)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/ResourcePackager.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ResourcePackager.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourcePackager.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/ResourcePackager.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ResourcePackager.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourcePackager.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/ResourcePackager.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourcePackager.cpp > CMakeFiles/osgGIS.dir/ResourcePackager.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ResourcePackager.cpp > CMakeFiles/osgGIS.dir/ResourcePackager.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourcePackager.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/ResourcePackager.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourcePackager.cpp -o CMakeFiles/osgGIS.dir/ResourcePackager.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ResourcePackager.cpp -o CMakeFiles/osgGIS.dir/ResourcePackager.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/ResourcePackager.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/ResourcePackager.o.requires
@@ -1827,17 +1827,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/ResourcePackager.o.provides.build: src/osgGIS/C
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RTreeSpatialIndex.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/RTreeSpatialIndex.o: src/osgGIS/RTreeSpatialIndex.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_75)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_75)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/RTreeSpatialIndex.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/RTreeSpatialIndex.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RTreeSpatialIndex.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/RTreeSpatialIndex.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RTreeSpatialIndex.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RTreeSpatialIndex.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/RTreeSpatialIndex.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RTreeSpatialIndex.cpp > CMakeFiles/osgGIS.dir/RTreeSpatialIndex.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RTreeSpatialIndex.cpp > CMakeFiles/osgGIS.dir/RTreeSpatialIndex.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RTreeSpatialIndex.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/RTreeSpatialIndex.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/RTreeSpatialIndex.cpp -o CMakeFiles/osgGIS.dir/RTreeSpatialIndex.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RTreeSpatialIndex.cpp -o CMakeFiles/osgGIS.dir/RTreeSpatialIndex.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/RTreeSpatialIndex.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/RTreeSpatialIndex.o.requires
@@ -1851,17 +1851,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/RTreeSpatialIndex.o.provides.build: src/osgGIS/
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Script.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Script.o: src/osgGIS/Script.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_76)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_76)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Script.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Script.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Script.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Script.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Script.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Script.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Script.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Script.cpp > CMakeFiles/osgGIS.dir/Script.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Script.cpp > CMakeFiles/osgGIS.dir/Script.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Script.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Script.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Script.cpp -o CMakeFiles/osgGIS.dir/Script.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Script.cpp -o CMakeFiles/osgGIS.dir/Script.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Script.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Script.o.requires
@@ -1875,17 +1875,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Script.o.provides.build: src/osgGIS/CMakeFiles/
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SelectFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/SelectFilter.o: src/osgGIS/SelectFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_77)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_77)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/SelectFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SelectFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SelectFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SelectFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SelectFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SelectFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/SelectFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SelectFilter.cpp > CMakeFiles/osgGIS.dir/SelectFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SelectFilter.cpp > CMakeFiles/osgGIS.dir/SelectFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SelectFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/SelectFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SelectFilter.cpp -o CMakeFiles/osgGIS.dir/SelectFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SelectFilter.cpp -o CMakeFiles/osgGIS.dir/SelectFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SelectFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/SelectFilter.o.requires
@@ -1899,17 +1899,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/SelectFilter.o.provides.build: src/osgGIS/CMake
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Session.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Session.o: src/osgGIS/Session.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_78)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_78)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Session.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Session.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Session.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Session.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Session.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Session.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Session.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Session.cpp > CMakeFiles/osgGIS.dir/Session.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Session.cpp > CMakeFiles/osgGIS.dir/Session.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Session.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Session.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Session.cpp -o CMakeFiles/osgGIS.dir/Session.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Session.cpp -o CMakeFiles/osgGIS.dir/Session.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Session.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Session.o.requires
@@ -1923,17 +1923,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Session.o.provides.build: src/osgGIS/CMakeFiles
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SkinResource.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/SkinResource.o: src/osgGIS/SkinResource.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_79)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_79)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/SkinResource.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SkinResource.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SkinResource.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SkinResource.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SkinResource.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SkinResource.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/SkinResource.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SkinResource.cpp > CMakeFiles/osgGIS.dir/SkinResource.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SkinResource.cpp > CMakeFiles/osgGIS.dir/SkinResource.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SkinResource.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/SkinResource.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SkinResource.cpp -o CMakeFiles/osgGIS.dir/SkinResource.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SkinResource.cpp -o CMakeFiles/osgGIS.dir/SkinResource.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SkinResource.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/SkinResource.o.requires
@@ -1947,17 +1947,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/SkinResource.o.provides.build: src/osgGIS/CMake
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleFeature.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleFeature.o: src/osgGIS/SimpleFeature.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_80)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_80)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/SimpleFeature.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SimpleFeature.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleFeature.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SimpleFeature.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SimpleFeature.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleFeature.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/SimpleFeature.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleFeature.cpp > CMakeFiles/osgGIS.dir/SimpleFeature.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SimpleFeature.cpp > CMakeFiles/osgGIS.dir/SimpleFeature.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleFeature.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/SimpleFeature.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleFeature.cpp -o CMakeFiles/osgGIS.dir/SimpleFeature.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SimpleFeature.cpp -o CMakeFiles/osgGIS.dir/SimpleFeature.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleFeature.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/SimpleFeature.o.requires
@@ -1971,17 +1971,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/SimpleFeature.o.provides.build: src/osgGIS/CMak
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleLayerCompiler.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleLayerCompiler.o: src/osgGIS/SimpleLayerCompiler.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_81)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_81)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/SimpleLayerCompiler.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SimpleLayerCompiler.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleLayerCompiler.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SimpleLayerCompiler.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SimpleLayerCompiler.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleLayerCompiler.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/SimpleLayerCompiler.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleLayerCompiler.cpp > CMakeFiles/osgGIS.dir/SimpleLayerCompiler.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SimpleLayerCompiler.cpp > CMakeFiles/osgGIS.dir/SimpleLayerCompiler.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleLayerCompiler.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/SimpleLayerCompiler.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleLayerCompiler.cpp -o CMakeFiles/osgGIS.dir/SimpleLayerCompiler.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SimpleLayerCompiler.cpp -o CMakeFiles/osgGIS.dir/SimpleLayerCompiler.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleLayerCompiler.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/SimpleLayerCompiler.o.requires
@@ -1995,17 +1995,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/SimpleLayerCompiler.o.provides.build: src/osgGI
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleSpatialIndex.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleSpatialIndex.o: src/osgGIS/SimpleSpatialIndex.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_82)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_82)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/SimpleSpatialIndex.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SimpleSpatialIndex.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleSpatialIndex.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SimpleSpatialIndex.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SimpleSpatialIndex.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleSpatialIndex.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/SimpleSpatialIndex.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleSpatialIndex.cpp > CMakeFiles/osgGIS.dir/SimpleSpatialIndex.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SimpleSpatialIndex.cpp > CMakeFiles/osgGIS.dir/SimpleSpatialIndex.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleSpatialIndex.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/SimpleSpatialIndex.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleSpatialIndex.cpp -o CMakeFiles/osgGIS.dir/SimpleSpatialIndex.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SimpleSpatialIndex.cpp -o CMakeFiles/osgGIS.dir/SimpleSpatialIndex.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SimpleSpatialIndex.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/SimpleSpatialIndex.o.requires
@@ -2019,17 +2019,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/SimpleSpatialIndex.o.provides.build: src/osgGIS
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SmartReadCallback.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/SmartReadCallback.o: src/osgGIS/SmartReadCallback.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_83)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_83)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/SmartReadCallback.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SmartReadCallback.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SmartReadCallback.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SmartReadCallback.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SmartReadCallback.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SmartReadCallback.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/SmartReadCallback.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SmartReadCallback.cpp > CMakeFiles/osgGIS.dir/SmartReadCallback.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SmartReadCallback.cpp > CMakeFiles/osgGIS.dir/SmartReadCallback.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SmartReadCallback.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/SmartReadCallback.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SmartReadCallback.cpp -o CMakeFiles/osgGIS.dir/SmartReadCallback.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SmartReadCallback.cpp -o CMakeFiles/osgGIS.dir/SmartReadCallback.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SmartReadCallback.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/SmartReadCallback.o.requires
@@ -2043,17 +2043,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/SmartReadCallback.o.provides.build: src/osgGIS/
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SpatialReference.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/SpatialReference.o: src/osgGIS/SpatialReference.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_84)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_84)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/SpatialReference.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SpatialReference.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SpatialReference.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SpatialReference.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SpatialReference.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SpatialReference.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/SpatialReference.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SpatialReference.cpp > CMakeFiles/osgGIS.dir/SpatialReference.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SpatialReference.cpp > CMakeFiles/osgGIS.dir/SpatialReference.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SpatialReference.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/SpatialReference.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SpatialReference.cpp -o CMakeFiles/osgGIS.dir/SpatialReference.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SpatialReference.cpp -o CMakeFiles/osgGIS.dir/SpatialReference.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SpatialReference.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/SpatialReference.o.requires
@@ -2067,17 +2067,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/SpatialReference.o.provides.build: src/osgGIS/C
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SRSResource.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/SRSResource.o: src/osgGIS/SRSResource.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_85)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_85)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/SRSResource.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SRSResource.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SRSResource.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SRSResource.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SRSResource.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SRSResource.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/SRSResource.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SRSResource.cpp > CMakeFiles/osgGIS.dir/SRSResource.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SRSResource.cpp > CMakeFiles/osgGIS.dir/SRSResource.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SRSResource.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/SRSResource.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SRSResource.cpp -o CMakeFiles/osgGIS.dir/SRSResource.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SRSResource.cpp -o CMakeFiles/osgGIS.dir/SRSResource.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SRSResource.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/SRSResource.o.requires
@@ -2091,17 +2091,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/SRSResource.o.provides.build: src/osgGIS/CMakeF
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SubstituteModelFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/SubstituteModelFilter.o: src/osgGIS/SubstituteModelFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_86)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_86)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/SubstituteModelFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SubstituteModelFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SubstituteModelFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/SubstituteModelFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SubstituteModelFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SubstituteModelFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/SubstituteModelFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SubstituteModelFilter.cpp > CMakeFiles/osgGIS.dir/SubstituteModelFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SubstituteModelFilter.cpp > CMakeFiles/osgGIS.dir/SubstituteModelFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SubstituteModelFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/SubstituteModelFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/SubstituteModelFilter.cpp -o CMakeFiles/osgGIS.dir/SubstituteModelFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SubstituteModelFilter.cpp -o CMakeFiles/osgGIS.dir/SubstituteModelFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/SubstituteModelFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/SubstituteModelFilter.o.requires
@@ -2115,17 +2115,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/SubstituteModelFilter.o.provides.build: src/osg
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Task.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Task.o: src/osgGIS/Task.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_87)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_87)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Task.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Task.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Task.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Task.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Task.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Task.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Task.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Task.cpp > CMakeFiles/osgGIS.dir/Task.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Task.cpp > CMakeFiles/osgGIS.dir/Task.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Task.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Task.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Task.cpp -o CMakeFiles/osgGIS.dir/Task.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Task.cpp -o CMakeFiles/osgGIS.dir/Task.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Task.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Task.o.requires
@@ -2139,17 +2139,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Task.o.provides.build: src/osgGIS/CMakeFiles/os
 
 src/osgGIS/CMakeFiles/osgGIS.dir/TaskManager.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/TaskManager.o: src/osgGIS/TaskManager.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_88)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_88)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/TaskManager.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/TaskManager.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/TaskManager.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/TaskManager.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/TaskManager.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/TaskManager.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/TaskManager.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/TaskManager.cpp > CMakeFiles/osgGIS.dir/TaskManager.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/TaskManager.cpp > CMakeFiles/osgGIS.dir/TaskManager.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/TaskManager.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/TaskManager.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/TaskManager.cpp -o CMakeFiles/osgGIS.dir/TaskManager.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/TaskManager.cpp -o CMakeFiles/osgGIS.dir/TaskManager.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/TaskManager.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/TaskManager.o.requires
@@ -2163,17 +2163,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/TaskManager.o.provides.build: src/osgGIS/CMakeF
 
 src/osgGIS/CMakeFiles/osgGIS.dir/TerrainUtils.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/TerrainUtils.o: src/osgGIS/TerrainUtils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_89)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_89)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/TerrainUtils.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/TerrainUtils.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/TerrainUtils.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/TerrainUtils.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/TerrainUtils.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/TerrainUtils.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/TerrainUtils.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/TerrainUtils.cpp > CMakeFiles/osgGIS.dir/TerrainUtils.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/TerrainUtils.cpp > CMakeFiles/osgGIS.dir/TerrainUtils.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/TerrainUtils.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/TerrainUtils.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/TerrainUtils.cpp -o CMakeFiles/osgGIS.dir/TerrainUtils.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/TerrainUtils.cpp -o CMakeFiles/osgGIS.dir/TerrainUtils.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/TerrainUtils.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/TerrainUtils.o.requires
@@ -2187,17 +2187,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/TerrainUtils.o.provides.build: src/osgGIS/CMake
 
 src/osgGIS/CMakeFiles/osgGIS.dir/TransformFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/TransformFilter.o: src/osgGIS/TransformFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_90)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_90)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/TransformFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/TransformFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/TransformFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/TransformFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/TransformFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/TransformFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/TransformFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/TransformFilter.cpp > CMakeFiles/osgGIS.dir/TransformFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/TransformFilter.cpp > CMakeFiles/osgGIS.dir/TransformFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/TransformFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/TransformFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/TransformFilter.cpp -o CMakeFiles/osgGIS.dir/TransformFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/TransformFilter.cpp -o CMakeFiles/osgGIS.dir/TransformFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/TransformFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/TransformFilter.o.requires
@@ -2211,17 +2211,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/TransformFilter.o.provides.build: src/osgGIS/CM
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Units.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Units.o: src/osgGIS/Units.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_91)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_91)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Units.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Units.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Units.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Units.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Units.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Units.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Units.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Units.cpp > CMakeFiles/osgGIS.dir/Units.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Units.cpp > CMakeFiles/osgGIS.dir/Units.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Units.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Units.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Units.cpp -o CMakeFiles/osgGIS.dir/Units.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Units.cpp -o CMakeFiles/osgGIS.dir/Units.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Units.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Units.o.requires
@@ -2235,17 +2235,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Units.o.provides.build: src/osgGIS/CMakeFiles/o
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Utils.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/Utils.o: src/osgGIS/Utils.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_92)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_92)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/Utils.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Utils.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Utils.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/Utils.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Utils.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Utils.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/Utils.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Utils.cpp > CMakeFiles/osgGIS.dir/Utils.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Utils.cpp > CMakeFiles/osgGIS.dir/Utils.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Utils.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/Utils.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/Utils.cpp -o CMakeFiles/osgGIS.dir/Utils.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Utils.cpp -o CMakeFiles/osgGIS.dir/Utils.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/Utils.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/Utils.o.requires
@@ -2259,17 +2259,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/Utils.o.provides.build: src/osgGIS/CMakeFiles/o
 
 src/osgGIS/CMakeFiles/osgGIS.dir/WriteFeaturesFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/WriteFeaturesFilter.o: src/osgGIS/WriteFeaturesFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_93)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_93)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/WriteFeaturesFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/WriteFeaturesFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/WriteFeaturesFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/WriteFeaturesFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/WriteFeaturesFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/WriteFeaturesFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/WriteFeaturesFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/WriteFeaturesFilter.cpp > CMakeFiles/osgGIS.dir/WriteFeaturesFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/WriteFeaturesFilter.cpp > CMakeFiles/osgGIS.dir/WriteFeaturesFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/WriteFeaturesFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/WriteFeaturesFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/WriteFeaturesFilter.cpp -o CMakeFiles/osgGIS.dir/WriteFeaturesFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/WriteFeaturesFilter.cpp -o CMakeFiles/osgGIS.dir/WriteFeaturesFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/WriteFeaturesFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/WriteFeaturesFilter.o.requires
@@ -2283,17 +2283,17 @@ src/osgGIS/CMakeFiles/osgGIS.dir/WriteFeaturesFilter.o.provides.build: src/osgGI
 
 src/osgGIS/CMakeFiles/osgGIS.dir/WriteTextFilter.o: src/osgGIS/CMakeFiles/osgGIS.dir/flags.make
 src/osgGIS/CMakeFiles/osgGIS.dir/WriteTextFilter.o: src/osgGIS/WriteTextFilter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/RALine/osggis/CMakeFiles $(CMAKE_PROGRESS_94)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles $(CMAKE_PROGRESS_94)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/osgGIS/CMakeFiles/osgGIS.dir/WriteTextFilter.o"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/WriteTextFilter.o -c /home/jatrigueros/programas/RALine/osggis/src/osgGIS/WriteTextFilter.cpp
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/osgGIS.dir/WriteTextFilter.o -c /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/WriteTextFilter.cpp
 
 src/osgGIS/CMakeFiles/osgGIS.dir/WriteTextFilter.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/osgGIS.dir/WriteTextFilter.i"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/RALine/osggis/src/osgGIS/WriteTextFilter.cpp > CMakeFiles/osgGIS.dir/WriteTextFilter.i
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/WriteTextFilter.cpp > CMakeFiles/osgGIS.dir/WriteTextFilter.i
 
 src/osgGIS/CMakeFiles/osgGIS.dir/WriteTextFilter.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/osgGIS.dir/WriteTextFilter.s"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/RALine/osggis/src/osgGIS/WriteTextFilter.cpp -o CMakeFiles/osgGIS.dir/WriteTextFilter.s
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/WriteTextFilter.cpp -o CMakeFiles/osgGIS.dir/WriteTextFilter.s
 
 src/osgGIS/CMakeFiles/osgGIS.dir/WriteTextFilter.o.requires:
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/WriteTextFilter.o.requires
@@ -2529,7 +2529,7 @@ lib/libosgGISd.so: /usr/lib/libXext.so
 lib/libosgGISd.so: src/osgGIS/CMakeFiles/osgGIS.dir/build.make
 lib/libosgGISd.so: src/osgGIS/CMakeFiles/osgGIS.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../lib/libosgGISd.so"
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/osgGIS.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/osgGIS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/osgGIS/CMakeFiles/osgGIS.dir/build: lib/libosgGISd.so
@@ -2632,10 +2632,10 @@ src/osgGIS/CMakeFiles/osgGIS.dir/requires: src/osgGIS/CMakeFiles/osgGIS.dir/Writ
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/requires
 
 src/osgGIS/CMakeFiles/osgGIS.dir/clean:
-	cd /home/jatrigueros/programas/RALine/osggis/src/osgGIS && $(CMAKE_COMMAND) -P CMakeFiles/osgGIS.dir/cmake_clean.cmake
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS && $(CMAKE_COMMAND) -P CMakeFiles/osgGIS.dir/cmake_clean.cmake
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/clean
 
 src/osgGIS/CMakeFiles/osgGIS.dir/depend:
-	cd /home/jatrigueros/programas/RALine/osggis && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jatrigueros/programas/RALine/osggis /home/jatrigueros/programas/RALine/osggis/src/osgGIS /home/jatrigueros/programas/RALine/osggis /home/jatrigueros/programas/RALine/osggis/src/osgGIS /home/jatrigueros/programas/RALine/osggis/src/osgGIS/CMakeFiles/osgGIS.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jatrigueros/programas/osggis_googlecode/3dgis /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS /home/jatrigueros/programas/osggis_googlecode/3dgis /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CMakeFiles/osgGIS.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/osgGIS/CMakeFiles/osgGIS.dir/depend
 

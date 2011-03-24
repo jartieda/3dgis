@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/AlignFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/AlignFilter.cpp
 osgGIS/AlignFilter
 -
 osgGIS/FeatureLayerResource
@@ -18,7 +18,7 @@ osg/Notify
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Attribute.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Attribute.cpp
 osgGIS/Attribute
 -
 osgGIS/Utils
@@ -30,11 +30,11 @@ algorithm
 cctype
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/AttributedNode.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/AttributedNode.cpp
 osgGIS/AttributedNode
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/BufferFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BufferFilter.cpp
 osgGIS/BufferFilter
 -
 osgGIS/Units
@@ -42,7 +42,7 @@ osgGIS/Units
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildGeomFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BuildGeomFilter.cpp
 osgGIS/BuildGeomFilter
 -
 osg/Geometry
@@ -62,7 +62,7 @@ sstream
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildLabelsFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BuildLabelsFilter.cpp
 osgGIS/BuildLabelsFilter
 -
 osgText/Text
@@ -74,7 +74,7 @@ osg/Depth
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/BuildNodesFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/BuildNodesFilter.cpp
 osgGIS/BuildNodesFilter
 -
 osgGIS/Utils
@@ -120,7 +120,7 @@ iomanip
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ChangeShapeTypeFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ChangeShapeTypeFilter.cpp
 osgGIS/ChangeShapeTypeFilter
 -
 osgGIS/Utils
@@ -128,7 +128,7 @@ osgGIS/Utils
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ClampFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ClampFilter.cpp
 osgGIS/ClampFilter
 -
 osgGIS/SmartReadCallback
@@ -148,7 +148,7 @@ osg/PagedLOD
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/CollectionFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CollectionFilter.cpp
 osgGIS/CollectionFilter
 -
 osgGIS/CollectionFilterState
@@ -158,7 +158,7 @@ osg/Notify
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/CollectionFilterState.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CollectionFilterState.cpp
 osgGIS/CollectionFilterState
 -
 osgGIS/FragmentFilterState
@@ -170,7 +170,7 @@ osgGIS/NodeFilterState
 osg/Notify
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/CombineLinesFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CombineLinesFilter.cpp
 osgGIS/CombineLinesFilter
 -
 osgGIS/SimpleFeature
@@ -186,7 +186,7 @@ algorithm
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ConvexHullFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ConvexHullFilter.cpp
 osgGIS/ConvexHullFilter
 -
 osgGIS/SimpleFeature
@@ -198,7 +198,7 @@ algorithm
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/CropFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/CropFilter.cpp
 osgGIS/CropFilter
 -
 osgGIS/SimpleFeature
@@ -210,7 +210,7 @@ stack
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/DecimateFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DecimateFilter.cpp
 osgGIS/DecimateFilter
 -
 osg/Notify
@@ -218,7 +218,7 @@ osg/Notify
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/DefaultFeatureStoreFactory.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DefaultFeatureStoreFactory.cpp
 osgGIS/DefaultFeatureStoreFactory
 -
 osgGIS/OGR_FeatureStore
@@ -234,7 +234,7 @@ osgDB/FileNameUtils
 osg/Notify
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/DefaultRasterStoreFactory.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DefaultRasterStoreFactory.cpp
 osgGIS/DefaultRasterStoreFactory
 -
 osgGIS/GDAL_RasterStore
@@ -250,13 +250,13 @@ osgDB/FileNameUtils
 osg/Notify
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/DensifyFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/DensifyFilter.cpp
 osgGIS/DensifyFilter
 -
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ElevationResource.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ElevationResource.cpp
 osgGIS/ElevationResource
 -
 osg/Image
@@ -264,7 +264,7 @@ osg/Image
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Ellipsoid.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Ellipsoid.cpp
 osgGIS/Ellipsoid
 -
 osgGIS/GeoPoint
@@ -274,7 +274,7 @@ osgGIS/Registry
 osg/CoordinateSystemNode
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ExtrudeGeomFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ExtrudeGeomFilter.cpp
 osgGIS/ExtrudeGeomFilter
 -
 osgGIS/Utils
@@ -296,7 +296,7 @@ float.h
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FadeHelper.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FadeHelper.cpp
 osgGIS/FadeHelper
 -
 osg/Program
@@ -308,7 +308,7 @@ osg/Uniform
 osg/BlendFunc
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Feature.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Feature.cpp
 osgGIS/Feature
 -
 osgGIS/Utils
@@ -318,7 +318,7 @@ osgGIS/SpatialReference
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureCursor.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureCursor.cpp
 osgGIS/FeatureCursor
 -
 osgGIS/FeatureStore
@@ -328,7 +328,7 @@ osgGIS/OGR_Utils
 algorithm
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureFilter.cpp
 osgGIS/FeatureFilter
 -
 osgGIS/FeatureFilterState
@@ -336,7 +336,7 @@ osgGIS/FeatureFilterState
 osg/Notify
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureFilterState.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureFilterState.cpp
 osgGIS/FeatureFilterState
 -
 osgGIS/FeatureFilter
@@ -350,7 +350,7 @@ osgGIS/NodeFilterState
 osg/Notify
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayer.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureLayer.cpp
 osgGIS/FeatureLayer
 -
 osgGIS/SimpleSpatialIndex
@@ -366,13 +366,13 @@ OpenThreads/ScopedLock
 OpenThreads/ReentrantMutex
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayerCompiler.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureLayerCompiler.cpp
 osgGIS/FeatureLayerCompiler
 -
 osg/Notify
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureLayerResource.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureLayerResource.cpp
 osgGIS/FeatureLayerResource
 -
 OpenThreads/ScopedLock
@@ -380,7 +380,7 @@ OpenThreads/ScopedLock
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FeatureStoreCompiler.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FeatureStoreCompiler.cpp
 osgGIS/FeatureStoreCompiler
 -
 osgGIS/Filter
@@ -396,15 +396,15 @@ osgGIS/Registry
 osg/Notify
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Filter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Filter.cpp
 osgGIS/Filter
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterEnv.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FilterEnv.cpp
 osgGIS/FilterEnv
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterGraph.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FilterGraph.cpp
 osgGIS/FilterGraph
 -
 osgGIS/FeatureFilterState
@@ -426,17 +426,17 @@ osg/Notify
 osg/Timer
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FilterState.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FilterState.cpp
 osgGIS/FilterState
 -
 osgGIS/Filter
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Fragment.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Fragment.cpp
 osgGIS/Fragment
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FragmentFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FragmentFilter.cpp
 osgGIS/FragmentFilter
 -
 osgGIS/FragmentFilterState
@@ -444,7 +444,7 @@ osgGIS/FragmentFilterState
 osg/Notify
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/FragmentFilterState.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/FragmentFilterState.cpp
 osgGIS/FragmentFilterState
 -
 osgGIS/CollectionFilterState
@@ -454,7 +454,7 @@ osgGIS/NodeFilterState
 osg/Notify
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GDAL_RasterStore.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GDAL_RasterStore.cpp
 osgGIS/GDAL_RasterStore
 -
 osgGIS/Registry
@@ -474,7 +474,7 @@ osg/Notify
 iomanip
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoExtent.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeoExtent.cpp
 osgGIS/GeoExtent
 -
 osg/Notify
@@ -484,7 +484,7 @@ sstream
 iomanip
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoPoint.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeoPoint.cpp
 osgGIS/GeoPoint
 -
 osgGIS/GeoExtent
@@ -494,19 +494,19 @@ osgGIS/Registry
 sstream
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeoShape.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeoShape.cpp
 osgGIS/GeoShape
 -
 osg/Notify
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeocentricSpatialReference.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeocentricSpatialReference.cpp
 osgGIS/GeocentricSpatialReference
 -
 osgGIS/GeoShape
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GeometryCleaner.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GeometryCleaner.cpp
 osgGIS/GeometryCleaner
 -
 osg/NodeVisitor
@@ -518,7 +518,7 @@ osg/Geometry
 osg/TexEnv
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GriddedLayerCompiler.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GriddedLayerCompiler.cpp
 osgGIS/GriddedLayerCompiler
 -
 osgGIS/GeoExtent
@@ -558,7 +558,7 @@ osgDB/Registry
 sstream
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/GroupFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/GroupFilter.cpp
 osgGIS/GroupFilter
 -
 osg/Notify
@@ -568,7 +568,7 @@ sstream
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ImageUtils.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ImageUtils.cpp
 osgGIS/ImageUtils
 -
 osg/Texture
@@ -588,7 +588,7 @@ string.h
 stdio.h
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/LayerCompiler.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/LayerCompiler.cpp
 osgGIS/LayerCompiler
 -
 osgGIS/Resource
@@ -628,7 +628,7 @@ queue
 sstream
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/LineSegmentIntersector2.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/LineSegmentIntersector2.cpp
 osgGIS/LineSegmentIntersector2
 -
 osg/Geometry
@@ -638,7 +638,7 @@ osg/io_utils
 osg/TriangleFunctor
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/LocalizeNodesFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/LocalizeNodesFilter.cpp
 osgGIS/LocalizeNodesFilter
 -
 osgGIS/Registry
@@ -664,7 +664,7 @@ osgUtil/Optimizer
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Lua_ScriptEngine.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Lua_ScriptEngine.cpp
 osgGIS/Lua_ScriptEngine
 -
 osgGIS/FilterEnv
@@ -674,21 +674,21 @@ osg/Notify
 sstream
 -
 tolua.h
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/tolua.h
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/tolua.h
 lualib.h
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/lualib.h
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/lualib.h
 lauxlib.h
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/lauxlib.h
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/lauxlib.h
 osgGIS/Lua_ScriptEngine_tolua
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Lua_ScriptEngine_tolua.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Lua_ScriptEngine_tolua.cpp
 stdlib.h
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/stdlib.h
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/stdlib.h
 string.h
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/string.h
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/string.h
 tolua.h
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/tolua.h
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/tolua.h
 osgGIS/Attribute
 -
 osgGIS/Feature
@@ -706,7 +706,7 @@ osgGIS/Lua_ScriptEngine
 string
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ModelResource.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ModelResource.cpp
 osgGIS/ModelResource
 -
 osgGIS/Utils
@@ -720,7 +720,7 @@ osg/ProxyNode
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/NodeFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/NodeFilter.cpp
 osgGIS/NodeFilter
 -
 osgGIS/NodeFilterState
@@ -734,7 +734,7 @@ osg/Geode
 osgSim/ShapeAttribute
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/NodeFilterState.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/NodeFilterState.cpp
 osgGIS/NodeFilterState
 -
 osgGIS/CollectionFilterState
@@ -746,7 +746,7 @@ osg/Group
 osg/Geode
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Notify.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Notify.cpp
 osgGIS/Notify
 -
 string
@@ -758,7 +758,7 @@ iostream
 fstream
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_Feature.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_Feature.cpp
 osgGIS/OGR_Feature
 -
 osgGIS/OGR_Utils
@@ -772,7 +772,7 @@ osg/Notify
 algorithm
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_FeatureStore.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_FeatureStore.cpp
 osgGIS/OGR_FeatureStore
 -
 osgGIS/OGR_Feature
@@ -794,7 +794,7 @@ ogr_api.h
 sys/stat.h
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_SpatialReference.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_SpatialReference.cpp
 osgGIS/OGR_SpatialReference
 -
 osgGIS/OGR_Utils
@@ -808,7 +808,7 @@ ogr_spatialref.h
 osg/Notify
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_SpatialReferenceFactory.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_SpatialReferenceFactory.cpp
 osgGIS/OGR_SpatialReferenceFactory
 -
 osgGIS/OGR_SpatialReference
@@ -836,7 +836,7 @@ fstream
 iostream
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OGR_Utils.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OGR_Utils.cpp
 osgGIS/OGR_Utils
 -
 ogr_api.h
@@ -844,11 +844,11 @@ ogr_api.h
 gdal_priv.h
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/OptimizerHints.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/OptimizerHints.cpp
 osgGIS/OptimizerHints
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/PagedLayerCompiler.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/PagedLayerCompiler.cpp
 osgGIS/PagedLayerCompiler
 -
 osgGIS/Registry
@@ -870,7 +870,7 @@ osgUtil/Optimizer
 OpenThreads/Thread
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/PathResource.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/PathResource.cpp
 osgGIS/PathResource
 -
 OpenThreads/ScopedLock
@@ -878,7 +878,7 @@ OpenThreads/ScopedLock
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Property.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Property.cpp
 osgGIS/Property
 -
 sstream
@@ -888,7 +888,7 @@ algorithm
 iomanip
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RTreeSpatialIndex.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RTreeSpatialIndex.cpp
 osgGIS/RTreeSpatialIndex
 -
 osgGIS/Registry
@@ -906,7 +906,7 @@ fstream
 sys/stat.h
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RandomGroupingFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RandomGroupingFilter.cpp
 osgGIS/RandomGroupingFilter
 -
 osg/Notify
@@ -916,7 +916,7 @@ sstream
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RasterResource.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RasterResource.cpp
 osgGIS/RasterResource
 -
 osgGIS/Utils
@@ -936,7 +936,7 @@ OpenThreads/ScopedLock
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RecalculateExtentFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RecalculateExtentFilter.cpp
 osgGIS/RecalculateExtentFilter
 -
 osg/Notify
@@ -946,7 +946,7 @@ sstream
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Registry.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Registry.cpp
 osgGIS/Registry
 -
 osgGIS/DefaultFeatureStoreFactory
@@ -970,7 +970,7 @@ fstream
 algorithm
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/RemoveHolesFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/RemoveHolesFilter.cpp
 osgGIS/RemoveHolesFilter
 -
 osgGIS/Utils
@@ -980,13 +980,13 @@ float.h
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Report.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Report.cpp
 osgGIS/Report
 -
 sstream
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Resource.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Resource.cpp
 osgGIS/Resource
 -
 osgGIS/Utils
@@ -994,13 +994,13 @@ osgGIS/Utils
 OpenThreads/ScopedLock
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourceCache.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ResourceCache.cpp
 osgGIS/ResourceCache
 -
 osgUtil/Optimizer
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourceLibrary.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ResourceLibrary.cpp
 osgGIS/ResourceLibrary
 -
 osgGIS/Utils
@@ -1018,7 +1018,7 @@ algorithm
 osg/Notify
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/ResourcePackager.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/ResourcePackager.cpp
 osgGIS/ResourcePackager
 -
 osgGIS/Resource
@@ -1044,7 +1044,7 @@ sstream
 set
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SRSResource.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SRSResource.cpp
 osgGIS/SRSResource
 -
 OpenThreads/ScopedLock
@@ -1052,11 +1052,11 @@ OpenThreads/ScopedLock
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Script.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Script.cpp
 osgGIS/Script
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SelectFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SelectFilter.cpp
 osgGIS/SelectFilter
 -
 osgGIS/Script
@@ -1066,7 +1066,7 @@ osg/Notify
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Session.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Session.cpp
 osgGIS/Session
 -
 osgGIS/Registry
@@ -1074,7 +1074,7 @@ osgGIS/Registry
 OpenThreads/ScopedLock
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleFeature.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SimpleFeature.cpp
 osgGIS/SimpleFeature
 -
 osg/Notify
@@ -1082,7 +1082,7 @@ osg/Notify
 algorithm
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleLayerCompiler.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SimpleLayerCompiler.cpp
 osgGIS/SimpleLayerCompiler
 -
 osgGIS/FilterGraph
@@ -1104,11 +1104,11 @@ osg/Depth
 osgDB/FileNameUtils
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SimpleSpatialIndex.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SimpleSpatialIndex.cpp
 osgGIS/SimpleSpatialIndex
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SkinResource.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SkinResource.cpp
 osgGIS/SkinResource
 -
 osgGIS/Utils
@@ -1130,7 +1130,7 @@ OpenThreads/ScopedLock
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SmartReadCallback.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SmartReadCallback.cpp
 osgGIS/SmartReadCallback
 -
 osgDB/ReadFile
@@ -1144,7 +1144,7 @@ osg/Notify
 stdlib.h
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SpatialReference.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SpatialReference.cpp
 osgGIS/SpatialReference
 -
 osgGIS/GeoPoint
@@ -1152,7 +1152,7 @@ osgGIS/GeoPoint
 osgGIS/GeoShape
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/SubstituteModelFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/SubstituteModelFilter.cpp
 osgGIS/SubstituteModelFilter
 -
 osg/MatrixTransform
@@ -1182,11 +1182,11 @@ osgText/Text
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Task.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Task.cpp
 osgGIS/Task
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/TaskManager.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/TaskManager.cpp
 osgGIS/TaskManager
 -
 OpenThreads/ScopedLock
@@ -1196,11 +1196,11 @@ osg/Notify
 osg/Timer
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/TerrainUtils.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/TerrainUtils.cpp
 osgGIS/TerrainUtils
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/TransformFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/TransformFilter.cpp
 osgGIS/TransformFilter
 -
 osgGIS/Ellipsoid
@@ -1216,11 +1216,11 @@ osgUtil/LineSegmentIntersector
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Units.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Units.cpp
 osgGIS/Units
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/Utils.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/Utils.cpp
 osgGIS/Utils
 -
 osgGIS/LineSegmentIntersector2
@@ -1250,7 +1250,7 @@ sys/stat.h
 string
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/WriteFeaturesFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/WriteFeaturesFilter.cpp
 osgGIS/WriteFeaturesFilter
 -
 OpenThreads/ScopedLock
@@ -1258,7 +1258,7 @@ OpenThreads/ScopedLock
 osgGIS/Registry
 -
 
-/home/jatrigueros/programas/RALine/osggis/src/osgGIS/WriteTextFilter.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/WriteTextFilter.cpp
 osgGIS/WriteTextFilter
 -
 osg/Notify

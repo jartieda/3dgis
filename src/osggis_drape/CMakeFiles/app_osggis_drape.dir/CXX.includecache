@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jatrigueros/src/osggis/src/osggis_drape/osggis_drape.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osggis_drape/osggis_drape.cpp
 osgGIS/Registry
 -
 osgGIS/SimpleLayerCompiler

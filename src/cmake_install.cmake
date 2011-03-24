@@ -1,8 +1,8 @@
-# Install script for directory: /home/jatrigueros/programas/RALine/osggis/src
+# Install script for directory: /home/jatrigueros/programas/osggis_googlecode/3dgis/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr")
+  SET(CMAKE_INSTALL_PREFIX "/usr/local")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,14 +34,14 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/jatrigueros/programas/RALine/osggis/src/osgGIS/cmake_install.cmake")
-  INCLUDE("/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/cmake_install.cmake")
-  INCLUDE("/home/jatrigueros/programas/RALine/osggis/src/osggis_build/cmake_install.cmake")
-  INCLUDE("/home/jatrigueros/programas/RALine/osggis/src/osggis_makelayer/cmake_install.cmake")
-  INCLUDE("/home/jatrigueros/programas/RALine/osggis/src/osggis_simple/cmake_install.cmake")
-  INCLUDE("/home/jatrigueros/programas/RALine/osggis/src/osggis_viewer/cmake_install.cmake")
-  INCLUDE("/home/jatrigueros/programas/RALine/osggis/src/osggis_mapper/cmake_install.cmake")
-  INCLUDE("/home/jatrigueros/programas/RALine/osggis/src/osggis_drape/cmake_install.cmake")
+  INCLUDE("/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGIS/cmake_install.cmake")
+  INCLUDE("/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/cmake_install.cmake")
+  INCLUDE("/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osggis_build/cmake_install.cmake")
+  INCLUDE("/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osggis_makelayer/cmake_install.cmake")
+  INCLUDE("/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osggis_simple/cmake_install.cmake")
+  INCLUDE("/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osggis_viewer/cmake_install.cmake")
+  INCLUDE("/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osggis_mapper/cmake_install.cmake")
+  INCLUDE("/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osggis_drape/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

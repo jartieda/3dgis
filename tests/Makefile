@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jatrigueros/programas/RALine/osggis
+CMAKE_SOURCE_DIR = /home/jatrigueros/programas/osggis_googlecode/3dgis
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jatrigueros/programas/RALine/osggis
+CMAKE_BINARY_DIR = /home/jatrigueros/programas/osggis_googlecode/3dgis
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -120,14 +120,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jatrigueros/programas/RALine/osggis && $(CMAKE_COMMAND) -E cmake_progress_start /home/jatrigueros/programas/RALine/osggis/CMakeFiles /home/jatrigueros/programas/RALine/osggis/tests/CMakeFiles/progress.marks
-	cd /home/jatrigueros/programas/RALine/osggis && $(MAKE) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jatrigueros/programas/RALine/osggis/CMakeFiles 0
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis && $(CMAKE_COMMAND) -E cmake_progress_start /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles /home/jatrigueros/programas/osggis_googlecode/3dgis/tests/CMakeFiles/progress.marks
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis && $(MAKE) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jatrigueros/programas/RALine/osggis && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -136,17 +136,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jatrigueros/programas/RALine/osggis && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jatrigueros/programas/RALine/osggis && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jatrigueros/programas/RALine/osggis && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -173,6 +173,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jatrigueros/programas/RALine/osggis && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jatrigueros/programas/osggis_googlecode/3dgis && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

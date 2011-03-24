@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jatrigueros/programas/RALine/osggis
+CMAKE_SOURCE_DIR = /home/jatrigueros/programas/osggis_googlecode/3dgis
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jatrigueros/programas/RALine/osggis
+CMAKE_BINARY_DIR = /home/jatrigueros/programas/osggis_googlecode/3dgis
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -120,9 +120,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jatrigueros/programas/RALine/osggis/CMakeFiles /home/jatrigueros/programas/RALine/osggis/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jatrigueros/programas/RALine/osggis/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jatrigueros/programas/osggis_googlecode/3dgis/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

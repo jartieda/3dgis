@@ -1,8 +1,8 @@
-# Install script for directory: /home/jatrigueros/programas/RALine/osggis/src/osgGISProjects
+# Install script for directory: /home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr")
+  SET(CMAKE_INSTALL_PREFIX "/usr/local")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libosgGISProjectsd.so"
          RPATH "")
   ENDIF()
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jatrigueros/programas/RALine/osggis/lib/libosgGISProjectsd.so")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jatrigueros/programas/osggis_googlecode/3dgis/lib/libosgGISProjectsd.so")
   IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libosgGISProjectsd.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libosgGISProjectsd.so")
     IF(CMAKE_INSTALL_DO_STRIP)
@@ -50,32 +50,32 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/osgGISProjects" TYPE FILE FILES
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Build"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Builder"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/BuildLayer"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/BuildLayerSlice"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/BuildTarget"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Cell"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/CellCompiler"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Common"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Document"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Export"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/GriddedMapLayerCompiler"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/MapLayer"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/MapLayerLevelOfDetail"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/MapLayerCompiler"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Project"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/QuadKey"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/QuadTreeMapLayerCompiler"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/RuntimeMap"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/RuntimeMapLayer"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Serializer"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/SimpleMapLayerCompiler"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Source"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/Terrain"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/XmlDocument"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/XmlDOM"
-    "/home/jatrigueros/programas/RALine/osggis/src/osgGISProjects/XmlSerializer"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/Build"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/Builder"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/BuildLayer"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/BuildLayerSlice"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/BuildTarget"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/Cell"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/CellCompiler"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/Common"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/Document"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/Export"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/GriddedMapLayerCompiler"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/MapLayer"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/MapLayerLevelOfDetail"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/MapLayerCompiler"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/Project"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/QuadKey"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/QuadTreeMapLayerCompiler"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/RuntimeMap"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/RuntimeMapLayer"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/Serializer"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/SimpleMapLayerCompiler"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/Source"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/Terrain"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/XmlDocument"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/XmlDOM"
+    "/home/jatrigueros/programas/osggis_googlecode/3dgis/src/osgGISProjects/XmlSerializer"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

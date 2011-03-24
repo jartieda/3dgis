@@ -111,10 +111,19 @@ ExtrudeGeomFilter::getProperties() const
     Properties p = BuildGeomFilter::getProperties();
     if ( getHeightScript() )
         p.push_back( Property( "height", getHeightScript()->getCode() ) );
+    else
+        p.push_back( Property( "height", "") );
+
     if ( getWallSkinScript() )
         p.push_back( Property( "wall_skin", getWallSkinScript()->getCode() ) );
+    else
+        p.push_back( Property( "wall_skin", "") );
+
     if ( getUniformHeight() != DEFAULT_UNIFORM_HEIGHT )
         p.push_back( Property( "uniform_height", getUniformHeight() ) );
+    else
+        p.push_back( Property( "uniform_height", "") );
+
     return p;
 }
 

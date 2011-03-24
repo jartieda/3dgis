@@ -217,6 +217,9 @@ IF(APPLE)
     
 ENDIF(APPLE)
 
+#add subdirectory app
+#ADD_SUBDIRECTORY(app)
+
 #add tests
 ENABLE_TESTING()
 ADD_SUBDIRECTORY(tests)

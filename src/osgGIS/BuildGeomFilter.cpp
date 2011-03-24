@@ -139,12 +139,24 @@ BuildGeomFilter::getProperties() const
     Properties p = FragmentFilter::getProperties();
     if ( getColorScript() )
         p.push_back( Property( "color", getColorScript()->getCode() ) );
+    else
+        p.push_back( Property( "color", "" ) );
+
     if ( getRasterOverlayScript() )
         p.push_back( Property( "raster_overlay", getRasterOverlayScript()->getCode() ) );
+    else
+        p.push_back( Property( "raster_overlay", "") );
+
     if ( getRasterOverlayMaxSize() != DEFAULT_RASTER_OVERLAY_MAX_SIZE )
         p.push_back( Property( "raster_overlay_max_size", getRasterOverlayMaxSize() ) );
+    else
+        p.push_back( Property( "raster_overlay_max_size", "" ) );
+
     if ( getFeatureNameScript() )
         p.push_back( Property( "feature_name", getFeatureNameScript() ) );
+    else
+        p.push_back( Property( "feature_name", "" ) );
+
     return p;
 }
 

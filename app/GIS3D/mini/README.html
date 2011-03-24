@@ -1,0 +1,2518 @@
+<html>
+<head>
+<title>libMini, a terrain rendering library</title>
+<link rel="stylesheet" type="text/css" href="libMini.css">
+</head>
+<body>
+
+<a name=""></a>
+<h1>libMini, a terrain rendering library</h1>
+
+The Mini Library (libMini) is the core of the high-performance terrain
+rendering system which is described in the paper
+"<a href="http://stereofx.org/papers/TERRAIN.PDF">Real-Time Generation
+of Continuous Levels of Detail for Height Fields</a>".<p>
+
+Version 8.8.6 as of 5.August.2008<br>
+Copyright (c) 1995-2008 by Stefan Roettger<p>
+
+<h2>Table of Contents</h2>
+
+<ul>
+   <li><a href="#TermsOfUsage">Terms of Usage</a></li>
+   <li><a href="#GeneralInformation">General Information</a></li>
+   <li><a href="#GettingThePackage">Getting the Package</a></li>
+   <li><a href="#PackageContents">Package Contents</a></li>
+</ul>
+
+<ul>
+   <li><a href="#Introduction">(A) Introduction</a></li>
+   <li><a href="#Compilation">(B) Compilation</a></li>
+   <li><a href="#TerrainRenderingAPI">(C) Terrain Rendering API</a></li>
+   <li><a href="#AdditionalComments">(D) Additional Comments</a></li>
+   <li><a href="#TiledTerrain">(E) Tiled Terrain</a></li>
+   <li><a href="#Frontends">(F) Minitile and Miniload Frontend</a>
+   <li><a href="#LibraryStub">(G) Library Stub</a></li>
+   <li><a href="#RealTerrain">(H) Real Terrain Maps and Textures</a>
+   <li><a href="#Performance">(I) High Performance Rendering</a>
+   <li><a href="#ShaderPlugins">(J) Using the libMini Shader Plugins</a>
+   <li><a href="#AsyncPaging">(K) Asynchronous Paging</a></li>
+   <li><a href="#RemotePaging">(L) Remote Paging</a></li>
+   <li><a href="#AutoCompression">(M) Automatic S3TC Compression</a></li>
+   <li><a href="#DynamicTerrain">(N) Dynamic Terrain</a></li>
+   <li><a href="#MiniViewer">(O) The libMini Viewer</a></li>
+   <li><a href="#ErrorHandling">(P) Error Handling</a></li>
+   <li><a href="#Acknowledgements">(Q) Final Acknowledgements</a>
+</ul>
+
+<ul>
+   <li><a href="#Minisky">Appendix (1): Minisky</a></li>
+   <li><a href="#Minipoint">Appendix (2): Minipoint</a></li>
+   <li><a href="#Minitext">Appendix (3): Minitext</a></li>
+   <li><a href="#Minitree">Appendix (4): Minitree</a></li>
+   <li><a href="#Minibrick">Appendix (5): Minibrick</a></li>
+</ul>
+
+<ul>
+   <li><a href="#PNMdoc">Appendix (6A): PNM Image Format Description</a></li>
+   <li><a href="#PVMdoc">Appendix (6B): PVM Volume Format Description</a></li>
+   <li><a href="#DBdoc">Appendix (6C): DB Data Format Description</a></li>
+</ul>
+
+<a name="TermsOfUsage"></a>
+<h2>Terms of Usage</h2>
+
+The terrain renderer is licensed under the terms of the
+LGPL <a href="http://www.gnu.org/copyleft/">2.1</a>. No warranty
+WHATSOEVER is expressed; not even for MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE!<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="GeneralInformation"></a>
+<h2>General Information</h2>
+
+The Mini Library is included in the virtual terrain project of Ben
+Discoe (<a href="http://www.vterrain.org">vterrain.org</a>) and an
+early version is utilized in the DX 8 underwater
+game <a href="http://www.aquanox.de">AquaNox</a>.<p>
+
+The author's contact address is:<p>
+
+   <a href="mailto:stefan:at:stereofx.org">stefan:at:stereofx.org</a><br>
+   <a href="http://stereofx.org">www.stereofx.org</a><p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="GettingThePackage"></a>
+<h2>Getting the Package</h2>
+
+The latest version of libMini is available here:<p>
+
+   <a href="http://stereofx.org/download">http://stereofx.org/download</a><br>
+   For compilation instructions see Section <a href="#Compilation">(B)</a>.<p>
+
+The original terrain rendering paper and the corresponding talk are available here:<p>
+
+   <a href="http://stereofx.org/papers/TERRAIN.PDF">http://stereofx.org/papers/TERRAIN.PDF</a><br>
+   <a href="http://stereofx.org/papers/WSCG98.PPT">http://stereofx.org/papers/WSCG98.PPT</a><p>
+
+The ground fog rendering paper is available here:<p>
+
+   <a href="http://stereofx.org/papers/PROJECTION.PDF">http://stereofx.org/papers/PROJECTION.PDF</a><br>
+   <a href="http://stereofx.org/papers/VG03.PPT">http://stereofx.org/papers/VG03.PPT</a><p>
+
+The vegetation rendering paper is available here:<p>
+
+   <a href="http://stereofx.org/papers/VEGETATION.PDF">http://stereofx.org/papers/VEGETATION.PDF</a><br>
+   <a href="http://stereofx.org/papers/CGIM07.PPT">http://stereofx.org/papers/CGIM07.PPT</a><p>
+
+Additional conceptual papers about libMini are available here:<p>
+
+   <a href="http://stereofx.org/download/libMini-Modules.pdf">http://stereofx.org/download/libMini-Modules.pdf (libMini Module Overview)</a><br>
+   <a href="http://stereofx.org/download/libMini-VolRen.pdf">http://stereofx.org/download/libMini-VolRen.pdf (libMini Volume Rendering Overview)</a><br>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="PackageContents"></a>
+<h2>Package Contents</h2>
+
+Within the libMini package the following files are contained:<p>
+
+<table>
+   <tr><td>README.html:         </td><td>this file</td></tr>
+   <tr><td>README2.html:        </td><td>the libMini usage guide</td></tr>
+   <tr><td>LICENSE.txt:         </td><td>the LGPL 2.1 license</td></tr>
+   <tr><td>minibase.h:          </td><td>contains basic declarations</td></tr>
+   <tr><td>mini.cpp/P.h/.h:     </td><td>contains the core of the terrain renderer</td></tr>
+   <tr><td>miniOGL.cpp/P.h/.h:  </td><td>contains all OpenGL dependent stuff</td></tr>
+   <tr><td>miniv??.cpp/.h:      </td><td>contains vector class definitions</td></tr>
+   <tr><td>minimath.cpp/.h:     </td><td>contains mathematical definitions</td></tr>
+   <tr><td>minimpfp.cpp/.h:     </td><td>contains templated mp-fp definitions</td></tr>
+   <tr><td>minisort.h:          </td><td>contains templated sorting methods</td></tr>
+   <tr><td>minitime.cpp/.h:     </td><td>contains system time abstraction</td></tr>
+   <tr><td>miniio.cpp/.h:       </td><td>contains additional file io stuff</td></tr>
+   <tr><td>minihsv.cpp/.h:      </td><td>contains additional hsv conversion stuff</td></tr>
+   <tr><td>miniutm.cpp/.h:      </td><td>contains additional utm conversion stuff</td></tr>
+   <tr><td>ministub.cpp/.h:     </td><td>simplified stub class of the mini library</td></tr>
+   <tr><td>minitile.cpp/.h:     </td><td>wrapper class for tiled terrain rendering</td></tr>
+   <tr><td>miniload.cpp/.h:     </td><td>wrapper class for paged terrain rendering</td></tr>
+   <tr><td>minilayer.cpp/.h:    </td><td>wrapper class rendering a single layer</td></tr>
+   <tr><td>miniterrain.cpp/.h:  </td><td>wrapper class rendering multiple layers</td></tr>
+   <tr><td>miniearth.cpp/.h:    </td><td>wrapper class for rendering the earth</td></tr>
+   <tr><td>minicache.cpp/.h:    </td><td>cache for speeding up tiled terrain rendering</td></tr>
+   <tr><td>minishader.cpp/.h:   </td><td>shader support for the render cache</td></tr>
+   <tr><td>miniwarp.cpp/.h:     </td><td>warp kernel for global coordinate systems</td></tr>
+   <tr><td>miniray.cpp/.h:      </td><td>ray/triangle intersection code</td></tr>
+   <tr><td>ministrip.cpp/.h:    </td><td>vertex array container for triangle strips</td></tr>
+   <tr><td>minipoint.cpp/.h:    </td><td>geographical point of interest management</td></tr>
+   <tr><td>minitext.cpp/.h:     </td><td>simple text renderer</td></tr>
+   <tr><td>minisky.cpp/.h:      </td><td>simple sky dome renderer</td></tr>
+   <tr><td>miniglobe.cpp/.h:    </td><td>night/day renderer of the earth or other textured globes</td></tr>
+   <tr><td>minitree.cpp/.h:     </td><td>contains algorithms for vegetation rendering</td></tr>
+   <tr><td>minibrick.cpp/.h:    </td><td>contains algorithms for C-LOD volume rendering</td></tr>
+   <tr><td>minilod.cpp/.h:      </td><td>contains algorithms for S-LOD volume rendering</td></tr>
+   <tr><td>minidyna.h:          </td><td>contains dynamic array template definition</td></tr>
+   <tr><td>minigeom.cpp/.h:     </td><td>contains geometric class definitions</td></tr>
+   <tr><td>minimesh.cpp/.h:     </td><td>contains tetrahedral mesh class definition</td></tr>
+   <tr><td>miniproj.cpp/.h:     </td><td>contains tetrahedral projection methods</td></tr>
+   <tr><td>pnmbase.cpp/.h:      </td><td>methods for handling PNM images</td></tr>
+   <tr><td>pnmsample.cpp/.h:    </td><td>methods for multi-resolution terrain resampling</td></tr>
+   <tr><td>database.cpp/.h:     </td><td>universal 1D/2D/3D/4D data buffer object</td></tr>
+   <tr><td>datafill.cpp/.h:     </td><td>generic 1D/2D/3D/4D fill-in algorithm</td></tr>
+   <tr><td>datacalc.cpp/.h:     </td><td>calculator for procedural images and implicit volumes</td></tr>
+   <tr><td>dataparse.cpp/.h:    </td><td>parser and interpreter of implicit functions</td></tr>
+   <tr><td>datacloud.cpp/.h:    </td><td>decouples terrain rendering from paging</td></tr>
+   <tr><td>datacache.cpp/.h:    </td><td>stores remote files in a local file cache</td></tr>
+   <tr><td>datagrid.cpp/.h:     </td><td>stores a grid of databuf objects</td></tr>
+   <tr><td>example.png:         </td><td>a screen shot of the example described below</td></tr>
+   <tr><td>example.cpp:         </td><td>the glut example (use "build.sh example" to compile)</td></tr>
+   <tr><td>stubtest.cpp:        </td><td>the stub example (use "build.sh stubtest" to compile)</td></tr>
+   <tr><td>viewer.cpp:          </td><td>the libMini Viewer (use "build.sh viewer" to compile)</td></tr>
+   <tr><td>viewerbase.cpp/.h:   </td><td>the libMini Viewer base class</td></tr>
+   <tr><td>threadbase.cpp/.h:   </td><td>multi-threading support for the libMini Viewer</td></tr>
+   <tr><td>curlbase.cpp/.h:     </td><td>http protocol support for the libMini Viewer</td></tr>
+   <tr><td>jpegbase.cpp/.h:     </td><td>JPEG support for the libMini Viewer</td></tr>
+   <tr><td>pngbase.cpp/.h:      </td><td>PNG support for the libMini Viewer</td></tr>
+   <tr><td>squishbase.cpp/.h:   </td><td>squish support for the libMini Viewer</td></tr>
+   <tr><td>greycbase.cpp/.h:    </td><td>GREYCstoration support for the libMini Viewer (optional)</td></tr>
+   <tr><td>convbase.cpp/.h:     </td><td>image conversion support for the libMini Viewer</td></tr>
+   <tr><td>imgbase.cpp/.h:      </td><td>image reading and writing support for the libMini Viewer</td></tr>
+   <tr><td>luna*.cpp/.h:        </td><td>interpreter for LUNA, an RPN-style language for LUNAtics and nerds alike</td></tr>
+   <tr><td>SkyDome.ppm:         </td><td>a sample sky dome texture (from Philo's Sky Collection)</td></tr>
+   <tr><td>Cone.db:             </td><td>a sample DB volume (implicitly defined cone)</td></tr>
+   <tr><td>GL/*:                </td><td>Windows freeGLUT headers</td></tr>
+   <tr><td>freeglut_static.lib: </td><td>Windows freeGLUT library for building the example and the libMini Viewer</td></tr>
+   <tr><td>*.sln/.vcproj:       </td><td>Windows Visual C++ solution and project files</td></tr>
+   <tr><td>Makefile:            </td><td>Makefile for Irix, Linux and MacOS X</td></tr>
+   <tr><td>build.bat:           </td><td>the Windows build batch file</td></tr>
+   <tr><td>build.sh:            </td><td>the Unix build script</td></tr>
+</table><p>
+
+Additionally, the Yukon Ground Fog Demo, the Stuttgart Demo, the
+Hawaii Demo and the Fraenkische Schweiz Demo can be downloaded from
+here (please follow the usage instructions in the README):<p>
+
+   <a href="http://stereofx.org/download/Yukon.zip">http://stereofx.org/download/Yukon.zip</a><br>
+   <a href="http://stereofx.org/download/Stuttgart.zip">http://stereofx.org/download/Stuttgart.zip</a><br>
+   <a href="http://stereofx.org/download/Hawaii.zip">http://stereofx.org/download/Hawaii.zip</a><br>
+   <a href="http://stereofx.org/download/Fraenkische.zip">http://stereofx.org/download/Fraenkische.zip</a><p>
+
+The libMini package also contains the libMini Viewer (see
+Section <a href="#MiniViewer">(O)</a>). This application is a generic
+viewing utility for terrain data and tile sets. For example, it can be
+used to display the demo data mentioned above or to stream terrain
+data over the internet.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="Introduction"></a>
+<h2>(A) INTRODUCTION:</h2>
+
+The Mini Library applies a view-dependent mesh simplification scheme
+to render large-scale terrain data at real-time. For this purpose, a
+quadtree representation of a height field is built. This quadtree is
+also utilized for fast view frustum culling and geomorphing.<p>
+
+Within this distribution the files needed to build the basic terrain
+rendering library are included. In order to keep the library portable
+any system dependent stuff like window management is not part of this
+distribution. Nevertheless, the Mini Library implements all the
+necessary graphics algorithms to setup a high-performance terrain
+rendering system.<p>
+
+The main goal for developing the library was to keep it as compact,
+stable and efficient as possible and not to blow it up by adding
+unnecessary features. Thus, Mini stands for "Mini Is Not Immense!" in
+a rather positive sense.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="Compilation"></a>
+<h2>(B) COMPILATION:</h2>
+
+The build.sh shell script compiles the library on Irix, Linux and
+MacOS X. Simply type "./build.sh" in your Unix
+shell. <a href="http://www.opengl.org">OpenGL</a> is required as the
+only dependency of the library. To install the library and the
+necessary include files in /usr/local on your Unix machine type
+"./build.sh install" as a super-user.<p>
+
+The library also compiles on Windows using the supplied VC++ 7.1 or
+8.0 project files. From the Windows command line use the build.bat
+batch file (requires VC++ 8.0) or use cygwin in the following way:<p>
+
+<ul>
+   <li>Run the <a href="http://cygwin.com">cygwin</a> installer program</li>
+   <li>Make sure to select "Devel" and "Shells" from the packages list</li>
+   <li>Double-click the cygwin icon to get a bash session</li>
+   <li>In bash, type: "cd mini" and "./build.sh"</li>
+</ul>
+
+Other than the specified operating systems are not supported.<p>
+
+As described in the following section, the distribution also contains
+a libMini application example . The example can be compiled by typing
+"./build.sh example" in a shell. It requires GLUT to be installed. On
+Windows it is recommended to use
+the <a href="http://freeglut.sourceforge.net">freeGLUT library</a> as
+a replacement for the standard GLUT library. For convenience, the
+libMini distribution already contains the freeGLUT headers and the
+prebuilt static freeGLUT library.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="TerrainRenderingAPI"></a>
+<h2>(C) TERRAIN RENDERING API:</h2>
+
+In this section the low level API of the Mini Library is described.
+Convenient high level methods for the most commonly encountered
+terrain rendering scenarios (as implemented in the minitile/miniload,
+ministub, minicache and datacloud classes) are described in
+Section <a href="#Frontends">(F)</a>, <a href="#LibraryStub">(G)</a>,
+<a href="#Performance">(I)</a>
+and <a href="#AsyncPaging">(I)</a>. Please first check out whether or
+not the high level APIs suffice your needs before you dive into the
+low level API. A good starting point is also to have a look at the
+reference implementation of the libMini tile set viewer which is
+described in Section <a href="#MiniViewer">(O)</a>.<p>
+
+The main include file is "mini.h" which contains the definition of the
+low level terrain rendering API (the libMini core). In order to port
+it to a different graphics architecture, only the file "miniOGL.cpp"
+needs to be adapted. It encapsulates all OpenGL calls that are made
+inside of the libMini core.<p>
+
+In the following the low level terrain rendering API is explained by
+drawing a small example height field. This task is broken down into
+eight basic steps. The full example code is included in the
+distribution (see "example.cpp").<p>
+
+<h3>Step 0) Include the libMini core header:</h3>
+
+<pre>
+   #include &lt;mini/mini.h&gt;
+</pre>
+
+<div class="note">
+   <b>Note:</b> On Linux the libMini headers are usually placed in the
+                "/usr/local/include/mini" directory after installation
+                (via build.sh; build.sh install). So the libMini
+                headers should be included with the "mini/" prefix,
+                since "/usr/local/include" is already in the default
+                search path. On Windows the libMini installation path
+                can be added with the VisualStudio-> Tools-> Options->
+                Projects-> Directories menu entry.
+</div><p>
+
+<h3>[Optional] Step 1) Specify the fine tuning parameters:</h3>
+
+   The fine tuning parameters are initialized to suitable values, so
+   normally this step can be omitted. However, for more flexibility
+   the parameters can be set explicitly via
+   mini::setparams(minres,maxd2,sead2,minoff,maxcull). In the terrain
+   rendering paper minres is referenced to as C, maxd2 is the maximum
+   value for the linear mapping of the d2-values, sead2 determines the
+   influence of the extracted sea surface onto the d2-values, and
+   maxcull defines the number of quadtree levels for which the view
+   frustum culling is performed.<p>
+
+<h3>Step 2) Open a window:</h3>
+
+   For that purpose the glut library is used in the example.<p>
+
+<h3>Step 3) Height field initialization:</h3>
+
+<pre>
+   // a small example height field
+   short int hfield[]={0,0,0,
+                       0,5,0,
+                       0,0,0};
+
+   int size=3; // grid size of the square height field
+               // (can be any number>2, but preferably 2^n+1, n>0)
+
+   float dim=10.0f; // cell dimension = horizontal grid point spacing
+   float scale=1.0f; // vertical scaling of the elevations
+
+   void *map,*d2map; // spare void pointers
+
+   map=mini::initmap(hfield,&d2map,&size,&dim,scale);
+</pre>
+
+<h3>Step 4) Texture map initialization:</h3>
+
+<pre>
+   // a small example RGB texture map
+   unsigned char texture[]={255,63,63, 255,63,63, 255,63,63, 255,63,63,
+                            255,63,63, 63,63,255, 63,63,255, 255,63,63,
+                            255,63,63, 63,63,255, 63,63,255, 255,63,63,
+                            255,63,63, 255,63,63, 255,63,63, 255,63,63};
+
+   int width=4,height=4; // width and height of the texture map
+                         // (can be any number>1, but preferably 2^n, n>0)
+
+   int texid; // id of the texture map
+
+   int mipmaps=1; // enable mip-mapping
+
+   texid=mini::inittexmap(texture,&width,&height,mipmaps);
+</pre>
+
+<h3>[Optional] Step 5) Ground fog map initialization:</h3>
+
+   Optionally, a ground fog layer is rendered by stacking prisms onto
+   each triangle that is generated by the terrain rendering
+   algorithm. The height of the fog layer is defined by the ground fog
+   map. With the assumption of an uniform fog density and the
+   application of an emissive optical model the volumetric projections
+   of the prisms can be composed efficiently (see ground fog paper for
+   more details).<p>
+
+<pre>
+   // a small example ground fog map
+   unsigned char ffield[]={2,3,2,
+                           3,1,3,
+                           2,3,2};
+
+   int fogsize=3; // size of the ground fog map
+                  // (can be any number>1, but same size as height field preferred)
+
+   void *fogmap; // spare void pointer
+
+   float lambda=1.0f; // vertical dimension of the ground fog layer
+   float displace=5.0E-3f; // vertical displacement of the ground fog layer
+   float emission=0.05f; // optical emission of ground fog per unit length
+   float attenuation=1.0f; // triangulation importance of ground fog
+   float fogR=1.0f,fogG=1.0f,fogB=1.0f; // fog color
+
+   fogmap=mini::initfogmap(ffield,fogsize,lambda,displace,emission,
+                           attenuation,fogR,fogG,fogB);
+</pre>
+
+<div class="note">
+   <b>Remarks:</b> For the ground fog to be rendered correctly an
+                   alpha channel is required in the frame buffer.
+                   Calling mini::inittexmap() with no parameters
+                   results in the omission of the terrain which is
+                   useful for the display of additional fog layers. An
+                   optical emission of zero triggers maximum intensity
+                   projection (MIP). Compared to an emissive optical
+                   model MIP is much faster and does not require an
+                   alpha channel.
+</div><p>
+
+<h3>Step 6) For each frame:</h3>
+
+<h3>Step 6.1) Clear window.</h3>
+
+<h3>Step 6.2) Setup model-view and projection matrix according to viewing coordinates.</h3>
+
+<h3>[Optional] Step 6.3) Set actual tile:</h3>
+
+   This step can be omitted if only a single height field is used.<p>
+
+<pre>
+   mini::setmaps(map,d2map,size,dim,scale,texid,width,height[,mipmaps,cellaspect]);
+</pre>
+
+   The optional mipmaps parameter determines whether or not mipmaps
+   are enabled. The optional cellaspect parameter can be used to
+   define a non-uniform spacing of the grid, that is the spacing along
+   the x-axis is dim units while the spacing along the z-axis is
+   dim*cellaspect units.<p>
+
+   If a ground fog map is used the following parameters need to be passed:<p>
+
+<pre>
+   mini::setmaps(map,d2map,size,dim,scale,
+                 texid,width,height,mipmaps,
+                 cellaspect,0.0f,0.0f,0.0f,NULL,NULL,
+                 fogmap,lambda,displace,
+                 emission);
+</pre>
+
+<h3>Step 6.4) Render the terrain:</h3>
+
+<pre>
+   float res=1000.0f; // global resolution of the triangulation (in the range [1..infty])
+   float ex=0.0f,ey=10.0f,ez=30.0f; // eye point
+   float fx=0.0f,fy=10.0f,fz=30.0f; // focus of interest (should be equal to eye point)
+   float dx=0.0f,dy=-0.25f,dz=-1.0f; // view direction
+   float ux=0.0f,uy=1.0f,uz=0.0f; // up vector
+   float fovy=60.0f; // vertical field of view
+   float aspect=1.0f; // window width/window height
+   float nearp=1.0f; // distance of near clipping plane
+   float farp=100.0f; // distance of far clipping plane
+
+   mini::drawlandscape(res,
+                       ex,ey,ez,
+                       fx,fy,fz,
+                       dx,dy,dz,
+                       ux,uy,uz,
+                       fovy,aspect,
+                       nearp,farp);
+</pre>
+
+   For typical height fields the parameter <i>res</i> should be set to 100-10000
+   depending on the desired density of the generated mesh.<p>
+
+<div class="note">
+   <b>Hint:</b> fovy&lt;0 triggers the orthographic projection mode<br>
+                use glOrtho(fovy/2*aspect,-fovy/2*aspect,fovy/2,-fovy/2,near,far);
+</div><p>
+
+<h3>Step 6.5) Swap buffers:</h3>
+
+   Now we are basically done. For comparison, a screen shot of the
+   result is included in the distribution (example.png).<p>
+
+<h3>[Optional] Step 6.6) Query functions:</h3>
+
+   Between each rendered frame the elevation and the normal at
+   position (x,z) of the height field can be queried via:<p>
+
+<pre>
+   float height=mini::getheight(i,j); // (i,j) = integer grid position
+   float height=mini::getheight(x,z); // (x,z) = floating point world coordinates
+   float nx,ny,nz; mini::getnormal(x,z,&nx,&ny,&nz);
+</pre>
+
+   Similarly, the height of the ground fog layer (if present) can be
+   queried via:<p>
+
+<pre>
+   float fogheight=mini::getfogheight(x,z);
+</pre>
+
+<h3>Step 7) After the last frame, delete all used maps:</h3>
+
+<pre>
+   mini::deletemaps();
+</pre>
+
+<h3>Step 8) Finally, close the window.</h3>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="AdditionalComments"></a>
+<h2>(D) ADDITIONAL COMMENTS:</h2>
+
+The size of the small height field in the above example surely is too
+small for realistic terrain rendering. For convenience, a real data
+set of Kluane National Park in Yukon Territory, Canada, is included in
+the Yukon Demo. See also Section <a href="#RealTerrain">(H)</a> about
+loading real data.<p>
+
+The accuracy of the rendered terrain can be controlled by setting the
+res parameter from the minimum value of 1 to larger values of say
+1,000-100,000 depending on the actual performance of the graphics
+hardware.<p>
+
+Normally, the focus of interest, that is the point with the highest
+resolution, should be equal to the eye point in order to minimize the
+screen space error of the dynamic triangulation. In some cases,
+however, it might be advantageous to set the focus to a different
+location. The focus can be set directly in the drawlandscape call of
+the libMini core or via ministub::setfocus and minitile::setfocus.<p>
+
+Instead of choosing the default short signed integer representation
+(16 bit) of the height field, a floating point representation can be
+chosen by using the Mini namespace (capital first letter). This is
+equivalent to calling the constructor of the ministub class with a
+float height field as the first parameter.<p>
+
+Since the algorithm uses uniform grids of size 2^n+1 in both
+dimensions, a height field with this size should be supplied whenever
+possible. Other sizes are scaled up internally to the next possible
+size. A data set with unequal grid dimensions must be resampled
+uniformly or broken up into uniform tiles prior to passing it to the
+Mini Library.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="TiledTerrain"></a>
+<h2>(E) TILED TERRAIN (TILE SETS):</h2>
+
+In the case that a terrain data set does not consist of a single
+height field but rather of several tiled patches, each of the tiles is
+setup separately:<p>
+
+<pre>
+   for (int i=0; i&lt;tiles; i++)
+      {
+      map[i]=mini::initmap(hfield[i],&d2map[i],&size[i],&dim[i],scale);
+      texid[i]=mini::inittexmap(texture[i],&width[i],&height[i]);
+      }
+</pre>
+
+Now, for each frame, the terrain is rendered in two passes:<p>
+
+<pre>
+   for (phase=1; phase<=2; phase++)
+      for (int i=0; i&lt;tiles; i++)
+         {
+         mini::setmaps(map[i],d2map[i],size[i],dim[i],scale,
+                       texid[i],width[i],height[i],mipmaps,
+                       cellaspect,ox[i],oy[i],oz[i],
+                       d2map2[i],size2[i]);
+
+         mini::drawlandscape(res,
+                             ex,ey,ez,fx,fy,fz,dx,dy,dz,ux,uy,uz,
+                             fovy,aspect,nearp,farp,
+                             NULL,NULL,phase);
+         }
+</pre>
+
+Here, the additional parameters ox[i], oy[i], and oz[i] specify the
+origin (center) of each tile. The remaining additional parameters
+d2map2[i][0..3] and size2[i][0..3] denote the d2maps of the four
+adjacent tiles and the grid size of the neighbours, respectively. The
+neighbours must be specified for each tile to ensure crack-free
+rendering of the entire scene. Viewed from above, the indices 0..3
+correspond to the following locations of the adjacent tiles: left,
+right, bottom, and top. If a neighbour does not exist, the NULL
+pointer may be passed instead. In order to ensure a conforming mesh,
+the elevations of shared grid points of adjacent tiles must be
+identical, meaning that the shared edges need to be duplicated. After
+the last frame, the allocated memory is released by subsequently
+passing each tile map[i] to the function mini::setmaps() and by
+calling mini::deletemaps() afterwards.<p>
+
+As an example, the center tile of a height field can be surrounded by
+tiles with a lower resolution. These low resolution tiles can be used
+to represent the horizon of a scenery without consuming a large amount
+of extra memory.<p>
+
+Preferably, each terrain data set should be broken up into tiles that
+fit into the L2-cache of the processor. For example a tile of size
+129x129 easily fits into the L2-cache of most modern processors. In
+this setup each tile consumes only 48 kilobytes of memory which leads
+to a significantly improved cache coherency and performance.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="Frontends"></a>
+<h2>(F) MINITILE AND MINILOAD FRONTEND:</h2>
+
+As mentioned above, a tiled terrain can be used to save memory and
+gain speed. In this case the minitile class provides a starting point
+how to render a tiled terrain with the Mini Library. In the
+constructor of the minitile class a array of file names is passed
+which defines the PGM height image of each tile and its corresponding
+PPM texture (in column first order). The tiles must have the same
+geometric extent but need not have equal resolution which means that
+grid size or cell dimension may differ.<p>
+
+Besides rendering a tiled terrain, the minitile class is also a
+convenient way to just display a single height field plus texture
+without going into the details of the low level API described in
+Section <a href="#TerrainRenderingAPI">(C)</a>. For an example use of
+the minitile class please check out the Yukon Demo or the Stuttgart
+Demo.<p>
+
+If the landscape that should be visualized is extremely large and
+detailed the terrain may not fit entirely into main memory. This
+situation is dealt with the miniload class. It offers almost the same
+functionality as the minitile class but dynamically pages visible and
+invisible tiles in and out. There are two paging modes: The first one
+just loads all visible tiles and displays all data up to the far
+clipping plane. For this to work efficiently, the distance to the far
+plane should be chosen to be considerably smaller than the actual
+extent of the entire scene. The second paging mode loads the
+appropriate LOD for each tile if a resolution pyramid is present. This
+reduces the memory foot print drastically but may also increase the
+latency during a movement of the viewer, since the LODs need to be
+updated dynamically. The second mode allows much larger viewing
+distances as the first mode. Depending on the tile size this comes at
+the expense of more or less latency whenever the LODs need to be
+updated from disk. To hide the latency the so-called preloading can be
+enabled so that the requested LODs are already available before they
+are actually needed for rendering.<p>
+
+By default, the tiles are stored in the PNM (PGM/PPM) format of the
+netpbm library which is available
+at <a
+href="http://netpbm.sourceforge.net">netpbm.sourceforge.net</a>. The
+netpbm library, however, is not required for linking, since libMini
+has built-in support for the PNM format (see
+Section <a href="#PNMdoc">Appendix (6A)</a>).<p>
+
+The LODs are identified by adding the number of the corresponding LOD
+to the base file name which has LOD 0 by definition. As an example,
+let the tile with file name "tile.x-y.pgm" be the base LOD at column x
+and row y of the grid. Then the next corresponding LOD with level 1 is
+named "tile.x-y.pgm1" and so forth. If the base LOD (or LOD0) has size
+2^n+1 the LODs with level l=1..n-1 (or LOD1, LOD2, ...) have size
+2^(n-l)+1. Let the texture with file name "tile.x-y.ppm" be the base
+texture at column x and row y of the grid. Then the next corresponding
+texture LOD with level 1 is named "tile.x-y.ppm1" and so forth. If the
+base texture has size 2^m the texture LODs with level l=1..m-1 have
+size 2^(m-l). For different tiles the base LOD may have different tile
+or texture size. While one or more levels from the top of each LOD
+pyramid may be missing the base LOD has to be present in any case.
+Both the height fields and the texture maps use a corner centric (not
+cell centric) data representation.<p>
+
+A basic grid resampler which is able to produce the required pyramids
+is available via the pnmsample::resample(...,int pyramid) call. The
+pyramid parameter controls the number of generated LODs in addition to
+the base level. If the described file conventions are met the output
+of any GIS program can be used, too. In fact, the latter should be the
+preferred way of resampling, since the built-in resampler has several
+limitations and is intended to be only a minimal "reference"
+implementation. Among its limitations is the restriction to Lat/Lon
+coordinates as world coordinate system and the missing out-of-core
+support. The addition of these features would have blown up libMini
+significantly, so if one of these features is needed in a particular
+situation the tiles should be resampled with a more advanced GIS
+application such as VTBuilder from vterrain.org. The output of
+VTBuilder is compatible with libMini so you are free to import the
+data into your own libMini project or visualize it directly with the
+VTEnviro application which also builds on top of libMini. However, if
+the restrictions of the built-in resampler are not crucial, you can
+call the resampler with a list of georeferenced PNM files, which will
+be resampled within the range of the first file on the list (for
+information about georeferencing see
+Section <a href="RealTerrain">(H)</a>.<p>
+
+To load a tiled terrain consisting of c columns and r rows one needs
+to construct two string pointer arrays hf and tx containing the file
+names of the PGM height fields and the ppm textures of each tile
+(column first order, north-west corner first, missing tiles indicated
+by null pointers). Let cd be the width of each column and rd be the
+height of each row and let s be the vertical scaling of the elevations
+and let (cx,cy,cz) be the offset of the center of the entire terrain
+(all constants measured in meters). Then the following call does the
+job with the terrain lying in the (x,-z) plane and the elevations
+corresponding to the y-coordinates:<p>
+
+<pre>
+   miniload *terrain=new miniload(hf,tx,c,r,cd,rd,s,cx,cy,cz);
+</pre>
+
+In order to load tiles that have been generated with the built-in
+resampler, we simply pass the number of columns and rows and the
+directory where the tiles have been stored to the miniload:load
+method. Then the missing parameters are determined automatically by
+looking at the georeferencing information of the specified tiles.<p>
+
+To render the scene use the following call:<p>
+
+<pre>
+   terrain->draw(res, // resolution
+                 ex,ey,ez, // eye point
+                 dx,dy,dz, // view direction
+                 ux,uy,uz, // up vector
+                 fovy,aspect, // field of view and aspect
+                 nearp,farp, // near and far plane
+                 update); // optional incremental update
+</pre>
+
+The library will now load all visible tiles and page in and out the
+appropriate LODs automatically.<p>
+
+By default, the tiles are rendered directly using the built-in OpenGL
+graphics engine. Alternatively, a render cache (e.g. the minicache
+described in Section <a href="#Performance">(I)) can be attached to
+the miniload class. Then the tiles are displayed indirectly by
+rendering the contents of the cache. However, we do not attach the
+cache to the miniload object but rather to the minitile object
+encapsulated in it (use terrain->getminitile() to get it).<p>
+
+The update parameter determines the number of frames for which the
+cache persists and how long it takes to completely fill the cache. A
+value of 1 causes the cache to be filled within a single frame and can
+be used to flush the cache.<p>
+
+Non-standard graphics effects can be implemented by using the hook
+mechanism or the shader plugins of the minicache backend (see
+Section <a href="#ShaderPlugins">(J)</a>).<p>
+
+During run-time, the terrain can be rescaled in the range from 0% to
+100% of the original elevation by calling miniload::setrelscale.<p>
+
+Also, the sea surface can be rendered at real-time. In order to
+interactively extract a specific sea level (e.g. 0) we use
+miniload::setsealevel(level).<p>
+
+For implementation reasons, this is only supported if a render cache
+is attached. The contour line of the sea surface is extracted
+precisely so that it matches the shore line and therefore does not
+intrude into the terrain. This approach efficiently eliminates
+Z-buffer fighting artifacts.<p>
+
+By default, texture compression is enabled which means that the
+textures will be compressed on-the-fly in the OpenGL driver. Since
+this is a very time consuming task it can be turned off via
+miniOGL::configure_compression(0). Texture mip-mapping is also enabled
+by default, but it can be switched off via
+minitile::configure_mipmaps(0). This further improves the texture
+loading performance.<p>
+
+The paging mechanism can be controlled via the following call:<p>
+
+<pre>
+   terrain->setloader(void (*request)(...),void *data,
+                      void (*preload)(...),
+                      void (*deliver)(...),
+                      int paging,
+                      float pfarp,
+                      float prange,int pbasesize,
+                      int plazyness,int pupdate,
+                      int expire);
+</pre>
+
+Normally, the first four arguments should be set to NULL. Then each
+tile is loaded if it is within the viewing range (that is the distance
+to the far clipping plane farp). In order to ensure that invisible
+tiles are already available before they actually become visible
+preloading can be enabled by passing a function pointer as third
+argument. The referenced function is called subsequently to notify all
+tiles which need to be preloaded. However, if preloading is disabled,
+visible tiles are just requested on the fly. This is recommended if
+the data is available on a fast medium (e.g. a hard disk).<p>
+
+Each requested tile is loaded either automatically by the library or
+manually via the callback mechanism. The callback passes height
+fields, texture maps and optional fog maps by encapsulating them into
+a databuf object. The object format is flexible and can be used for
+byte, short int, float and even pre-compressed texture data with an
+optional alpha channel (as opposed to the PNM format which only
+supports plain RGB images and only 8- or 16-bit height fields). The
+databuf class has methods to load and store data in its native DB file
+format (see Section <a href="#DBdoc">Appendix (6C)</a>). The extension
+for the native format is ".db". The databuf class also has convenience
+functions for reading PNM images and PVM volumes which are the
+standard format for the minibrick module (see
+Section <a href="#Minibrick">Appendix (5)</a>). Pre-compressed texture
+maps are preferred over uncompressed textures, because loading
+is <b>much</b> faster. This is due to the fact that neither the
+texture data has to be compressed nor a mipmap pyramid has to be
+generated on-the-fly. Currently, only S3TC/DXT1 texture
+pre-compression is supported.<p>
+
+<div class="note">
+   <b>Remark</b>: A workaround to get pre-compressed PPM images is to
+                  use the databuf::loadPPMcompressed method instead of
+                  the databuf::loadPNMdata method. For the first time
+                  the PPM images are accessed, the uncompressed data
+                  is loaded as usual. But the texture data will also
+                  be compressed and written to a DB file. If the data
+                  is accessed a second time it will be already
+                  pre-compressed and loading will be much
+                  faster. Optimally, this procedure should be applied
+                  to all resampled tiles before the renderer is
+                  launched.
+</div><p>
+
+For slow media or internet access preloading should be enabled so that
+each call of the preload callback can be used to spawn a thread which
+silently receives and stores the incoming data until it is collected
+by the deliver callback. While requested data should be returned
+instantly the delivery of preloaded data can be delayed until an
+arbitrary point in the future. The Mini Library has a reference
+implementation of an asynchronous file cache. With this cache the
+rendering task can be decoupled from the loading task which leads to a
+much smoother visual experience for large paged data sets. In such an
+ambitious use case, please also read
+Sections <a href="#AsyncPaging">(K)</a>
+and <a href="#RemotePaging">(L)</a>.<p>
+
+If a resolution pyramid is present, the library also tries to page in
+the appropriate LOD l from the pyramid. If preloading is enabled, the
+library requests level l as usual but also tries to silently preload
+level l+1 so that the next level is delivered before it actually
+becomes visible.<p>
+
+The other arguments of miniload::setloader have the following meaning:<p>
+
+<ul>
+   <li>
+   <b>paging:</b> enables/disables paging from the LOD pyramid
+   <ul>
+      <li>a value of zero means that only LOD 0 is used</li>
+      <li>for a value of one the next larger level is paged in
+          after a LOD difference of one level is reached</li>
+      <li>for a value of s>=1 the next larger level is preloaded
+          after a LOD difference of s-1 levels is reached</li>
+      <li>recommended: 1</li>
+   </ul>
+   </li>
+
+   <li>
+   <b>pfarp:</b> defines the radius of the preloading area
+   <ul>
+      <li>a value of zero disables preloading of invisible tiles
+          beyond the far plane</li>
+      <li>otherwise each invisible tile inside the radius is
+          preloaded within the allowed update time (see pupdate)</li>
+      <li>the radius should be slightly greater than farp</li>
+      <li>example: 1.25*farp</li>
+   </ul>
+   </li>
+
+   <li>
+   <b>prange:</b> controls the enabling range of the first texture LOD
+   <ul>
+      <li>a value of zero means that only texture LOD 0 is used</li>
+      <li>let d be the minimum euclidean distance to a given tile
+          then for d in [0,prange] LOD 0 is enabled
+          and for d in [2^(n-1)*prange,2^n*prange] LOD n>0 is enabled</li>
+      <li>the range can be calculated easily from a given screen space
+          error threshold using the miniload::calcrange method</li>
+      <li>the range should not be much smaller than the tile size
+          but smaller than the distance to the far clipping plane</li>
+      <li>example: 0.1f*farp (or roughly equal to the tile size)</li>
+   </ul>
+   </li>
+
+   <li>
+   <b>pbasesize:</b> specifies the maximum texture size that is paged in
+   <ul>
+      <li>a value of zero means that the largest available texture in
+          the pyramid is defined to be LOD 0</li>
+      <li>for non-zero values LOD 0 is redefined to be the level
+          with the specified base texture size so that larger
+          textures have negative LOD and are not paged in</li>
+      <li>the dimension of a texel from LOD 0 can be fed into
+          the calcrange method in order to control texture paging
+          by using a screen space error instead of an enabling range</li>
+      <li>the base size should be set to the size of the largest
+          texture tile so that the maximum texture detail is shown
+          but the base size should not exceed the maximum texture
+          size supported by the hardware</li>
+      <li>example: 1024</li>
+   </ul>
+   </li>
+
+   <li>
+   <b>plazyness:</b> controls the laziness of paging
+   <ul>
+      <li>a value of zero means that the LODs are updated instantly</li>
+      <li>for a value of l>=0 the next smaller level is paged in
+          after a LOD difference of l+1 levels is reached</li>
+      <li>for a value of l>=1 the next smaller level is preloaded
+          after a LOD difference of l levels is reached</li>
+      <li>for maximum memory utilization set l to 0</li>
+      <li>to reduce data traffic increase l</li>
+      <li>recommended: 1</li>
+   </ul>
+   </li>
+
+   <li>
+   <b>pupdate:</b> total update time
+   <ul>
+      <li>determines the number of frames after which a complete
+          update of the tiles is finished</li>
+      <li>applies to preloading of tiles beyond the far plane</li>
+      <li>applies to preloading the next level of visible tiles</li>
+      <li>should be not much smaller than the frame rate
+          then for each frame only a small fraction of the tiles is
+          updated in order to limit the update latencies</li>
+      <li>a value of zero means that one tile is updated per frame</li>
+      <li>example: 25</li>
+   </ul>
+   </li>
+
+   <li>
+   <b>expire:</b> expiration time
+   <ul>
+      <li>determines the number of frames after which invisible tiles
+          are removed from the tile cache</li>
+      <li>should be much larger than the frame rate</li>
+      <li>a value of zero disables expiration</li>
+      <li>example: 1000</li>
+   </ul>
+   </li>
+</ul>
+
+<div class="note">
+   <b>Note:</b> A possible reason for slow rendering performance is
+                the limited amount of available texture RAM. If the
+                prange parameter is too large most of the texture
+                tiles will be loaded at the highest resolution. Thus,
+                the textures may not fit completely into texture
+                memory. In such a case, the prange parameter should be
+                decreased until the rendering performance is
+                sufficient again. We have to remember that halving the
+                prange results in 25% of texture memory usage!
+</div><p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="LibraryStub"></a>
+<h2>(G) LIBRARY STUB:</h2>
+
+In some cases the built-in texture mapping setup or the explicit
+dependency on OpenGL may be too restrictive. In order to gain more
+flexibility, the internal management of the OpenGL state including the
+automatic generation of texture coordinates can be disabled by calling
+mini::inittexmap() with no parameters. Then all generated vertices are
+passed to a callback function allowing the entire graphics state to be
+handled externally. This feature also allows compatibility with
+graphics standards such as DirectX or rendering engines like
+Irrlicht. Using the callback mechanism from within the minitile and
+miniload frontends is also possible and works analogue to the case
+described in the following.<p>
+
+If the internal OpenGL state management of the Mini Library is not
+needed, one can access the library through the ministub class as shown
+in the code example given below. It demonstrates the external handling
+of the graphics state using explicit calls to OpenGL. If a different
+graphics library should handle the graphics state we can use "build.sh
+stub" to compile a library that does not contain any references to
+OpenGL specific functions (use the switch -DNOOGL on Windows).
+Otherwise the library must be linked against "-lGL -lGLU -lm" to
+resolve the OpenGL dependencies.<p>
+
+<pre>
+   #include &lt;OpenGL headers&gt;
+
+   #include &lt;mini/ministub.h&gt;
+
+   // height field is a float array
+   float hfield[]={0,0,0,0,0,
+                   0,3,3,3,0,
+                   0,3,5,3,0,
+                   0,3,3,3,0,
+                   0,0,0,0,0};
+
+   int size=5; // grid size
+
+   float dim=5.0f; // cell dimension
+   float scale=1.0f; // vertical scaling
+   float cellaspect=1.0f; // cell aspect ratio
+   float cx=0.0f,cy=0.0f,cz=0.0f; // grid center
+
+   ministub *stub;
+
+   int myfancnt;
+
+   void mybeginfan()
+      {
+      // mandatory "beginfan" callback
+      // called for each generated triangle fan
+      // followed by the vertex callbacks
+
+      if (myfancnt++>0) glEnd();
+      glBegin(GL_TRIANGLE_FAN);
+      }
+
+   void myfanvertex(float i,float y,float j)
+      {
+      // mandatory "fanvertex" callback
+      // called for each vertex of a triangle fan
+      // glVertex3f directly qualifies as a fast "fanvertex" callback
+      // (i,j) is the grid coordinate of the vertex
+      // y is the unscaled elevation interpolated from the height field
+      // these coordinates are transformed by the OpenGL modelview matrix
+      // therefore, the real world coordinates of each vertex are
+      // (vx,vy,vz)=((i-size/2)*dim+cx,y*scale+cy,(size/2-j)*dim+cz)
+
+      glVertex3f(i,y,j);
+      }
+
+   void mynotify(int i,int j,int s)
+      {
+      // optional "notify" callback
+      // triggered during quadtree traversal
+      // called for each visible node of the quadtree
+      // to disable the callback pass the NULL pointer to the ministub
+      // (i,j) is the center of the actual node in grid coordinates
+      // s is the size of the actual node in grid units
+
+      // only add extra code here if you know what you are doing
+      // ...
+      }
+
+   float mygetelevation(int i,int j,int S,void *data=NULL)
+      {
+      // optional "getelevation" callback
+      // if image=NULL is passed to the ministub constructor
+      // this callback is evaluated separately for each grid point
+      // use this for the sequential access of a height field
+      // e.g. for memory efficient reading from an input stream
+      // as a reference to the calling object an optional
+      // data pointer can be passed to the callback
+
+      // return the elevation at grid position (i,j) here
+      return(hfield[i+j*S]); // the size of the grid must be equal to SxS
+      }
+
+   int main(int argc,char *argv[])
+      {
+      stub=new ministub(hfield,
+                        &size,&dim,scale,
+                        cellaspect,cx,cy,cz,
+                        mybeginfan,myfanvertex,
+                        mynotify,
+                        mygetelevation,
+                        NULL);
+
+      float res=1000.0f; // resolution
+      float ex=0.0f,ey=10.0f,ez=30.0f; // eye point
+      float dx=0.0f,dy=-0.25f,dz=-1.0f; // view direction
+      float ux=0.0f,uy=1.0f,uz=0.0f; // up vector
+      float fovy=60.0f; // field of view
+      float aspect=1.0f; // aspect of view
+      float nearp=1.0f; // near plane
+      float farp=100.0f; // far plane
+
+      // open window and create OpenGL context here
+      // ...
+
+      // change OpenGL state here
+      // (for example, setup automatic texture coordinate generation)
+      // ...
+
+      // setup OpenGL modelview matrix
+      glScalef(dim,scale,-dim); // scale vertices
+      glTranslatef(-size/2+cx,cy,-size/2+cz); // translate vertices
+
+      myfancnt=0;
+
+      stub->draw(res,
+                 ex,ey,ez,
+                 dx,dy,dz,
+                 ux,uy,uz,
+                 fovy,aspect,
+                 nearp,farp);
+
+      glEnd();
+
+      // delete OpenGL context and close window here
+      // ...
+
+      delete stub;
+
+      return(0);
+      }
+</pre>
+
+Since the Mini Library optionally supports ground fog rendering, the
+fog mesh which consists of vertically aligned prisms have to be passed
+to the calling framework as well. Three subsequent calls of the
+"prismedge" callback define one fog prism by describing the ground
+position (x,y,z) and the vertical size (yf) of the three vertical
+prism edges. The edges are already transformed into the world
+coordinate system.<p>
+
+A test version above code can be compiled by first stripping the Mini
+Library off its OpenGL dependent calls (type "build.sh stub"). Then
+the stub test is compiled with the command "build.sh stubtest".<p>
+
+For comparison, the text output of the stub test is:<p>
+
+<pre>
+   beginfan();
+   fanvertex(1,1,1); // realvertex=(0,5,0)
+   fanvertex(2,0,1); // realvertex=(10,0,0)
+   fanvertex(2,0,2); // realvertex=(10,0,-10)
+   prismedge(0,5.005,6.005,-0);
+   prismedge(10,0.005,3.005,-0);
+   prismedge(10,0.005,2.005,-10);
+   fanvertex(1,0,2); // realvertex=(0,0,-10)
+   prismedge(0,5.005,6.005,-0);
+   prismedge(10,0.005,2.005,-10);
+   prismedge(0,0.005,3.005,-10);
+   fanvertex(0,0,2); // realvertex=(-10,0,-10)
+   prismedge(0,5.005,6.005,-0);
+   prismedge(0,0.005,3.005,-10);
+   prismedge(-10,0.005,2.005,-10);
+   fanvertex(0,0,1); // realvertex=(-10,0,0)
+   prismedge(0,5.005,6.005,-0);
+   prismedge(-10,0.005,2.005,-10);
+   prismedge(-10,0.005,3.005,-0);
+   fanvertex(0,0,0); // realvertex=(-10,0,10)
+   prismedge(0,5.005,6.005,-0);
+   prismedge(-10,0.005,3.005,-0);
+   prismedge(-10,0.005,2.005,10);
+   fanvertex(1,0,0); // realvertex=(0,0,10)
+   prismedge(0,5.005,6.005,-0);
+   prismedge(-10,0.005,2.005,10);
+   prismedge(0,0.005,3.005,10);
+   fanvertex(2,0,0); // realvertex=(10,0,10)
+   prismedge(0,5.005,6.005,-0);
+   prismedge(0,0.005,3.005,10);
+   prismedge(10,0.005,2.005,10);
+   fanvertex(2,0,1); // realvertex=(10,0,0)
+   prismedge(0,5.005,6.005,-0);
+   prismedge(10,0.005,2.005,10);
+   prismedge(10,0.005,3.005,-0);
+</pre>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="RealTerrain"></a>
+<h2>(H) REAL TERRAIN MAPS AND TEXTURES:</h2>
+
+A good starting point for real world terrain data is<p>
+
+   The Global Land Cover Facility<br>
+   <a href="http://glcf.umiacs.umd.edu">glcf.umiacs.umd.edu</a><p>
+
+Free sky dome textures can be downloaded at<p>
+
+   Philo's Sky Collection<br>
+   <a href="http://www.philohome.com/skycollec/skycollec.htm">www.philohome.com/skycollec/skycollec.htm</a><p>
+
+In order to load a real height field or texture use the PNM reader via<p>
+
+<pre>
+   #include &lt;mini/pnmbase.h&gt;
+
+   unsigned char *data;
+   int width,height,components;
+
+   data=readPNMfile(pnmfilename,&width,&height,&components);
+</pre>
+
+If components==1 the function returns an unsigned char height field<br>
+else if components==2 16 bit signed values are returned in MSB format<br>
+else if components==3 an RGB color image is returned.
+else if components==4 an RGBA color image is returned.<p>
+
+If the PNM image contains an 8- or 16-bit height field we first copy
+it to a short array. Then we can pass this array to the libMini core
+or the ministub class for example:<p>
+
+<pre>
+   if (width!=height) ERRORMSG(); // height field must be quadratic
+
+   short int *hfield=new short int[width*height];
+
+   if (components==1) // 8-bit
+      for (int j=0; j&lt;height; j++)
+         for (int i=0; i&lt;width; i++)
+            hfield[i+j*width]=data[i+(height-1-j)*width];
+   else if (components==2) // 16-bit
+      for (int j=0; j&lt;height; j++)
+         for (int i=0; i&lt;width; i++)
+            hfield[i+j*width]=(short int)(256*data[2*(i+(height-1-j)*width)]+data[2*(i+(height-1-j)*width)+1]);
+   else ERRORMSG();
+
+   free(data);
+
+   ministub stub=new ministub(hfield,...);
+
+   delete hfield;
+</pre>
+
+Alternatively, we can pass the array via the getelevation callback
+which prevents the array from being copied twice:<p>
+
+<pre>
+   short int mygetelevation(int i,int j,int S)
+      {
+      if (components==1) return(data[i+(S-1-j)*S]);
+      else if (components==2) return((short int)(256*data[2*(i+(S-1-j)*S)]+data[2*(i+(S-1-j)*S)+1]));
+      return(0);
+      }
+
+   ministub stub=new ministub(NULL,...,mygetelevation,...);
+
+   free(data);
+</pre>
+
+The same callback mechanism is also implemented in the libMini core.<p>
+
+In order to georeference a PNM image, we have to put its geographic
+location into the comment of the PNM header. This is achieved by
+specifying the four corners of the image in either the geographic
+world coordinate system (also known as Lat/Lon) or in Universal
+Transverse Mercator coordinates (UTM). The built-in resampler of the
+library exclusively uses this extended PNM format. An example of a
+georeferenced header is shown below:<p>
+
+<pre>
+   P6
+   # BOX
+   # description=PPM example
+   # coordinate system=LL
+   # coordinate zone=0
+   # coordinate datum=0
+   # SW corner=198721.93993200/-75123.60940800 arc-seconds
+   # NW corner=198722.01794400/-75081.99117600 arc-seconds
+   # NE corner=198766.29376800/-75082.06288800 arc-seconds
+   # SE corner=198766.21917600/-75123.68115600 arc-seconds
+   # cell size=.086482/.086482 arc-seconds
+   # vertical scaling=0 meters
+   # missing value=-9999
+   512 512
+   255
+</pre>
+
+The identifier "P6" stands for an RGB image and the numbers at the end
+of the header define the width, the height and the maximum pixel value
+of the image. For 8-bit data the maximum value is 255, for signed
+16-bit data it is 32767 (or 65535). The identifier "P5" stands for
+height fields (and gray scale images). The raw data of an image is
+appended after the header. 16-bit data is stored in MSB format.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="Performance"></a>
+<h2>(I) HIGH PERFORMANCE RENDERING USING THE MINICACHE BACKEND:</h2>
+
+The minicache backend improves the rendering performance of the
+libMini core by exploiting the frame to frame coherency of a scene.<p>
+
+Principally, the Mini Library generates a new triangle mesh for each
+frame. This is necessary to suppress the popping effect by applying
+the geomorphing technique. As a consequence, the dynamically generated
+mesh prohibits the use of high performance rendering primitives such
+as vertex arrays or vertex buffer objects, because there is virtually
+no frame to frame coherency of the vertex data.<p>
+
+However, we do not need to perform the geomorphing operation for each
+and every frame. Usually 5-10 morphing operations per second appear to
+be visually smooth to a human observer. If the terrain is rendered
+with 50 frames per second then we can cache the generated vertices for
+at least 5 consecutive frames.<p>
+
+This dramatically reduces the CPU load, since the triangle mesh can be
+updated over consecutive frames. For this to work, a tiled terrain
+needs to be used, so that the mesh update can be triggered tile after
+tile. The GPU load is also reduced dramatically, since the cache can
+be rendered in an optimized fashion. The minicache uses vertex arrays
+for this purpose.<p>
+
+To enable the minicache we simply pass the minitile object to be
+cached to the minicache:<p>
+
+<pre>
+   minitile *tileset=new minitile(hfields,textures,cols,rows,...);
+   minicache *cache=new minicache;
+
+   cache->attach(tileset);
+</pre>
+
+Then, for each frame, we trigger a partial update of the scene with:
+
+<p>
+   int update=5; // number of frames per update
+
+   tileset->draw(...,update); // nothing is rendered yet
+   cache->rendercache(); // render the cached vertex buffer
+</pre>
+
+This is illustrated in the Hawaii Demo and in the libMini Viewer (see
+Section <a href="#MiniViewer">(O)</a>).<p>
+
+The raw performance on a Linux box with an AMD Athlon 2.2 GHz CPU and
+an NVIDIA GeForce FX 5800 graphics accelerator is about 20 million
+geomorphed vertices per second.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="ShaderPlugins"></a>
+<h2>(J) USING THE LIBMINI SHADER PLUGINS:</h2>
+
+The standard behaviour of the minicache which basically only drapes
+textures on the height fields can be extended easily by supplying
+vertex and pixel shaders. If no application-specific shaders are
+given, the built-in shaders just implement the standard behaviour and
+can be used as a basis to write own advanced shaders as described in
+the following.<p>
+
+The default vertex shader multiplies the incoming vertices with the
+combined modelview and projection matrix and computes the appropriate
+2D texture coordinates for each tile. It is selected via
+minicache::setshader() and enabled via minicache::useshader(). Own
+vertex shaders are selected by passing a program string via
+minicache::setshader("!!ARBvp...").<p>
+
+<pre>
+   // default vertex shader
+   static char *vtxprog="!!ARBvp1.0 \n\
+      PARAM t=program.env[0]; \n\
+      PARAM e=program.env[1]; \n\
+      PARAM c0=program.env[2]; \n\
+      PARAM c1=program.env[3]; \n\
+      PARAM c2=program.env[4]; \n\
+      PARAM c3=program.env[5]; \n\
+      PARAM c4=program.env[6]; \n\
+      PARAM c5=program.env[7]; \n\
+      PARAM c6=program.env[8]; \n\
+      PARAM c7=program.env[9]; \n\
+      PARAM mat[4]={state.matrix.mvp}; \n\
+      PARAM invtra[4]={state.matrix.modelview.invtrans}; \n\
+      TEMP vtx,col,nrm,pos,vec; \n\
+      ### fetch actual vertex \n\
+      MOV vtx,vertex.position; \n\
+      MOV col,vertex.color; \n\
+      MOV nrm,vertex.normal; \n\
+      ### transform vertex with modelview \n\
+      DP4 pos.x,mat[0],vtx; \n\
+      DP4 pos.y,mat[1],vtx; \n\
+      DP4 pos.z,mat[2],vtx; \n\
+      DP4 pos.w,mat[3],vtx; \n\
+      ### transform normal with inverse transpose \n\
+      DP4 vec.x,invtra[0],nrm; \n\
+      DP4 vec.y,invtra[1],nrm; \n\
+      DP4 vec.z,invtra[2],nrm; \n\
+      DP4 vec.w,invtra[3],nrm; \n\
+      ### write resulting vertex \n\
+      MOV result.position,pos; \n\
+      MOV result.color,col; \n\
+      ### calculate tex coords \n\
+      MAD result.texcoord[0].x,vtx.x,t.x,t.z; \n\
+      MAD result.texcoord[0].y,vtx.z,t.y,t.w; \n\
+      MUL result.texcoord[0].z,vtx.y,e.y; \n\
+      ### pass normal as tex coords \n\
+      MOV result.texcoord[1],vec; \n\
+      ### calculate spherical fog coord \n\
+      DP3 result.fogcoord.x,pos,pos; \n\
+      END \n";
+</pre>
+
+The parameter t holds bias and scaling constants to compute the 2D
+texture coordinates in the x- and y-component of the result texture
+coordinate vector. The parameter e holds the scaling factor of the
+incoming elevations to compute the current true elevation. These true
+elevation values are passed to the pixel shader in the z-component of
+the texture coordinate vector so that per-fragment computations can
+easily depend on elevation. The parameter vectors t and e are supplied
+automatically by the minicache, but the parameter vectors c0-c7 may
+hold four additional constants that can be supplied by the user via
+minicache::setvtxshaderparams(x,y,z,w[,n]).<p>
+
+The default pixel shader takes the actual 2D texture coordinates and
+fetches the corresponding color from texture #0 which holds the
+current texture tile. After that the texture color is multiplied with
+the current fragment color to mimic the standard modulating texture
+environment.<p>
+
+<pre>
+   // default pixel shader
+   static char *fragprog="!!ARBfp1.0 \n\
+      PARAM c0=program.env[0]; \n\
+      PARAM c1=program.env[1]; \n\
+      PARAM c2=program.env[2]; \n\
+      PARAM c3=program.env[3]; \n\
+      PARAM c4=program.env[4]; \n\
+      PARAM c5=program.env[5]; \n\
+      PARAM c6=program.env[6]; \n\
+      PARAM c7=program.env[7]; \n\
+      PARAM a=program.env[8]; \n\
+      PARAM t=program.env[9]; \n\
+      PARAM l=program.env[10]; \n\
+      PARAM p=program.env[11]; \n\
+      TEMP col,nrm,len; \n\
+      ### fetch texture color \n\
+      TEX col,fragment.texcoord[0],texture[0],2D; \n\
+      MAD col,col,a.x,a.b; \n\
+      ### modulate with directional light \n\
+      MOV nrm,fragment.texcoord[1]; \n\
+      DP3 len.x,nrm,nrm; \n\
+      RSQ len.x,len.x; \n\
+      MUL nrm,nrm,len.x; \n\
+      DP3 nrm.z,nrm,l; \n\
+      MAD nrm.z,nrm.z,p.x,p.y; \n\
+      MUL_SAT col.xyz,col,nrm.z; \n\
+      ### modulate with fragment color \n\
+      MUL result.color,col,fragment.color; \n\
+      END \n";
+</pre>
+
+As with vertex shaders, the parameter vectors c0-c7 may hold four
+additional user-specific constants that can be set via
+minicache::setpixshaderparams(x,y,z,w[,n]).<p>
+
+Here is a simple usage example which adds contour lines to the
+bathymetry of a data set, which means that only negative elevations
+will show contours:<p>
+
+<pre>
+   // declare the cache
+   minicache cache;
+
+   // enable default vertex shader plugin
+   cache.setvtxshader();
+   cache.usevtxshader();
+
+   // fragment program for adding contour lines to the bathymetry
+   static char *fragprog="!!ARBfp1.0\
+      PARAM c0=program.env[0];\
+      TEMP col,vtx;\
+      TEX col,fragment.texcoord[0],texture[0],2D;\
+      MUL vtx.x,fragment.texcoord[0].z,c0.x;\
+      FRC vtx.y,vtx.x;\
+      MAD vtx.y,vtx.y,c0.z,-c0.w;\
+      ABS vtx.y,vtx.y;\
+      SUB vtx.y,c0.w,vtx.y;\
+      MUL_SAT vtx.y,vtx.y,c0.y;\
+      CMP vtx.y,vtx.x,vtx.y,c0.w;\
+      MUL col.xyz,col,vtx.y;\
+      MUL result.color,col,fragment.color;\
+      END";
+
+   // enable pixel shader plugin
+   cache.setpixshader(fragprog);
+   cache.setpixshaderparams(contourspacing,contourwidth,2.0f,1.0f);
+   cache.usepixshader();
+
+   // render actual content of the cache
+   cache.render(...);
+
+   // disable programs
+   cache.usevtxshader(0);
+   cache.usepixshader(0);
+</pre>
+
+The example is part of the Hawaii Demo (see
+Section <a href="#Performance">(I)</a>), so you can actually watch the
+shaders working together by pressing 'c' during the demo.<p>
+
+<div class="note">
+   <b>Hint:</b> If for any reason you need the rendered triangle mesh
+                to be semi-transparent, set its opacity with
+                cache.setopacity(alpha). The blended mesh, however,
+                might show artifacts due to incorrect blending
+                order. To avoid these artifacts we can use a two-pass
+                algorithm. First, we render the mesh with alpha=0 to
+                update the Z-buffer only. Then we render the mesh a
+                second time with alpha>0 to blend the mesh without
+                ordering artifacts.
+</div><p>
+
+Another usage example is per-fragment lighting: Let us first assume
+that the RGB texture contains the horizontal components x and z of the
+normal vector mapped to the R and G channels. Let us also assume that
+the B channel contains a gray scale image. Then the vertical component
+y of the normal vector can be computed from the horizontal components
+using y=sqrt(1-x*x-z*z). For diffuse shading we supply a light
+direction in the shader parameters and compute the dot product of the
+light direction with the normal vector. Then we multiply this with the
+B channel to get a shaded gray value. The elevations provided in the
+z-component of the texture coordinate vector may be additionally used
+to derive a color mapping which modulates the shaded gray values
+giving a final shaded color. The advantage of using a pixel shader for
+the calculation of the lighting equations is that the light conditions
+can be changed interactively.<p>
+
+<div class="note">
+   <b>Hint:</b> Normal maps can be computed with
+                pnmsample::normalize. The method takes a collection of
+                grids and computes a georeferenced normal map for each
+                of them. Afterwards the normal maps can be resampled
+                just like texture maps. Both the resampled normal maps
+                and the resampled texture maps are loaded by the
+                databuf::loadPPMnormalized method which produces a
+                texture with the normal map in the R and G and the
+                gray value of the original texture in the B
+                channel. Start the Hawaii Demo with the -n option to
+                see the result of this approach.
+</div><p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="AsyncPaging"></a>
+<h2>(K) ASYNCHRONOUS PAGING:</h2>
+
+Many high-resolution terrain data sets do not fit into main memory. In
+such a case out-of-core methods are needed which operate on tile
+sets. This has been described in detail in the previous sections. To
+give an example, we've got a data set of entire Oahu, Hawai'i, which
+has a resolution of less than 0.5 meters for the texture maps. The
+total uncompressed size of the data set is more than 70 GB. This
+clearly doesn't fit neither into main memory nor into the texture
+memory of the graphics card.<p>
+
+In order to view this data set in real-time we resampled it to a
+100x80 tile set. This tile set is visualized out-of-core using the
+described libMini paging callback concept. Whenever a tile needs to be
+paged into memory, the callback is triggered and the corresponding
+tile is loaded. However, while loading the requested data most of the
+time is wasted with busy waiting for the hard disk to seek and spin to
+the correct file position. This can take up 150ms even for the tiniest
+files. Since we cannot continue rendering while we wait for the data
+to arrive the frame rate usually drops down to a mere 5-10 fps.<p>
+
+Therefore, we need to decouple the disk access from rendering in order
+to get a smooth rendering experience. For this purpose, the Mini
+Library contains an asynchronous tile cache which loads the requested
+tiles in a background thread without blocking the main rendering
+thread.<p>
+
+We first assume that the tile set is defined via a miniload
+object. The tile set should contain S3TC compressed textures for best
+paging performance or uncompressed and denoised textures for best
+image quality:<p>
+
+<pre>
+   miniload *tileset=new miniload;
+</pre>
+
+Then we enable the asynchronous paging mechanism (with a single
+background thread):<p>
+
+<pre>
+   #include &lt;mini/datacloud.h&gt;
+
+   static const int numthreads=1;
+
+   datacloud *cloud=new datacloud(tileset);
+   cloud->setloader(request_callback,NULL,check_callback,1,1.25f*farp,0.01f*farp,pbasesize,1,10,1000);
+   cloud->getterrain()->setradius(0.03f*farp,1.0f); // optional non-linear texture LOD drop-off distance
+   cloud->setinquiry(inquiry_callback,NULL); // optional callback for better paging performance
+   cloud->setquery(query_callback,NULL); // optional callback for better paging performance
+   cloud->setschedule(0.02,0.5,1.0); // upload for 20ms, keep for 30sec, invalidate after 1sec
+   cloud->setmaxsize(128.0); // allow 128 MB tile cache size
+   cloud->setthread(startthread,NULL,jointhread,lock_cs,unlock_cs,lock_io,unlock_io);
+   cloud->setmulti(numthreads);
+   threadinit();
+</pre>
+
+We additionally need to define two mandatory and two optional
+callbacks (one for loading data, one for checking file existence, one
+for optionally checking the elevation range of a height field and one
+for optionally querying the image size of a texture map):<p>
+
+<pre>
+   void request_callback(const unsigned char *mapfile,databuf *map,int istexture,int background,void *data)
+      {map->loaddata((char *)mapfile);}
+
+   int check_callback(const unsigned char *mapfile,int istexture,void *data)
+      {return(checkfile((char *)mapfile));}
+
+   void inquiry_callback(int col,int row,const unsigned char *mapfile,int hlod,void *data,float *minvalue,float *maxvalue)
+      {
+      *minvalue=0.0f;
+      *maxvalue=10000.0f;
+      return(1);
+      }
+
+   void query_callback(int col,int row,const unsigned char *texfile,int tlod,void *data,int *tsizex,int *tsizey)
+      {
+      int tbasesize=2048; // size of texture LOD 0
+      while (tlod-->0) tbasesize/=2;
+      *tsizex=*tsizey=tbasesize;
+      }
+</pre>
+
+We finally have to define the callbacks for creating and locking the
+background thread. In the following example implementation we are
+using POSIX threads (pthreads), but any other multi-threading library
+like OpenThreads could be used as well:<p>
+
+<pre>
+   #include &lt;pthread.h&gt;
+
+   #include &lt;mini/datacloud.h&gt;
+
+   pthread_t pthread[numthreads];
+   pthread_mutex_t mutex,iomutex;
+   pthread_attr_t attr;
+
+   void threadinit()
+      {
+      pthread_mutex_init(&mutex,NULL);
+      pthread_mutex_init(&iomutex,NULL);
+
+      pthread_attr_init(&attr);
+      pthread_attr_setdetachstate(&attr,PTHREAD_CREATE_JOINABLE);
+      }
+
+   void threadexit()
+      {
+      pthread_mutex_destroy(&mutex);
+      pthread_mutex_destroy(&iomutex);
+
+      pthread_attr_destroy(&attr);
+      }
+
+   void startthread(void *(*thread)(void *background),backarrayelem *background,void *data)
+      {pthread_create(&pthread[background->background-1],&attr,thread,background);}
+
+   void jointhread(backarrayelem *background,void *data)
+      {
+      void *status;
+      pthread_join(pthread[background->background-1],&status);
+      }
+
+   void lock_cs(void *data)
+      {pthread_mutex_lock(&mutex);}
+
+   void unlock_cs(void *data)
+      {pthread_mutex_unlock(&mutex);}
+
+   void lock_io(void *data)
+      {pthread_mutex_lock(&iomutex);}
+
+   void unlock_io(void *data)
+      {pthread_mutex_unlock(&iomutex);}
+</pre>
+
+The loaddata, loadPNMdata and loadPVMdata methods of a databuf object
+are reentrant. In principle these methods can be used safely to load
+data in the background thread. However, they rely on the file IO
+functions of the operating system (fopen, fread, fwrite, fclose,
+fscanf and fprintf of the stdlibc++) to be thread-safe as well. This
+is usually the case but it is not guaranteed for all operating
+systems. As a safety measurement, libMini uses the lock_io and
+unlock_io functions to lock the request callback which is performing
+the IO in the background thread. If it is known in advance that the
+entire request callback is thread-safe, the two functions may be
+omitted in the setthread call.<p>
+
+Similarly, the loadPPMcompressed method is not reentrant because it is
+using OpenGL to compress the incoming data on-the-fly. If you want to
+pass S3TC compressed textures in the background thread you need to
+store pre-compressed data on the hard disk and load this data with a
+standard loaddata call. This approach saves a lot of disk space and is
+much faster than compressing the data on-the-fly.<p>
+
+In order to start multiple background threads we simply set numthreads
+to a higher value (e.g. 10). Typically, this is not needed if data is
+stored on a fast hard disk, but it has a performance advantage if the
+data is arriving over a slow network connection.<p>
+
+Adding these lines to the code will lead to a very smooth out-of-core
+visualization experience even for the mentioned 70 GB data set of
+Oahu. To give some performance details, the demo is running at a
+consistent 25 fps on my Apple Powerbook Pro with 1.5 GB of main
+memory, 1.83GHz Core Duo and ATI X1600 with 128MB VRAM.<p>
+
+An application that is using the asynchronous tile cache should update
+the scene each time the view point changes. Additionally, it should
+update the scene until there are no pending tiles left to be paged
+in. This can be achieved in the following way:<p>
+
+<pre>
+   static int pending=cloud->getpending();
+   if (pending!=0) tileset->draw(...);
+   pending=cloud->getpending();
+</pre>
+
+If a render cache is attached to the tile set the cache should be
+flushed after all pending tiles have been processed.
+
+As an alternative, the application could just render continuously with
+a given target frame rate. This obviously ensures that all arriving
+tiles will be displayed eventually.<p>
+
+Information about the actual streaming status can be printed by the
+following example code snippet:<p>
+
+<pre>
+   printf("streaming: pending=%d mem=%gMB\n",
+          cloud->getpending(), // total number of pending tiles
+          cloud->getmem()); // total memory foot print
+</pre>
+
+In order to quit an application which is using the asynchronous tile
+cache the background thread needs to be stopped beforehand. It is
+stopped implicitly if the datacloud object is deleted but it can be
+stopped at any time with an explicit call of
+cloud->stopthread(). Before the application can quit it also needs to
+release the background thread (see threadexit() in the above
+example).<p>
+
+<div class="note">
+   <b>Note:</b> By default, the tile cache module releases all the
+                databuf objects that are passed to it. If this is not
+                the desired behaviour, the memory chunks encapsulated
+                into a databuf object can be configured not to be
+                released via cloud->configure_dontfree(1).
+</div><p>
+
+The performance of loading tiles from disk is mainly limited by the
+number of tiles and only to a certain degree by the tile size. This is
+different if the tiles arrive over a network connection (see also
+Section <a href="#RemotePaging">(L)</a>). In such a case the startup
+time is determined by the size and the number of the tiles that need
+to be loaded initially. We can reduce the number of initially loaded
+tiles (and minimize startup time) by telling libMini that only a
+subset of the visible tiles is mandatory for startup. After these
+tiles have been loaded initially the remaining tiles are paged in
+consecutively in the background thread. Typically, a useful startup
+subset is a small area around the initial point of view (ex,ey,ez):<p>
+
+<pre>
+   tileset->restrictroi(ex,ez,farp/3);
+</pre>
+
+The tile size quadratically depends on the distance to the point of
+view. Therefore, the selection of a view point high above the scene
+(bird's eye view) additionally leads to a reduced initial traffic on
+the net. If the initial point of view is lying on the terrain, the
+traffic will be much higher, but we can mimic a high point of view by
+applying the following trick before the first frame is rendered:<p>
+
+<pre>
+   tileset->updateroi(res,
+                      ex,ey+10*farp,ez,
+                      ex,ez,farp);
+</pre>
+
+This has the effect, that only low resolution tiles are loaded
+initially. These are replaced by higher resolution tiles as soon as
+they are coming in over the net. To apply the trick to the entire tile
+set use tileset.updateall().<p>
+
+For very large tile sets it is also important to save disk space. With
+S3TC compression only a compression of 1:6 is possible. In order to go
+beyond this compression ratio, the tiles need to be stored in JPEG
+format, for example. This is not a native format of libMini so that
+the conversion hook of the databuf object must be registered with a
+function that is able to to export and reimport that data (see
+Appendix <a href="#DBdoc">(6C)</a>).<p>
+
+Since the textures are now stored in JPEG format on disk, they need to
+be decoded and uploaded in raw format to the graphics memory. If S3TC
+compression is required to fit the textures into the graphics memory,
+we also need to recompress the textures on-the-fly. For this purpose
+the <a href="http://www.sjbrown.co.uk/?code=squish">squish library</a>
+of Simon Brown is highly recommended. See
+Section <a href="#AutoCompression">(M)</a> how to use this library.
+
+<a href="#" class="top">Back to top</a>
+
+<a name="RemotePaging"></a>
+<h2>(L) REMOTE PAGING:</h2>
+
+Those who have been reading until this point, can be truly called
+libMini experts. In the following we are approaching the next level:
+in the previous section we have seen how to use a background thread to
+page data concurrently to rendering. To do so we need to implement the
+callback API of the datacloud class. In our previous example our
+implementation was just loading files from disk, but in principle it
+doesn't make a difference if the data is coming from a local disk or
+from a remote server. The only difference is that data will be
+arriving much slower over a network connection, meaning that we should
+use highly compressed data whenever possible. And of course the
+implementation needs to use a library
+like <a href="http://curl.haxx.se">libcurl</a> to transfer the files
+from the remote server to the client.<p>
+
+The libMini library contains a sample implementation of a transfer
+module. To use this module we make the following modifications to the
+example code of the previous section:<p>
+
+<pre>
+   tilecache=new datacache(tileset);
+   tilecache->setremoteid(REMOTEID);
+   tilecache->setremoteurl(REMOTEURL);
+   tilecache->setlocalpath(LOCALPATH);
+   tilecache->setstartupfile(STARTUPFILE);
+   tilecache->setloader(request_callback,NULL);
+   tilecache->getcloud()->setschedule(0.02,5.0,1.0); // upload for 20ms, keep for 5min, invalidate after 1sec
+   tilecache->getcloud()->setmaxsize(256.0); // allow 256 MB tile cache size
+   tilecache->getcloud()->setthread(startthread,NULL,jointhread,lock_cs,unlock_cs);
+   tilecache->configure_netthreads(numthreads);
+   tilecache->setreceiver(receive_callback,NULL,check_callback);
+   tilecache->load();
+</pre>
+
+<ul>
+   <li>REMOTEID is the local path or the remote id on the server.</li>
+   <li>REMOTEURL is the URL of the server. If the http:// prefix is
+   missing files are assumed to be stored locally.</li>
+   <li>LOCALPATH is the storage path for local data on the
+   client.</li>
+   <li>STARTUPFILE is the name of a startup file which persistently
+   stores information about whether or not a file is existing and has
+   already been transferred and stored locally. This file is created
+   after the client has been started up the first time. The first
+   startup might take some time but after that the next client
+   startups will be much faster. The startup file should be copied
+   into the base directory on the server, because each client will
+   first try to download it from that location on the server prior to
+   generating it from scratch. For this purpose, the built-in
+   resampler can be configured to write the startup file via
+   pnmsample::configure_startupfile(1). The default startup file name
+   is startup.sav. The install path of the resampled tile set must be
+   identical to the path where the tile set is uploaded on the
+   server. This means that the local path argument of
+   pnmsample::configure_tilesetpath must be identical to the remote
+   path argument of datacache::setremoteid.</li>
+   <li>numthreads is the number of threads for concurrent net
+   transfers. A useful value is 10. In contrast to a single thread,
+   this improves the typical download rate from below 30kb/s to almost
+   the theoretical bandwidth of 128kb/s of a standard 1000kbit ASL/DSL
+   line.</li>
+</ul>
+
+The callbacks used by the transfer module are slightly different:<p>
+
+<pre>
+   void request_callback(const char *file,int istexture,databuf *buf,void *data)
+      {buf->loaddata(file);}
+
+   void receive_callback(const char *src_url,const char *src_id,const char *src_file,const char *dst_file,int background,void *data)
+      {geturl(src_url,src_id,src_file,dst_file,background);}
+
+   int check_callback(const char *src_url,const char *src_id,const char *src_file,void *data)
+      {return(checkurl(src_url,src_id,src_file));}
+</pre>
+
+The geturl and checkurl functions use libcurl to negotiate and
+transfer data over the net. Please see the libMini Viewer (Section <a
+href="#MiniViewer">(O)</a>) how this can be done in detail.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="AutoCompression"></a>
+<h2>(M) AUTOMATIC S3TC COMPRESSION:</h2>
+
+For high-resolution imagery, texture compression is crucial. For that
+reason, the resampled tiles are typically stored in S3TC format (see
+also previous sections). The compression ratio of S3TC is 1:6 for RGB
+images. In order to achieve a higher compression ratio, JPEG can be
+used as an external format.<p>
+
+With that approach a compression ratio of up to 1:20 can be achieved
+with still good image quality. However, the images now have to be
+recompressed with S3TC on-the-fly. For that purpose, libMini features
+the auto-compression hook. Whenever libMini encounters an uncompressed
+texture and the auto-compression hook is set it automatically tries to
+run the texture data through the compression hook. Below is a
+reference implementation of the S3TC compression hook using
+the <a href="http://www.sjbrown.co.uk/?code=squish">squish library</a>
+of Simon Brown.<p>
+
+<pre>
+   void autocompress(int isrgbadata,unsigned char *rawdata,unsigned int bytes,
+                     unsigned char **s3tcdata,unsigned int *s3tcbytes,int width,int height,
+                     void *data)
+      {
+      int i;
+
+      int mode;
+
+      unsigned char *rgbadata;
+
+      static const int modefast=squish::kDxt1 | squish::kColourRangeFit; // fast but produces artifacts
+      static const int modegood=squish::kDxt1 | squish::kColourClusterFit; // almost no artifacts though much slower
+      static const int modeslow=squish::kDxt1 | squish::kColourIterativeClusterFit; // no artifacts but really sluggish
+
+      mode=modefast; // we strive to compress as fast as possible
+
+      if (isrgbadata==0)
+         {
+         rgbadata=(unsigned char *)malloc(4*width*height);
+         if (rgbadata==NULL) ERRORMSG();
+
+         for (i=0; i&lt;width*height; i++)
+            {
+            rgbadata[4*i]=rawdata[3*i];
+            rgbadata[4*i+1]=rawdata[3*i+1];
+            rgbadata[4*i+2]=rawdata[3*i+2];
+            rgbadata[4*i+3]=255;
+            }
+
+         rawdata=rgbadata;
+         }
+
+      *s3tcbytes=squish::GetStorageRequirements(width,height,mode);
+      *s3tcdata=(unsigned char *)malloc(*s3tcbytes);
+      if (*s3tcdata==NULL) ERRORMSG();
+
+      squish::CompressImage(rawdata,width,height,*s3tcdata,mode);
+
+      if (isrgbadata==0) free(rawdata);
+      }
+</pre>
+
+To register the above compression hook we use the following one-liner:<p>
+
+<pre>
+   databuf::setautocompress(autocompress,NULL);
+</pre>
+
+Finally, the S3TC auto-compression is turned on in the background
+thread via datacloud::configure_autocompress(1).<p>
+
+The auto-compression also applies to mip-mapped textures. In order to
+automatically generate mip-maps prior to compressing the texture data
+we use datacloud::configure_automipmap(1).<p>
+
+Please note that the auto-compression hook is triggered from the
+background thread. Therefore it cannot use OpenGL functionality,
+because the background thread has no OpenGL context. This is the
+reason why we need to utilize a library like squish.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="DynamicTerrain"></a>
+<h2>(N) DYNAMIC TERRAIN:</h2>
+
+For certain applications such as utility or telegraph pole placement it is
+necessary to modify the terrain at run time. Depending on the extent
+of the modified area libMini offers the following options:<p>
+
+<ul>
+   <li><b>Large extent:</b> the result of a post-processing operation
+   like trenching roads or a mud slide simulation is usually a
+   modified data set or a modified part of it. Then the modified part
+   can be reloaded at run time via miniload::reload(col,row,...).</li>
+   <li><b>Small extent:</b> in order to place telegraph poles, for
+   example, the exact position of a pole needs to be matched with the
+   level of the terrain at that particular position. This modification
+   can be temporary and does not need to have a representation in the
+   data set. The same holds for explosion craters and tank
+   tracks. Therefore, the elevation values can be modified dynamically
+   by using the setheight or setrealheight methods of the libMini
+   core. These methods are also available for the ministub and
+   minitile class (tile size has to be uniform in the modified area)
+   but not for the miniload class. After modifying the terrain using
+   the libMini core the terrain needs to be updated with the
+   updatemaps method. Otherwise the quadtree operations (culling and
+   triangulation) might produce wrong results. The methods of the
+   ministub and minitile class take care of updating the terrain
+   automatically.</li>
+</ul>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="MiniViewer"></a>
+<h2>(O) THE LIBMINI VIEWER:</h2>
+
+The libMini Viewer is a tool for viewing tile sets. It can load local
+and remote tile sets stored on a web server. The supported format is
+either PNM which is exported by the built-in libMini resampler or DB
+which is output by vtb (virtual terrain builder of vterrain.org).<p>
+
+For conceptual information on the modules used by the viewer see
+the <a href="http://stereofx.org/download/libMini-Modules.pdf">libMini
+Module Overview</a>.<p>
+
+To compile the viewer type "./build.sh viewer" on the command line. It
+requires POSIX threads (pthreads), <a href="http://curl.haxx.se">libcurl</a>,
+<a href="http://www.ijg.org">libjpeg</a>, <a href="http://www.libpng.org">libpng</a>
+and <a href="http://www.sjbrown.co.uk/?code=squish">squish</a> to be
+installed. On Windows the <a href="http://freeglut.sourceforge.net">freeGLUT
+library</a> must be installed additionally.<p>
+
+The libMini Viewer can be configured to
+use <ahref="http://www.openscenegraph.org/svn/osg/OpenThreads">OpenThreads</a>
+instead of pthreads by typing "./build.sh viewer useopenth". On
+Windows, however, the default is to use OpenThreads instead of a
+pthread implementation such as
+<a href="http://sourceware.org/pthreads-win32">pthreads-win32</a>.<p>
+
+Optionally, the libMini Viewer can also be built without squish
+support ("./build.sh viewer nosquish") or with
+<a href="http://www.greyc.ensicaen.fr/~dtschump/greycstoration">GREYCstoration</a>
+support ("./build.sh viewer usegreyc").<p>
+
+See the following examples how to use the viewer from the command line:<p>
+
+<pre>
+   local usage:
+      viewer &lt;local.base.path&gt; &lt;tileset.path&gt; &lt;elevation.subpath&gt; imagery.subpath { &lt;options&gt; }
+
+   local example (for loading the data of the Hawaii Demo):
+      viewer ~user/.../Hawaii/ data/HawaiiTileset/ tiles landsat
+
+   remote usage:
+      viewer "&lt;http-address&gt;" &lt;tileset.path&gt; &lt;elevation.subpath&gt; &lt;imagery.subpath&gt; { &lt;options&gt; }
+
+   remote example:
+      viewer "http://server.inter.net/.../" tileset/ elevation imagery
+</pre>
+
+If the data is resampled with vtb make sure that a metric coordinate
+system like UTM is chosen. Also make sure that the two ini files for
+the elevation and the imagery are made available in the tile set path,
+because the viewer automatically retrieves necessary information from
+the ini files. The libMini Viewer tries to guess their names by adding
+the .ini suffix to the respective subpath. The default setting for the
+vtp subpaths is "elev" and "imag". If you used this naming convention
+when generating the elevation and imagery tile sets with vtp, you can
+start the libMini Viewer with just one argument:
+
+<pre>
+   short usage:
+      viewer &lt;url/path&gt;
+</pre>
+
+This is equivalent to the multi-argument usage of "viewer url/ path/
+elev imag", so that the corresponding directory layout for the short
+use case must be as follows:
+
+<pre>
+   url/
+       path/
+            elev/
+                 tile.0-0.db
+                 ...
+            elev.ini
+            imag/
+                 tile.0-0.db
+                 ...
+            imag.ini
+</pre>
+
+The initial viewing settings are very conservative, so that the first
+view probably will not look adequate. To get a better visualization,
+you can adjust the following parameters interactively: the far
+clipping distance (farp), the triangle mesh resolution (res) and the
+texture detail level (range). To check these parameters press the h
+key. This turns on the head up display (HUD). The HUD also displays
+information about the available keyboard controls.<p>
+
+Optionally, you can view waypoints that were gathered with a GPS unit,
+for example. The waypoints must be contained in a definition file
+named "Waypoints.txt" in the base directory of the tile set. Each 5
+consecutive lines separated by a single empty line define one
+waypoint. Here is an example:<p>
+
+<pre>
+   Pali Lookout, Oahu
+   UTM 04
+   0625143
+   2363262
+   379m
+
+   Hubertusklause, Deckersberg
+   LL
+   49.470846
+   11.440757
+   542m
+</pre>
+
+The general layout of the data fields of each waypoint is the following:<p>
+
+<pre>
+   waypoint description ; meta-information
+   ; comment lines
+   coordinate system (LL or UTM)
+   position (lat/lon or x/y)
+   elevation (m_eter or f_eet)
+</pre>
+
+The coordinate system of the first waypoint in the definition file
+must match the coordinate system of the tile set. Then the waypoints
+will be displayed as signposts at the corresponding position in the
+tile set. The first waypoint also determines the initial point of view
+when starting the libMini Viewer.<p>
+
+Optionally, you can run the libMini Viewer in anaglyph stereo mode by
+appending "-s -a" to the command line. You need to put on red/cyan
+glasses to get the stereo effect. To start the viewer in full-screen
+mode use the -f option. For full usage information on all available
+command line options start the viewer without arguments. <p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="ErrorHandling"></a>
+<h2>(P) ERROR HANDLING:</h2>
+
+Normally, libMini will run silently doing just what it is ought to do.
+However, if it encounters insufficient resources (either insufficient
+memory or disk space) it will print an error on the console and
+quit. For that purpose it uses the macro ERRORMSG().<p>
+
+If it is required to catch these errors, a signal handler can be
+provided via setminierrorhandler() as defined in minibase.h to safely
+handle the exceptions (e.g. by closing or restarting the renderer).<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="Acknowledgements"></a>
+<h2>(Q) FINAL ACKNOWLEDGEMENTS:</h2>
+
+In particular, I would like to thank Ben Discoe of vterrain.org for
+his suggestions and valuable feedback on the terrain rendering API
+during his efforts to include the Mini Library into the VTP.<p>
+
+I also would like to thank Ingo Frick of Massive Development for many
+interesting discussions on implementation specific details while
+porting the terrain renderer to the AquaNox game engine. Many thanks
+also go to Olivier Pascal for his valuable feedback and to the folks
+at Makai Ocean Engineering for their great support: Jose Andres, Tie
+Fang and Greg Gillenwaters.<p>
+
+Comments or suggestions are highly appreciated. Please do not hesitate
+to contact the author at the given email address.<p>
+
+Have fun,<br>
+Stefan<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="Appendix"></a>
+<h1>APPENDIX OF OPTIONAL MODULES</h1>
+
+<a name="Minisky"></a>
+<h2>(1) MINISKY</h2>
+
+This class implements a sky dome which is textured by a 2D texture
+parametrized with polar coordinates. For an example please see the
+libMini Viewer (Section <a href="#MiniViewer">(O)</a>).<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="Minipoint"></a>
+<h2>(2) MINIPOINT</h2>
+
+This class organizes a collection of way points. The points could have
+been collected with a GPS receiver, for example, or just exported from
+a GIS software.
+
+Each way point has the following attributes:<p>
+
+<ul>
+   <li><b>desc</b>: the point description</li>
+   <li><b>meta</b>: the meta-information (separated from the description by a semicolon)</li>
+   <li><b>comment</b>: the comment section (indicated by lines that begin with a semicolon)</li>
+   <li><b>x</b>, <b>y</b>: the actual (transformed) point coordinates</li>
+   <li><b>longitude</b>, <b>latitude</b>: the measured point coordinates</li>
+   <li><b>height</b>: the actual height of the terrain at the point in meters</li>
+   <li><b>elevation</b>: the measured elevation of the point in meters</li>
+   <li><b>zone</b>: the UTM zone of the measured coordinates (equals 0 for Lat/Lon)</li>
+   <li><b>datum</b>: the UTM datum of the measured coordinates (assuming WGS84 datum for Lat/Lon)</li>
+</ul>
+
+For an example how to load and display the way points please check out
+the libMini Viewer (see Section <a href="#MiniViewer">(O)</a>). Press
+'p' in the viewer to toggle the way points on or off. The Hawaii Demo
+data contains a small collection of geocache locations on Oahu, so you
+need to visit this island with the libMini Viewer to see the way
+points.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="Minitext"></a>
+<h2>(3) MINITEXT</h2>
+
+This module implements a 3D OpenGL text renderer which uses a
+minimalistic vector representation of the ASCII character set. All
+characters used by the C programming language are supported. The
+minitext is mainly intended for prototyping purposes where
+fully-fledged anti-aliased text would be sort of an overkill. For
+example, it is used in the libMini Viewer (see
+Section <a href="#MiniViewer">(O)</a>) to render the text of the way
+points and the HUD.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="Minitree"></a>
+<h2>(4) VEGETATION RENDERING</h2>
+
+The Mini Library also supports vegetation rendering. The height of the
+vegetation layer is defined by an additional height field. Now for all
+rendered triangles a prism is generated that stacks on top of each
+triangle and fits in between the terrain and the upper boundary of the
+vegetation layer. This is a volumetric description of the
+vegetation. The so-defined vegetation volume is used to place plants
+of varying height. As a result, wood, shrub and meadow is generated in
+a procedural way from the additional input height field.<p>
+
+A more detailed description is given in
+the <a href="http://stereofx.org/papers/VEGETATION.PDF">paper</a>. The
+reader is also encouraged to try the Fraenkische Demo which applies
+the described approach.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="Minibrick"></a>
+<h2>(5) VOLUME RENDERING WITH THE MINIBRICK</h2>
+
+The minibrick class implements volume rendering of regular
+time-dependent data by displaying multiple shaded semi-transparent iso
+surfaces. The complexity of the scene is controlled by using a
+volumetric C-LOD approach and an octree for the efficient culling of
+sub-volumes that do not contain any iso surface.<p>
+
+For conceptual information on the volume rendering approach see
+the <a href="http://stereofx.org/download/libMini-VolRen.pdf">libMini
+Volume Rendering Overview</a>.<p>
+
+A volume is given by a tile set with r rows and c columns that extend
+in the horizontal plane and form what is called a minibrick. The
+preferable tile size is 2^n+1 (n may vary to yield varying size along
+the tile edges). The tile data needs to be provided in a databuf
+object container which is passed to the library using a callback
+mechanism. The load callback is triggered for each visible tile. In
+the callback the tile to be loaded is identified by its row and
+column. The availability of each tile is checked with the isavailable
+callback. Currently only two methods are provided that load a PVM (see
+Section <a href="#PVMdoc">Appendix (6B)</a>) or a MOE volume and store
+the data in the databuf object. So usually the application layer will
+implement its own methods for setting up the databuf objects being
+passed in the load callback. Use the minibrick.setloader method to
+register your own callbacks with the library. The tiles do not need to
+be axis-aligned, but must have a rectangular basis. Therefore, please
+ensure that the corner coordinates of each databuf object are set to
+suitable values. Otherwise seams will be visible.<p>
+
+The appearance of a minibrick volume is determined by a so called
+spectrum of iso surfaces. Each single iso surface of the spectrum is
+defined by using the minibrick.addiso(iso,R,G,B,A) method which
+specifies the iso value and the corresponding RGB color and opacity of
+each iso surface.<p>
+
+Three different rendering methods can be configured. These methods
+implement either 2-, 3- or 4-pass rendering. The 2-pass method renders
+the opaque triangles in the first pass and the semi-transparent
+triangles in the second pass. This is the fastest available method,
+but artifacts may arise because the semi-transparent geometry is only
+sorted by iso surface number and not by depth order. In order to
+suppress these artifacts, the 3-pass method accumulates the opacity in
+the second pass and sums up the emission in the third pass. The 4-pass
+method improves image quality even further by selectively neglecting
+the emissions behind the first encountered back-face. The 3-pass
+method is a good compromise between speed and visual quality, thus it
+is enabled by default.<p>
+
+It is possible to render an arbitrary number a bricks
+simultaneously. The bricks could even intersect each other. For this
+to work, the render passes of each single brick have to be interleaved
+in the following way:<p>
+
+<pre>
+   // declare n bricks
+   minibrick bricks[n];
+
+   // render the bricks in an interleaved fashion
+   for (int i=MINIBRICK_FIRST_RENDER_PHASE; i<=MINIBRICK_LAST_RENDER_PHASE; i++)
+      for (int j=0; i&lt;n; j++)
+         brick[j].render(ex,ey,ez,rad,farp,fovy,aspect,time,i);
+</pre>
+
+Additionally, each brick can have up to six clipping planes that are
+set via minibrick::setclip. The clip planes are defined by a number,
+an origin and a normal vector.<p>
+
+The level of detail of the visualization is determined by the radius
+parameter rad. Within this radius around the view point the maximum
+level of detail is enabled. Outside the radius the resolution
+gradually decreases. The library interpolates smoothly between the
+level of details so that the popping effect is suppressed efficiently.
+Since this involves heavy floating point math the user should use the
+multi-threading support of the library to decouple the update of the
+iso surface geometry from rendering. This means that one thread
+continuously updates the geometry if the view point has changed while
+the other thread is busy rendering the latest cached geometry. This
+approach has the advantage that the frame rate only depends on the
+speed of the graphics hardware and is not limited by the update time
+that is needed to interpolate and extract the iso surfaces.
+Multi-threading is enabled by passing appropriate callbacks to the
+minibrick::setthread method as illustrated in the Hawaii Demo (see
+Section <a href="#Performance">(I)</a>).<p>
+
+In order to get a better understanding of the capabilities of the
+minibrick module please check out the Hawaii Demo. Start it with the
+-b option, press 'm' to go to Makai Pier in Waimanalo at the east side
+of Oahu and look at the scene with a bird's eye view. Then you see a
+time-dependent visualization of the evolution of a thunder storm with
+one opaque and two semi-transparent iso-surfaces.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="PNMdoc"></a>
+<h2>(5A) PNM IMAGE FORMAT DESCRIPTION</h2>
+
+The Mini Library supports the PNM image format (PNM = Portable
+aNy-Map) to read tile sets from disk. Color images have the file
+extension .ppm (Portable Picture Map = PPM), gray-scale images have
+the extension .pgm (Portable Gray-scale Map = PGM). The format
+consists of an ASCII header that defines type, size and bit depth in
+an easily readable way
+(see <a
+href="http://netpbm.sourceforge.net">netpbm.sourceforge.net</a>). The
+raw image data follows directly after the header. In contrast to the
+original netpbm library libMini does not optionally support ASCII
+image data and it also does not support image types other than color
+and gray-scale. With these restrictions a plain PNM image is defined
+as follows:<p>
+
+<pre>
+   &lt;TYPE&gt;\n
+   &lt;WIDTH&gt; &lt;HEIGHT&gt;\n
+   &lt;MAXVAL&gt;\n
+   ...DATA...
+</pre>
+
+with<p>
+
+<pre>
+   &lt;TYPE&gt;   = P5 | P6 | P8 ::: P5 = PGM, P6 = PPM, P8 = RGBA
+   &lt;WIDTH&gt;  = %d           ::: width of texture/heightmap
+   &lt;HEIGHT&gt; = %d           ::: height of texture/heightmap
+   &lt;MAXVAL&gt; = %d           ::: maximum value
+</pre>
+
+For 8 bit images MAXVAL is 255, for 16 bit images MAXVAL is either
+32767 or 65535. In the 16 bit case libMini always assumes the data to
+be signed 16 bit (stored in MSB format). The header may additionally
+contain comments starting with a '#' in each line.<p>
+
+The plain PNM format does not contain georeferencing information. For
+this purpose, libMini is using a comment section after the TYPE
+identifier to include the missing information (thanks to Kyle
+Dickerson for the compilation):<p>
+
+<pre>
+   &lt;TYPE&gt;
+   # description=&lt;DESCRIPTION&gt;
+   # coordinate system=&lt;COORD_SYS&gt;
+   # coordinate zone=&lt;COORD_ZONE&gt;
+   # coordinate datum=&lt;COORD_DATUM&gt;
+   # SW corner=&lt;SW_X&gt;/&lt;SW_Y&gt; &lt;SW_UNITS&gt;
+   # NW corner=&lt;NW_X&gt;/&lt;NW_Y&gt; &lt;NW_UNITS&gt;
+   # NE corner=&lt;NE_X&gt;/&lt;NE_Y&gt; &lt;NE_UNITS&gt;
+   # SE corner=&lt;SE_X&gt;/&lt;SE_Y&gt; &lt;SE_UNITS&gt;
+   # cell size=&lt;CELL_X&gt;/&lt;CELL_Y&gt; &lt;CELL_UNITS&gt;
+   # vertical scaling=&lt;VERT_SCALE&gt; &lt;VS_UNITS&gt;
+   # missing value=&lt;MISSING_VAL&gt;
+   &lt;WIDTH&gt; &lt;HEIGHT&gt;
+   &lt;MAXVAL&gt;
+   ...DATA...
+</pre>
+
+with<p>
+
+<pre>
+   &lt;MAGIC DESCRIPTOR&gt; = BOX | DEM | TEX ::: BOX = bounding box, DEM = digital elevation model, TEX = texture map
+   &lt;DESCRIPTION&gt; = %s
+   &lt;COORD_SYS&gt; = LL | UTM
+   &lt;COORD_ZONE&gt; = %d
+      if (&lt;COORD_SYS&gt; == LL) then &lt;COORD_ZONE&gt; = 0
+      if (&lt;COORD_SYS&gt; == UTM) then (&lt;COORD_ZONE&gt; != 0 && &lt;COORD_ZONE&gt; &gt; -60 && &lt;COORD_ZONE&gt; &lt; 60)
+   &lt;COORD_DATUM&gt; = %d
+      if (&lt;COORD_SYS&gt; == LL) then &lt;COORD_DATUM&gt; = 0 (assuming WGS84 datum)
+      else if (&lt;COORD_DATUM&gt; &lt;1 || &lt;COORD_DATUM&gt; &gt;14) then &lt;COORD_DATUM&gt; = 3 (WGS84)
+
+      1  = NAD27 (Mean North American Datum of 1927)
+      2  = WGS72 (World Geodetic System of 1972)
+      3  = WGS84 (World Geodetic System of 1984)
+      4  = NAD83 (Mean North American Datum of 1983)
+      5  = Sphere (with radius 6370997 meters)
+      6  = ED50 (Mean European Datum of 1950, centered at the Munich Frauenkirche)
+      7  = ED79 (Mean European Datum of 1979)
+      8  = OldHawaiian (mean datum for Hawaii/Maui/Oahu/Kauai)
+      9  = Luzon (Philippine Datum)
+      10 = Tokyo (Mean Japanese Datum)
+      11 = OSGB1936 (mean datum of the Ordnance Survey Great Britain 1936)
+      12 = Australian1984 (Mean Australian Geodetic Datum of 1984)
+      13 = Geodetic1949 (New Zealand Datum of 1949)
+      14 = SouthAmerican1969 (Mean South American Datum of 1969)
+
+   &lt;SW_X&gt;, &lt;SW_Y&gt;, &lt;NW_X&gt;, &lt;NW_Y&gt;, &lt;NE_X&gt;, &lt;NE_Y&gt;, &lt;SE_X&gt;, &lt;SE_Y&gt;, &lt;CELL_X&gt;, &lt;CELL_Y&gt; = %g
+   &lt;SW_UNITS&gt;, &lt;NW_UNITS&gt;, &lt;NE_UNITS&gt;, &lt;SE_UNITS&gt;, &lt;CELL_UNITS&gt; = radians | feet | meters | decimeters | arc-seconds
+      if (&lt;COORD_SYS&gt; == LL) then &lt;SW|NW|NE|SE|CELL_UNITS&gt; == radians | arc-seconds
+      if (&lt;COORD_SYS&gt; == UTM) then &lt;SW|NW|NE|SE|CELL_UNITS&gt; == feet | meters | decimeters
+   &lt;VERT_SCALE&gt; = %g
+   &lt;VS_UNITS&gt; = feet | meters | decimeters
+   &lt;MISSING_VAL&gt; = %d
+</pre>
+
+The libMini core only understands the BOX georeferencing type meaning
+that the contained data is enclosed exactly within the bounding box
+spanned by the four corner points. The built-in resampler also
+distinguishes between the two following types: DEM means that the
+contained data is a height field and that the corner coordinates
+define the exact position of the four corner vertices (corner-centric
+grid representation). TEX means that the contained data is a texture
+map and that the corner coordinates define the position of the
+midpoint of the four corner pixels (cell-centric grid
+representation). The missing value field is usually used by DEM
+formats to identify cells with unknown or unspecified elevation. A
+typical value is -9999. The no-data value for imagery assumed by the
+built-in resampler is absolute black (0,0,0). This is a safe
+assumption since real world imagery may indeed contain some really
+dark colors but hardly ever real black. In case it does though, the
+black pixels can be substituted easily with (0,0,1). If you think this
+still makes a visual difference then please remember not to fire
+cannons at chickadees.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<a name="PVMdoc"></a>
+<h2>(5B) PVM VOLUME FORMAT DESCRIPTION</h2>
+
+Similar to the PNM image format, the PVM volume format defines
+volumetric data in an easily readable fashion:
+
+<pre>
+   &lt;MAGIC&gt;\n
+   &lt;WIDTH&gt; &lt;HEIGHT&gt; &lt;DEPTH&gt;\n
+   &lt;COMPONENTS&gt;\n
+   ...DATA...
+</pre>
+
+with<p>
+
+<pre>
+   &lt;MAGIC&gt;      = PVM ::: magic identifier
+   &lt;WIDTH&gt;      = %d  ::: width of volume
+   &lt;HEIGHT&gt;     = %d  ::: height of volume
+   &lt;COMPONENTS&gt; = %d  ::: number of components
+</pre>
+
+For 8 bit data the number of components is 1, for 16 bit data 2 and
+for RGB movies it is 3.
+
+<a href="#" class="top">Back to top</a>
+
+<a name="DBdoc"></a>
+<h2>(5C) DB DATA FORMAT DESCRIPTION</h2>
+
+While the built-in image format for tile sets is PNM, it is clear that
+libMini needs to support other file formats as well. This is achieved
+by registering a callback with libMini which handles loading the
+requested data in a proprietary format. The registered function copies
+the required information into a generic data buffer object which is
+returned to the Mini Library. In this way the data retrieval from the
+terrain data base can be handled completely in the application and is
+decoupled entirely from libMini. The data buffer is realized by the
+databuf class. It can contain 1D, 2D, 3D and 4D data. The class has
+methods to load and save its content in its native DB format but it is
+able to load from PNM files, too. The file extension of the native
+format is .db. Similar to PNM, the header is human readable consisting
+of the following fields:
+
+<pre>
+   MAGIC=13048  ::: magic number
+   xsize=%u     ::: mandatory width
+   ysize=%u     ::: mandatory height for 2+D, 1 for 1D data
+   zsize=%u     ::: mandatory depth for 3+D, 1 for 1D and 2D data
+   tsteps=%u    ::: mandatory number of time steps for 4D, 1 for 1D, 2D and 3D data
+   type=%u      ::: mandatory cell type: 0 = unsigned byte, 1 = signed short, 2 = float, 3 = RGB, 4 = RGBA, 5 = compressed RGB (S3TC DXT1), 6 = compressed RGBA (S3TC DXT1 with 1-bit alpha)
+   swx=%g       ::: x-component of south west corner (should be supplied for tile sets)
+   swy=%g       ::: y-component of south west corner (should be supplied for tile sets)
+   nwx=%g       ::: x-component of north west corner (should be supplied for tile sets)
+   nwy=%g       ::: y-component of north west corner (should be supplied for tile sets)
+   nex=%g       ::: x-component of north east corner (should be supplied for tile sets)
+   ney=%g       ::: y-component of north east corner (should be supplied for tile sets)
+   sex=%g       ::: x-component of south east corner (should be supplied for tile sets)
+   sey=%g       ::: y-component of south east corner (should be supplied for tile sets)
+   h0=%g        ::: base elevation of 3D or 4D data cube
+   dh=%g        ::: height of the 3D or 4D cube
+   t0=%g        ::: starting time of 4D series
+   dt=%g        ::: time step of 4D series
+   scaling=%g   ::: elevation scaling parameter for height fields (default is 1)
+   bias=%g      ::: elevation bias parameter for height fields (default is 0)
+   extformat=%u ::: external format indicator: a value!=0 triggers conversion hook (default 0, 1 reserved for JPEG, 2 for PNG)
+   bytes=%u     ::: mandatory byte length of the following data chunk
+</pre>
+
+The data chunk is appended to the above description. The description
+must end with a NUL character. Data type 1 and 2 is stored in MSB
+format. After loading the data into main memory it is automatically
+converted into the native MSB or LSB format of the CPU.<p>
+
+A value other than zero for extformat indicates that the data chunk is
+stored in an external format. When calling databuf::loaddata on such
+an object it automatically tries to trigger an external conversion
+hook to transform the input data into the corresponding raw
+format. The hook can be set via databuf::setconversion. As an example,
+extformat=1 in the header of a DB file means that the appended data
+chunk is encoded as a JPEG image. For more information on this issue,
+please have a look at the libMini Viewer (as described in
+Section <a href="#MiniViewer">(O)</a>) which demonstrates how to use
+the conversion hook mechanism in order to decode JPEG images. If the
+extfmt parameter of databuf::savedata is set, the conversion hook is
+also triggered to convert the raw data into the external format.<p>
+
+<a href="#" class="top">Back to top</a>
+
+<small>eof</small><p>
+
+</body>
+</html>

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jatrigueros/src/osggis/tests/encode/main.cpp
+/home/jatrigueros/programas/osggis_googlecode/3dgis/tests/encode/main.cpp
 osgGISProjects/Project
 -
 osgGISProjects/XmlSerializer

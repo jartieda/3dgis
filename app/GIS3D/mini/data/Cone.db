@@ -1,0 +1,49 @@
+MAGIC=13091
+xsize=17
+ysize=17
+zsize=17
+tsteps=1
+type=0
+swx=0
+swy=0
+nwx=0
+nwy=0
+nex=0
+ney=0
+sex=0
+sey=0
+h0=0
+dh=0
+t0=0
+dt=0
+scaling=1
+bias=0
+extformat=0
+implformat=1
+bytes=0
+
+# implicit cone function
+
+func sphere(par x, par y, par z)
+   {return(* 2 sqrt(+ sqr(x) (+ sqr(y) sqr(z))));}
+
+func half_sphere(par x, par y, par z)
+   {
+   if (< z 0) return(1);
+   else return(* 2 sqrt(+ sqr(x) (+ sqr(y) sqr(z))));
+   }
+
+func cone(par x, par y, par z)
+   {
+   if (> z 0.25) return(1);
+   else return(+ (- sqrt(+ sqr(x) sqr(y)) (/ z 2)) 0.25);
+   }
+
+func cylinder(par x, par y, par z)
+   {
+   if (| (< z -0.4) (> z 0.4)) return(1);
+   return(+ sqrt(+ sqr(x) sqr(y)) 0.4);
+   }
+
+main(par x, par y, par z, par t)
+   {return(cone(x,y,z));}
